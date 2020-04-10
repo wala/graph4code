@@ -20,7 +20,7 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 # Download Graph4Code<a name="datasets"></a>
 Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
 
-# Uses<a name="uses"></a>
+# Example Use Cases<a name="uses"></a>
 
 * Recommendation engine for developers.  CodeBreaker is a coding assistant built on top of Graph4Code to help data scientists write code.  The coding assistant helps users find the most plausible next coding step, finds relevant stack overflow posts based purely on the users' code, and allows users to see what sorts of models other people have constructed for data flows similar to their own.  For a detailed description of the use cases, see [here](http://graph4code.whyis.io/download/CodeAssistanceDemo.pdf).
 
