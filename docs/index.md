@@ -1,7 +1,26 @@
-# Datasets
+
+Knowledge graphs have proven to be extremely useful in powering diverse applications in semantic search and natural language understanding. Graph4Code is an effort to build a knowledge graph about program code to similarly power diverse applications such as program search, code understanding, refactoring, bug detection, and code automation.  The graph uses generic techniques to capture the semantics of Python code.  The key nodes in the graph are classes, functions and methods in popular Python modules.  Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow).  We make extensive use of named graphs in RDF using Nanopublications to make the knowledge graph extensible by the community.  We describe a set of generic extraction techniques that we applied to over 1.3M Python files drawn from GitHub, over 2300 Python modules, as well as 47M forum posts to generate a graph with over 2 billion triples, which is available to the larger community for use. 
+
+# Table of Contents
+1. [How Graph4Code is created?](#pipeline)
+2. [Graph4Code Schema?](#schema)
+3. [Download Graph4Code](#datasets)
+3. [Example Use Cases](#uses)
+
+
+
+# How Graph4Code is created?<a name="pipeline"></a>
+
+![](figures//graph4code_pipeline2.png)
+
+# Graph4Code Schema<a name="schema"></a>
+
+![](figures/graph4code-relationships.png)
+
+# Download Graph4Code<a name="datasets"></a>
 Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
 
-# Uses
+# Uses<a name="uses"></a>
 
 * Recommendation engine for developers.  CodeBreaker is a coding assistant built on top of Graph4Code to help data scientists write code.  The coding assistant helps users find the most plausible next coding step, finds relevant stack overflow posts based purely on the users' code, and allows users to see what sorts of models other people have constructed for data flows similar to their own.  For a detailed description of the use cases, see [here](http://graph4code.whyis.io/download/CodeAssistanceDemo.pdf).
 
