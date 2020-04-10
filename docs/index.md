@@ -6,6 +6,7 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 2. [Graph4Code Schema?](#schema)
 3. [Download Graph4Code](#datasets)
 3. [Example Use Cases](#uses)
+4. [Publications](#papers)
 
 
 
@@ -13,12 +14,14 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 
 ![](figures//graph4code_pipeline2.png)
 
+
 # Graph4Code Schema<a name="schema"></a>
 
 ![](figures/graph4code-relationships.png)
 
 # Download Graph4Code<a name="datasets"></a>
 Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
+
 
 # Example Use Cases<a name="uses"></a>
 
@@ -35,4 +38,15 @@ Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
   * As an example, again, from a data science use case, the arguments flowing into constructors of models govern the behavior of a model to a large extent.   These so-called hyperparameters are often optimized by some sort of search technique over the space of parameters.  Hyperparameter optimization can be seeded with the appropriate values using query here.
   * The graphs themselves can be used to perform automated code generation by using them as training sets.  As an example, [Code2seq](https://arxiv.org/pdf/1808.01400.pdf) is a system that generates natural language statements about code (e.g. predicting Java method names) or code captioning (summarizing code snippets).  Code2seq is based on an AST representation of code.  Graph4Code can be used to generate richer representations which may be better suited to generate code captioning.
 
+# Publications:
+* If you use Graph4Code in your research, please cite our paper:
+
+ ```
+ @article{srinivas2020graph4code,
+  title={Graph4Code: A Machine Interpretable Knowledge Graph for Code},
+  author={Srinivas, Kavitha and Abdelaziz, Ibrahim and Dolby, Julian and McCusker, James P},
+  journal={arXiv preprint arXiv:2002.09440},
+  year={2020}
+}
+```
 
