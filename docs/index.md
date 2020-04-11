@@ -26,12 +26,10 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 <br><br>
 
 ### Download Graph4Code<a name="datasets"></a>
-<br>
-Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
+* Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
 
 
 ### Example Use Cases<a name="uses"></a>
-<br>
 * Recommendation engine for developers.  CodeBreaker is a coding assistant built on top of Graph4Code to help data scientists write code.  The coding assistant helps users find the most plausible next coding step, finds relevant stack overflow posts based purely on the users' code, and allows users to see what sorts of models other people have constructed for data flows similar to their own.  For a detailed description of the use cases, see [here](http://graph4code.whyis.io/download/CodeAssistanceDemo.pdf).
 
 * Best practice encoding.  Many best practices for API frameworks can be encoded into query templates over data flow and control flow.  Here we give three such examples for data science code, along with queries which can be templatized.
@@ -46,7 +44,6 @@ Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
   * The graphs themselves can be used to perform automated code generation by using them as training sets.  As an example, [Code2seq](https://arxiv.org/pdf/1808.01400.pdf) is a system that generates natural language statements about code (e.g. predicting Java method names) or code captioning (summarizing code snippets).  Code2seq is based on an AST representation of code.  Graph4Code can be used to generate richer representations which may be better suited to generate code captioning.
 
 ### Publications<a name="papers"></a>
-<br>
 * If you use Graph4Code in your research, please cite our paper:
 
  ```
