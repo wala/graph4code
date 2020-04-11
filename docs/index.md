@@ -9,7 +9,7 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 4. [Publications](#papers)
 
 
-<br>
+
 ### How Graph4Code is created?<a name="pipeline"></a>
 
 ![](figures//graph4code_pipeline2.png)
