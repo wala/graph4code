@@ -14,14 +14,14 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 
 <!---![](figures//graph4code_pipeline2.png)-->
 <p align="center">
-[<img align="center" src="figures//graph4code_pipeline2.png" width="90%"/>]
+<img align="center" src="figures//graph4code_pipeline2.png" width="90%"/>
 </p>
 <br><br>
 
 ### Graph4Code Schema<a name="schema"></a>
 
 <p align="center">
-[<img align="center" src="figures/graph4code-relationships.png" width="90%"/>]
+<img align="center" src="figures/graph4code-relationships.png" width="90%"/>
 </p>
 <br><br>
 
