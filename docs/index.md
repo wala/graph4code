@@ -12,12 +12,17 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 
 ### How Graph4Code is created?<a name="pipeline"></a>
 
-![](figures//graph4code_pipeline2.png)
+<!---![](figures//graph4code_pipeline2.png)-->
+<p align="center">
+<img align="center" src="figures//graph4code_pipeline2.png" width="85%"/>
+</p>
 <br><br>
 
 ### Graph4Code Schema<a name="schema"></a>
 
-![](figures/graph4code-relationships.png)
+<p align="center">
+<img align="center" src="figures/graph4code-relationships.png" width="85%"/>
+</p>
 <br><br>
 
 ### Download Graph4Code<a name="datasets"></a>
