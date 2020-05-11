@@ -1,0 +1,47 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+select * where {
+ graph ?g {
+    # find all classifiers and transformers from the docstrings graph
+    graph graph4code:docstrings {
+      {
+        ?cls rdfs:subClassOf* <http://purl.org/twc/graph4code/python/sklearn.base.ClassifierMixin> .
+      } UNION
+      {
+        ?cls rdfs:subClassOf* <http://purl.org/twc/graph4code/python/sklearn.base.RegressorMixin> .
+      }
+      ?cls rdfs:label ?name .
+    }
+
+    # find a call that is the constructor of those classes in ?cls, locate its source in text in
+    # ?l1 and ?l2 (lines in source) and capture the source text in ?txt
+    ?clf rdfs:label ?name .
+    ?clf sio:SIO_000061 ?p .
+    ?p graph4code:lastLine ?l1 .
+    ?p graph4code:firstLine ?l2 .
+    ?clf <https://schema.org/text> ?txt .
+
+    # that constructor must have some argument in positions greater than 0 (0 is the receiver object)
+    # which reflects some value being passed into the constructor call as a hyper-parameter.  Note that
+    ?clf sio:SIO_000230 ?anon .
+    ?anon sio:SIO_000613  ?v .
+    ?anon sio:SIO_000300 ?z .
+    ?anon graph4code:flowsTo ?clf .
+    filter(?v > 0)
+
+    # check the case where the user is passing in parameters but through an algorithm designed to do hyper
+    # parameter optimizations
+    filter not exists {
+        ?h rdfs:label "hyperopt.fmin" ;
+            graph4code:flowsTo+ ?clf .
+    }
+ }
+}

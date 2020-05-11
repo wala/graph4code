@@ -1,0 +1,54 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+select distinct ?g ?fit1 ?l1 ?l2 ?txt ?cls1 where {
+ graph ?g {
+
+  # find a dataflow between a read of dataframe and a fit call ?fit1 on some classifier
+  ?read rdfs:label "pandas.read_csv" .
+  ?fit1 schema:about "fit" .
+  ?read graph4code:flowsTo+ ?fit1 .
+
+  # find predecessors ?pred1 of fit1 (note that here we use a transitive property
+  # to find predecessors because every method call in Python is read of an object to find
+  # the 'property' which is the method call
+  ?pred1 graph4code:flowsTo+ ?fit1 .
+  ?pred1 rdfs:label ?name1 .
+
+  # find the location of the fit call in source with lines (?l1, ?l2) and text (?txt)
+  ?fit1 sio:SIO_000061 ?p .
+  ?p graph4code:lastLine ?l1 .
+  ?p graph4code:firstLine ?l2 .
+  ?fit1 <https://schema.org/text> ?txt .
+
+  # find the predecessors of the ?fit1 call that are classifiers.  Note one could do the same
+  # with sklearn regressors.
+  graph graph4code:docstrings {
+    ?cls1 rdfs:label ?name1 ;
+          rdfs:subClassOf* <http://purl.org/twc/graph4code/python/sklearn.base.ClassifierMixin> .
+  }
+
+  # Filter out all cases where people have used different models (?cls2 mirrors the pattern
+  # used to find ?cls1, and ensures ?cls1 != ?cls2).
+  filter not exists {
+      ?fit2 schema:about "fit" .
+      ?read graph4code:flowsTo+ ?fit2 .
+      ?pred2 graph4code:flowsTo+ ?fit2 .
+      ?pred2 rdfs:label ?name2 .
+      graph graph4code:docstrings {
+        ?cls2 rdfs:label ?name2 ;
+              rdfs:subClassOf* <http://purl.org/twc/graph4code/python/sklearn.base.ClassifierMixin> .
+      }
+
+      filter (?cls1 != ?cls2)
+  }
+ }
+}
