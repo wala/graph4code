@@ -41,7 +41,7 @@ CodeBreaker is a coding assistant built on top of Graph4Code to help data scient
 #### Best practice encoding<a name="case2"></a>
 Many best practices for API frameworks can be encoded into query templates over data flow and control flow.  Here we give three such examples for data science code, along with queries which can be templatized.
   
-  * Check that users developing data science code create multiple models on the same dataset, since machine learning algorithms vary greatly in terms of performance on different datasets [see query here](https://github.com/wala/graph4code/blob/master/usage_queries/ensure_multiple_models.sparql).  Here is an example result from the query.  As shown in the example, only one model is used to train ona  given dataset.
+  * Check that users developing data science code create multiple models on the same dataset, since machine learning algorithms vary greatly in terms of performance on different datasets ([see query here](https://github.com/wala/graph4code/blob/master/usage_queries/ensure_multiple_models.sparql)).  Here is an example result from the query.  As shown in the example, only one model is used to train ona  given dataset.
 
 <a name="Example violation of best practice to create multiple models"></a>
 
@@ -50,7 +50,7 @@ Many best practices for API frameworks can be encoded into query templates over 
 </p>
 <br><br>
 
-  * Check that the users use some sort of libraries for hyper-parameter optimization when building their models [see query here](https://github.com/wala/graph4code/blob/master/usage_queries/must_not_set_hyperparameters.sparql).  Here is an example result from the query - the analysis found all three examples of manual sets to hyperparameters.
+  * Check that the users use some sort of libraries for hyper-parameter optimization when building their models ([see query here](https://github.com/wala/graph4code/blob/master/usage_queries/must_not_set_hyperparameters.sparql)).  Here is an example result from the query - the analysis found all three examples of manual sets to hyperparameters.
 
 <a name="Example violation of best practice to not set hyper-parameters manually"></a>
 
@@ -59,7 +59,7 @@ Many best practices for API frameworks can be encoded into query templates over 
 </p>
 <br><br>
 
-  * Check that users developing data science code create the model with a different dataset than the ones they use to validate the model [see query here](https://github.com/wala/graph4code/blob/master/usage_queries/train_test_different_data.sparql).
+  * Check that users developing data science code create the model with a different dataset than the ones they use to validate the model ([see query here](https://github.com/wala/graph4code/blob/master/usage_queries/train_test_different_data.sparql)).
 
 <a name="Example violation of best practice to use different datasets to train"></a>
 
@@ -71,7 +71,7 @@ Many best practices for API frameworks can be encoded into query templates over 
 #### Learning from big code<a name="case3"></a> 
 
 There has been an explosion of work on mining large open domain repositories for a wide variety of tasks (see [here](https://ml4code.github.io/papers.html)).  We sketch a couple of examples for how Graph4Code can be used in this context.
-  * As an example, again, from a data science use case, the arguments flowing into constructors of models govern the behavior of a model to a large extent.   These so-called hyperparameters are often optimized by some sort of search technique over the space of parameters.  Hyperparameter optimization can be seeded with the appropriate values using query here to restrict search, using any of the standard hyper parameter optimization packages [see query here](https://github.com/wala/graph4code/blob/master/usage_queries/find_hyperparameter_distributions.sparql).
+  * As an example, again, from a data science use case, the arguments flowing into constructors of models govern the behavior of a model to a large extent.   These so-called hyperparameters are often optimized by some sort of search technique over the space of parameters.  Hyperparameter optimization can be seeded with the appropriate values using query here to restrict search, using any of the standard hyper parameter optimization packages ([see query here](https://github.com/wala/graph4code/blob/master/usage_queries/find_hyperparameter_distributions.sparql)).
 
 <a name="Example hyperparameter distributions"></a>
 
