@@ -1,0 +1,61 @@
+@prefix : <http://purl.org/twc/graph4code/>.
+@prefix py: <http://purl.org/twc/graph4code/python/>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix schema: <http://schema.org/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+
+{% for turtle in script %}
+  :script/{{scriptname}}/se/{{turtle.id}} a sio:SIO_000667; # software execution
+    a :Imported; # for imported objects/functions.
+    schema:about {{turtle.path.end}};
+    rdfs:label {{turtle.path}};
+    sio:SIO_000068 {{turtle.containingMethod}}; # is part of
+    sio:SIO_000061 [ # is located in
+      :firstLine {{turtle.linenum.start}};
+      :lastLine {{turtle.linenum.end}};
+      :firstCol {{turtle.column.start}};
+      :lastCol {{turtle.column.end}};
+      :firstOffset {{turtle.offset.start}};
+      :lastOffset {{turtle.offset.end}};
+      schema:text {{turtle.sourceText}}
+    ];
+  {% for arg in turtle.arguments %}
+    sio:SIO_000892 [ # in relation from
+      {% if arg.position %}
+		    a :PositionalArgument;
+        sio:SIO_000300 {{arg.position}}; # has value
+      {% elif arg.name %}
+		    a :NamedArgument;
+        sio:SIO_000300 {{arg.name}}; # has value
+      {% endif %}
+      {% if arg.constant %}
+        sio:SIO_000227 [
+          sio:SIO_000300 {{arg.constant}};
+        ];
+      {% elif arg.turtle %}
+        prov:specializationOf {{arg.turtle.id}}; # in relation to
+      {% endif %}
+      sio:SIO_000231 {{turtle.id}}; # is input in
+    ];
+  {% endfor %} # arguments
+  {% if turtle.read %}
+    :read [
+      sio:SIO_000068 {{turtle.read.turtle.id}}; # is part of
+      {% if turtle.read.field %}
+      sio:SIO_000300 {{turtle.read.field}} # has value
+      {% elif turtle.read.expression %}
+      sio:SIO_000420 {{turtle.read.expression}} # has expression
+      {% endif %}
+    ];
+  {% endif %}
+  {% if turtle.write %}
+    :write-> [
+      sio:SIO_000068 {{turtle.write.turtle.id}}; # is part of
+      sio:SIO_000300 {{turtle.write.field}} # has value
+    ]
+  {% endif %}
+  sio:SIO_000250 {{turtle.next.id}} # immediately precedes (control flow)
+  {% for flow in turtle.dataFlow %}
+    :flowsTo {{flow.id}} # data flow
+  {% endfor %}
+{% endfor %} # turtles
