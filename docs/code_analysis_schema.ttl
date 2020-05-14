@@ -29,7 +29,7 @@
         sio:SIO_000300 {{arg.name}}; # has value
       {% endif %}
       {% if arg.constant %}
-        sio:SIO_000227 [
+        sio:SIO_000227 [ # is role of
           sio:SIO_000300 {{arg.constant}};
         ];
       {% elif arg.turtle %}
