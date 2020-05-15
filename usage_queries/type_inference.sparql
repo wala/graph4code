@@ -1,0 +1,71 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?n1 ?cls ?super ?l1 ?l2 ?txt ?name where {
+  graph <http://github/samples/sample813882.py> {
+    {
+      select ?n1 ?cls where {
+        {
+          # count everything (as ?all) that n1 flowsTo as a receiver (that is as argument 0)
+          # e.g., read_csv (n1) flowsTo say read_csv.head (n2), read_csv.drop (n2), etc.
+          select ?n1 (count(distinct ?n2) as ?all) where {
+            ?n1 graph4code:flowsTo ?n2 .
+            ?n1 sio:SIO_000230 ?anon .              # we have some anonymous node that represents an input to n1
+            ?anon sio:SIO_000613  "0"^^xsd:int .    # the anon has an ordinal position of 0
+            ?anon prov:isSpecializationOf ?n2 .     # anonymous node is a specialization of n3
+          } group by ?n1
+        }
+        {
+      # again count everything (as ?ok) that n1 flowsTo as a receiver
+	  # (that is as argument 0) but group by each class that has a method
+	  # with the right name.  Thus ?ok counts all calls on ?n1 that are
+	  # supported by ?cls.  Continuing our example, head, drop etc would be
+	  # associated with any class (?cls) that had the method
+	  # the name of method here is ?p2)
+	  #
+	  # In addition to ?n1, also select the class as ?cls.
+          #
+          select ?n1 ?cls (count(distinct ?n2) as ?ok) where {
+            ?n1 graph4code:flowsTo ?n2 .
+            ?n1 sio:SIO_000230 ?anon .                      # we have some anonymous node that represents an input to n1
+            ?anon sio:SIO_000613  "0"^^xsd:int .            # the anon has an ordinal position of 0
+            ?anon prov:isSpecializationOf ?n2 .             # anonymous node is a specialization of n2
+            ?n2 schema:about ?p2 .
+            graph graph4code:docstrings {
+              ?s graph4codeOntology:name_end ?p2 ;
+              dc:isPartOf ?cls .
+            }
+          } group by ?n1 ?cls
+        }
+        # The filter step of ?ok = ?all ensures that *every* method
+        # call made on ?n1 has a method in ?cls.  This is because
+	    # we counted all such calls as ?all and ones supported by ?cls
+	    # as ?ok.  Since ?cls thus supports all the methods called on
+	    # ?n1, it is a valid type in that context (this is known as duck
+	    # typing)
+        filter(?ok = ?all)
+    }
+   }
+     ?n1 sio:SIO_000061 ?p .
+     ?p graph4code:lastLine ?l1 .
+     ?p graph4code:firstLine ?l2 .
+     ?n1 <https://schema.org/text> ?txt .
+   }
+
+   graph graph4code:docstrings {
+       ?cls dc:isPartOf ?module .
+       ?module rdfs:label ?name .
+   }
+   # ?imp rdfs:label ?name .
+
+
+   graph graph4code:docstrings {
+      ?cls rdfs:subClassOf* ?super .
+   }
+}

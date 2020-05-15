@@ -1,0 +1,82 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select * where {
+ graph ?g {
+
+  ?fit schema:about "fit" .
+
+  # find predecessors ?pred1 of fit1 (note that here we use a transitive property
+  # to find predecessors because every method call in Python is read of an object to find
+  # the 'property' which is the method call
+  ?pred1 graph4code:flowsTo+ ?fit .
+  ?pred1 rdfs:label ?name1 .
+
+  # find the location of the fit call in source with lines (?l1, ?l2) and text (?txt)
+  ?fit sio:SIO_000061 ?p .
+  ?p graph4code:lastLine ?l1 .
+  ?p graph4code:firstLine ?l2 .
+  ?fit <https://schema.org/text> ?txt .
+
+  # find the predecessors of the ?fit call that are classifiers.  Note one could do the same
+  # with sklearn regressors.
+  graph graph4code:docstrings {
+    ?cls1 rdfs:label ?name1 ;
+          rdfs:subClassOf* <http://purl.org/twc/graph4code/python/sklearn.base.ClassifierMixin> .
+  }
+
+  # find a predict call on the same model
+  ?predict schema:about "predict" .
+  ?pred1 graph4code:flowsTo+ ?predict .
+
+  # find the location of the fit call in source with lines (?l1, ?l2) and text (?txt)
+  ?predict sio:SIO_000061 ?pp .
+  ?pp graph4code:lastLine ?pl1 .
+  ?pp graph4code:firstLine ?pl2 .
+  ?predict <https://schema.org/text> ?ptxt .
+
+  # common data
+  ?data graph4code:flowsTo* ?dfp ;
+        graph4code:flowsTo* ?predict ;
+        <https://schema.org/text> ?dtxt ;
+        sio:SIO_000061 ?dp .
+  ?dp graph4code:lastLine ?l11 .
+  ?dp graph4code:firstLine ?dl2 .
+  
+  ?dfp sio:SIO_000230 ?dfpa .
+  ?dfpa <http://www.w3.org/ns/prov#isSpecializationOf> ?fit ;
+        sio:SIO_000613 ?dfpo .
+  filter(?dfpo > 1)
+
+  filter not exists {
+    ?data graph4code:flowsTo* ?x .
+    ?x graph4code:flowsTo* ?predict .
+    ?x graph4code:read ?y .
+    ?y sio:SIO_000068 ?dc .
+    ?data graph4code:flowsTo* ?dc .
+    ?y sio:SIO_000300 ?readv .
+    filter not exists {
+      ?data graph4code:flowsTo* ?fx .
+      ?fx graph4code:flowsTo* ?fit .
+      ?fx graph4code:read ?fy .
+      ?fy sio:SIO_000068 ?fdc .
+      ?data graph4code:flowsTo* ?fdc .
+      ?fy sio:SIO_000300 ?readv .
+    }
+  }
+
+  filter not exists {
+    ?data graph4code:flowsTo* ?x .
+    ?x graph4code:flowsTo+ ?predict .
+    ?x <http://schema.org/about> "train_test_split" .
+  }  
+
+ }
+}
