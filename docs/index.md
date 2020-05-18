@@ -26,7 +26,7 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 <br><br>
 
 ### Download Graph4Code<a name="datasets"></a>
-* Download the datasets as nquads [here](http://graph4code.whyis.io/download/).
+* Download the datasets as nquads [here](https://archive.org/download/graph4codev1).
 
 
 ### Example Use Cases<a name="uses"></a>
