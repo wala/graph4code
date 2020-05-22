@@ -20,22 +20,19 @@
       schema:text {{turtle.sourceText}}
     ];
   {% for arg in turtle.arguments %}
-    sio:SIO_000892 [ # in relation from
+    sio:SIO_000230 [ # has input
       {% if arg.position %}
 		    a :PositionalArgument;
-        sio:SIO_000300 {{arg.position}}; # has value
+        sio:SIO_000613 {{arg.position}}; # ordinal position
       {% elif arg.name %}
 		    a :NamedArgument;
-        sio:SIO_000300 {{arg.name}}; # has value
+        sio:SIO_000116 {{arg.name}}; # name
       {% endif %}
       {% if arg.constant %}
-        sio:SIO_000227 [ # is role of
-          sio:SIO_000300 {{arg.constant}};
-        ];
+        sio:SIO_000300 {{arg.constant}}; # has value
       {% elif arg.turtle %}
-        prov:specializationOf {{arg.turtle.id}}; # in relation to
+        prov:specializationOf {{arg.turtle.id}};
       {% endif %}
-      sio:SIO_000231 {{turtle.id}}; # is input in
     ];
   {% endfor %} # arguments
   {% if turtle.read %}

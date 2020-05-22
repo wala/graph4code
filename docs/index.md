@@ -1,5 +1,5 @@
 
-Knowledge graphs have proven to be extremely useful in powering diverse applications in semantic search and natural language understanding. Graph4code is an effort to build a knowledge graph about program code to similarly power diverse applications such as program search, code understanding, refactoring, bug detection, and code automation.  The graph uses generic techniques to capture the semantics of Python code. The key nodes in the graph are classes, functions and methods in popular Python modules.  Edges indicate *function usage* (e.g., how data flows through function calls, as derived from program analysis of real code), and *documentation* about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow).  We make extensive use of named graphs in RDF to make the knowledge graph extensible by the community. We describe a set of generic extraction techniques that we applied to over 1.3M Python files drawn from GitHub, over 2,300 Python modules, as well as 47M forum posts to generate a graph with almost 2 billion triples. We also provided a number of initial use cases of the knowledge graph in code assistance, enforcing best practices, debugging and type inference. The graph and all its artifacts are available to the larger community for use. 
+Knowledge graphs have proven to be extremely useful in powering diverse applications in semantic search and natural language understanding. [Graph4code](https://arxiv.org/abs/2002.09440) is an effort to build a knowledge graph about program code to similarly power diverse applications such as program search, code understanding, refactoring, bug detection, and code automation.  The graph uses generic techniques to capture the semantics of Python code. The key nodes in the graph are classes, functions and methods in popular Python modules.  Edges indicate *function usage* (e.g., how data flows through function calls, as derived from program analysis of real code), and *documentation* about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow).  We make extensive use of named graphs in RDF to make the knowledge graph extensible by the community. We describe a set of generic extraction techniques that we applied to over 1.3M Python files drawn from GitHub, over 2,300 Python modules, as well as 47M forum posts to generate a graph with almost 2 billion triples. We also provided a number of initial use cases of the knowledge graph in code assistance, enforcing best practices, debugging and type inference. The graph and all its artifacts are available to the larger community for use. 
 
 
 ### Table of Contents
@@ -25,7 +25,7 @@ Knowledge graphs have proven to be extremely useful in powering diverse applicat
 ### Graph4Code Schema<a name="schema"></a>
 
 <p align="center">
-<img align="center" src="figures/graph4code-relationships_v1.png" width="90%"/>
+<img align="center" src="figures/graph4code-relationships-v2.png" width="90%"/>
 </p>
 <br><br>
 
@@ -83,7 +83,7 @@ There has been an explosion of work on mining large open domain repositories for
   * The graphs themselves can be used to perform automated code generation by using them as training sets.  As an example, [Code2seq](https://arxiv.org/pdf/1808.01400.pdf) is a system that generates natural language statements about code (e.g. predicting Java method names) or code captioning (summarizing code snippets).  Code2seq is based on an AST representation of code.  Graph4Code can be used to generate richer representations which may be better suited to generate code captioning.
 
 ### Publications<a name="papers"></a>
-* If you use Graph4Code in your research, please cite our paper:
+* If you use [Graph4Code](https://arxiv.org/abs/2002.09440) in your research, please cite our paper:
 
  ```
  @article{srinivas2020graph4code,
