@@ -27,7 +27,7 @@ select distinct ?g ?fit1 ?l1 ?l2 ?txt ?cls1 where {
   ?fit1 sio:SIO_000061 ?p .
   ?p graph4code:lastLine ?l1 .
   ?p graph4code:firstLine ?l2 .
-  ?fit1 <https://schema.org/text> ?txt .
+  ?fit1 schema:text ?txt .
 
   # find the predecessors of the ?fit1 call that are classifiers.  Note one could do the same
   # with sklearn regressors.
