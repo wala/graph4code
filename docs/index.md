@@ -93,7 +93,7 @@ select distinct ?label where {
 }
 ```
 
-More Example queries can be found [here]<https://github.com/wala/graph4code/tree/master/usage_queries> 
+More Example queries can be found [here](https://github.com/wala/graph4code/tree/master/usage_queries) 
 
 ### Publications<a name="papers"></a>
 * If you use [Graph4Code](https://arxiv.org/abs/2002.09440) in your research, please cite our paper:
