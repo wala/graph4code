@@ -5,13 +5,21 @@ Download Graph4Code dataset as nquads [here](https://archive.org/download/graph4
 
 
 ### Table of Contents
-1. [Schema and Query By Example](./query_by_example.md#schema)
-2. [How Graph4Code is created?](#pipeline)
+1. [How Graph4Code is created?](#pipeline)
+2. [Schema and Query By Example](#schema)
 3. [Example Use Cases](./use_cases.md#uses)
     * [Recommendation engine for developers](./use_cases.md#case1)
     * [Enforcing best practices](./use_cases.md#case2)  
     * [Learning from big code](./use_cases.md#case3) 
 4. [Publications](#papers)
+
+### How Graph4Code is created?<a name="pipeline"></a>
+
+<!---![](figures//graph4code_pipeline2.png)-->
+<p align="center">
+<img align="center" src="figures//graph4code_pipeline2.png" width="90%"/>
+</p>
+<br><br>
 
 ### Schema and Example Queries:
 
@@ -24,9 +32,11 @@ The following shows a concept map of Graph4Code's overall schema, across the cod
 
 #### Query Example 1: Get documentation about a function
 
+The first example query returns the documentation of a class or function, in this case \texttt{pandas.read\_csv}. It also returns parameter and return types, when known. One can expand these parameters (\texttt{?param}) further to get their labels, documentation, inferred types, and check if they are optional.
+
 ```
 select ?doc ?param ?return where {
-  graph <http://purl.org/twc/graph4code/docstrings> {
+   graph <http://purl.org/twc/graph4code/docstrings> {
       ?s  rdfs:label "pandas.read_csv" ;
           skos:definition ?doc .
       optional { ?s g4c:param ?param . }
@@ -34,15 +44,53 @@ select ?doc ?param ?return where {
     }
 }
 ```
+#### Query Example 2: Search in forums posts for program code
 
-### How Graph4Code is created?<a name="pipeline"></a>
+This query below assumes that the user has a context in the program from which they are launching their search. ?f specifies a list of functions that represent the calling context. 
 
-<!---![](figures//graph4code_pipeline2.png)-->
-<p align="center">
-<img align="center" src="figures//graph4code_pipeline2.png" width="90%"/>
-</p>
-<br><br>
+```
+select ?q ?t ?q_content ?a_content ?c where {
+   graph <https://stackoverflow.com/questions/> {
+     {
+        # gather questions that are about the list of functions, counting the number of hits to functions
+        # per question.  Here we used values to specify that list as ?f
+        select ?q (count(?q) as ?c) {
+            values (?f) {
+              (python:sklearn.model_selection.train_test_split)
+              (python:sklearn.svm.SVC.fit)
+            }
+           ?q rdf:type  schema:Question;
+              schema:about ?f ;
 
+       } group by ?q
+     }
+        # gather the content and title of the question, its suggested answers and their content
+        # ensuring the answer contains some phrase
+       ?q schema:suggestedAnswer ?a ;
+            sioc:content  ?q_content ;
+            schema:name ?t.
+       ?a rdf:type schema:Answer ;
+            sioc:content ?a_content .
+       filter(contains(?a_content, "memory issue"))
+   }
+} order by desc(?c)
+```
+
+#### Example 3: Understand how people use functions or classes
+
+Another use of Graph4Code is to understand how people use functions such as *pandas.read\_csv*. In particular, the query below shows when *pandas.read\_csv* is used, what are the *fit* functions that are typically applied on its output. 
+
+
+```
+select distinct ?label where {
+   graph ?g {
+        ?read rdfs:label "pandas.read_csv" .
+        ?fit schema:about "fit" .
+        ?read graph4code:flowsTo+ ?fit .
+        ?fit rdfs:label ?label .
+   }
+}
+```
 
 ### Publications<a name="papers"></a>
 * If you use [Graph4Code](https://arxiv.org/abs/2002.09440) in your research, please cite our paper:
