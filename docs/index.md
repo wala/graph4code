@@ -47,7 +47,7 @@ select ?doc ?param ?return where {
 ```
 #### Query Example 2: Search in forums posts for program code
 
-This query below assumes that the user has a context in the program from which they are launching their search. ?f specifies a list of functions that represent the calling context. 
+The query below assumes that the user has a context in the program from which they are launching their search. ?f specifies a list of functions that represent the calling context. 
 
 ```
 select ?q ?t ?q_content ?a_content ?c where {
