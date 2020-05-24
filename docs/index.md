@@ -31,7 +31,7 @@ The following shows a concept map of Graph4Code's overall schema, across the cod
 </p>
 <br><br>
 
-#### Query Example 1: Get documentation about a function or class
+##### Query Example 1: Get documentation about a function or class
 
 The first example query returns the documentation of a class or function, in this case \texttt{pandas.read\_csv}. It also returns parameter and return types, when known. One can expand these parameters (\texttt{?param}) further to get their labels, documentation, inferred types, and check if they are optional.
 
@@ -45,7 +45,7 @@ select ?doc ?param ?return where {
     }
 }
 ```
-#### Query Example 2: Search in forums posts for program code
+##### Query Example 2: Search in forums posts for program code
 
 The query below assumes that the user has a context in the program from which they are launching their search. ?f specifies a list of functions that represent the calling context. 
 
@@ -77,7 +77,7 @@ select ?q ?t ?q_content ?a_content ?c where {
 } order by desc(?c)
 ```
 
-#### Example 3: Understand how people use functions or classes
+##### Example 3: Understand how people use functions or classes
 
 Another use of Graph4Code is to understand how people use functions such as *pandas.read\_csv*. In particular, the query below shows when *pandas.read\_csv* is used, what are the *fit* functions that are typically applied on its output. 
 
