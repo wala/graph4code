@@ -77,7 +77,7 @@ select ?q ?t ?q_content ?a_content ?c where {
 } order by desc(?c)
 ```
 
-##### Example 3: Understand how people use functions or classes
+##### Query Example 3: Understand how people use functions or classes
 
 Another use of Graph4Code is to understand how people use functions such as *pandas.read\_csv*. In particular, the query below shows when *pandas.read\_csv* is used, what are the *fit* functions that are typically applied on its output. 
 
