@@ -1,7 +1,7 @@
 
 Knowledge graphs have proven extremely useful in powering diverse applications in semantic search and natural language understanding. Graph4Code is a knowledge graph about program code that can similarly power diverse applications such as program search, code understanding, refactoring, bug detection, and code automation.  The graph uses generic techniques to capture the semantics of Python code: the key nodes in the graph are classes, functions and methods in popular Python modules.  Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow).  We make extensive use of named graphs in RDF to make the knowledge graph extensible by the community.  We describe a set of generic extraction techniques that we applied to over 1.3M Python files drawn from GitHub, over 2,300 Python modules, as well as 47M forum posts to generate a graph with over 2 billion triples. We also provide a number of initial use cases of the knowledge graph in code assistance, enforcing best practices, debugging and type inference. The graph and all its artifacts are available to the community for use. 
 
-Download Graph4Code dataset as nquads [here](https://archive.org/download/graph4codev1).
+Download Graph4Code dataset as nquads from [https://archive.org/download/graph4codev1](https://archive.org/download/graph4codev1).
 
 
 ### Table of Contents
@@ -21,7 +21,7 @@ Download Graph4Code dataset as nquads [here](https://archive.org/download/graph4
 </p>
 <br><br>
 
-### Schema and Example Queries:
+### Schema and Example Queries<a name="schema"></a>:
 
 The following shows a concept map of Graph4Code's overall schema, across the code analysis, Stack Exchange, and Docstrings extractions.
 
@@ -30,7 +30,7 @@ The following shows a concept map of Graph4Code's overall schema, across the cod
 </p>
 <br><br>
 
-#### Query Example 1: Get documentation about a function
+#### Query Example 1: Get documentation about a function or class
 
 The first example query returns the documentation of a class or function, in this case \texttt{pandas.read\_csv}. It also returns parameter and return types, when known. One can expand these parameters (\texttt{?param}) further to get their labels, documentation, inferred types, and check if they are optional.
 
