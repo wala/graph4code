@@ -33,7 +33,7 @@ The following shows a concept map of Graph4Code's overall schema, across the cod
 
 ##### Query Example 1: Get documentation about a function or class
 
-The first example query returns the documentation of a class or function, in this case \texttt{pandas.read\_csv}. It also returns parameter and return types, when known. One can expand these parameters (\texttt{?param}) further to get their labels, documentation, inferred types, and check if they are optional.
+The first example query returns the documentation of a class or function, in this case *pandas.read\_csv*. It also returns parameter and return types, when known. One can expand these parameters (*?param*) further to get their labels, documentation, inferred types, and check if they are optional.
 
 ```
 select ?doc ?param ?return where {
