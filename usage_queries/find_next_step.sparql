@@ -1,0 +1,30 @@
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+
+select (count(?g) as ?c) ?next_label where {
+    graph ?g {
+        # This example simulates a query in CodeBreaker where the user can ask of a repository
+        # what are the next steps other users have taken.
+        # ?this is the node that has an execution path of "sklearn.ensemble.RandomForestClassifier.predict"
+        # where the user is at in the program, and has paused to ask next steps from this call.
+        # ?pred refers to predecessors that flow into this node within the program, and it adds
+        # context to the call to predict.  In this example
+        # it is just the constructor - "sklearn.ensemble.RandomForestClassifier".  ?next shows all the calls
+        # that tend to be called on the return type of ?this, ordering by counts across the graphs in the
+        # repository.
+         ?pred rdfs:label   "sklearn.ensemble.RandomForestClassifier" .
+         ?pred graph4code:flowsTo+ ?this .
+         ?this rdfs:label  "sklearn.ensemble.RandomForestClassifier.predict" .
+         ?this rdf:type  <http://semanticscience.org/resource/SIO_000667> .
+         ?this graph4code:flowsTo+ ?next .
+         ?next rdfs:label  ?next_label .
+         ?next rdf:type  <http://semanticscience.org/resource/SIO_000667> .
+
+    }
+} group by ?next_label order by desc(?c) limit 3

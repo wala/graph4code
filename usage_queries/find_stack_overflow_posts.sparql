@@ -1,0 +1,53 @@
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sioc: <http://rdfs.org/sioc/ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX python: <http://purl.org/twc/graph4code/python/>
+
+# This query assumes that the user has a context in the program from which they are launching their search.
+# ?f specifies a list of functions that represent the calling context
+# <https://stackoverflow.com/questions/> is the RDF graph that contains all stack overflow posts and questions
+# Other forums are in the following graphs:
+# Stats StackExchange: https://stats.stackexchange.com/,
+# Datascience StackExchange: https://datascience.stackexchange.com/,
+# Math StackExchange: https://math.stackexchange.com/
+# AI StackExchange: https://ai.stackexchange.com/
+#
+select ?q ?t ?q_content ?a_content ?c where {
+ graph <https://stackoverflow.com/questions/> {
+     {
+        # gather questions that are about the list of functions, counting the number of hits to functions
+        # per question.  Here we used values to specify that list as ?f
+        select ?q (count(?q) as ?c) {
+            values (?f) {
+              (python:sklearn.model_selection.train_test_split)
+              (python:sklearn.svm.SVC.fit)
+            }
+           ?q rdf:type  schema:Question;
+              schema:about ?f ;
+
+       } group by ?q
+     }
+        # gather the content and title of the question, its suggested answers and their content
+        # ensuring the answer contains some phrase
+       ?q schema:suggestedAnswer ?a ;
+            sioc:content  ?q_content ;
+            schema:name ?t.
+       ?a rdf:type schema:Answer ;
+            sioc:content ?a_content .
+ }
+} order by desc(?c)

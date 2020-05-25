@@ -29,7 +29,7 @@ select * where {
     ?clf sio:SIO_000061 ?p .
     ?p graph4code:lastLine ?l1 .
     ?p graph4code:firstLine ?l2 .
-    ?clf <https://schema.org/text> ?txt .
+    ?clf schema:text ?txt .
 
     # find all arguments passed into the constructor with the same named argument
     # as a known parameter.  Positional args are ignored because its unclear they match
