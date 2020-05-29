@@ -6,9 +6,11 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <http://schema.org/>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-select ?n1 ?cls ?super ?l1 ?l2 ?txt ?name where {
-  graph <http://github//data/github//trycs/ozelot/examples/leonardo/leonardo/common/input.py> {
+#select ?n1 ?cls ?super ?l1 ?l2 ?txt ?name ?label where {
+select * where {
+  graph <http://github//data/github//jiegzhan/multi-class-text-classification-cnn/data_helper.py> {
     {
       select ?n1 ?cls where {
         {
@@ -16,7 +18,7 @@ select ?n1 ?cls ?super ?l1 ?l2 ?txt ?name where {
           # e.g., read_csv (n1) flowsTo say read_csv.head (n2), read_csv.drop (n2), etc.
           select ?n1 (count(distinct ?n2) as ?all) where {
             ?n1 graph4code:flowsTo/graph4code:flowsTo ?n2 .
-            ?n1 graph4code:flowsTo/sio:SIO_000230 ?anon .              # we have some anonymous node that represents an input to n1
+            ?n1 graph4code:flowsTo/sio:SIO_000230 ?anon .   # we have some anonymous node that represents an input to n1
             ?anon sio:SIO_000613  "0"^^xsd:int .    # the anon has an ordinal position of 0
             ?anon prov:isSpecializationOf ?n2 .     # anonymous node is a specialization of n2
           } group by ?n1
@@ -53,18 +55,32 @@ select ?n1 ?cls ?super ?l1 ?l2 ?txt ?name where {
     }
    }
      ?n1 sio:SIO_000061 ?p .
+     ?n1 rdfs:label ?label .
      ?p graph4code:lastLine ?l1 .
      ?p graph4code:firstLine ?l2 .
-     ?n1 schema:text ?txt .
+     optional {
+        ?n1 schema:text ?txt .
+     }
+   }
+   filter exists {
+      graph graph4code:docstrings {
+        ?cls dc:isPartOf* ?dep .
+      }
+      graph graph4codeOntology:module_dependencies {
+        ?imp_module schema:softwareRequirements* ?dep .
+      }
+      graph graph4code:docstrings {
+        ?imp_module rdfs:label ?impName .
+     }
+     # gather all imports in this script
+     graph <http://github//data/github//jiegzhan/multi-class-text-classification-cnn/data_helper.py> {
+        ?imp rdf:type graph4code:Imported .
+        ?imp rdfs:label ?impName .
+     }
    }
 
-   graph graph4code:docstrings {
-       ?cls dc:isPartOf ?module .
-       ?module rdfs:label ?name .
-   }
+  graph graph4code:docstrings {
+      ?cls rdfs:subClassOf+ ?super .
+  }
 
-
-   graph graph4code:docstrings {
-      ?cls rdfs:subClassOf* ?super .
-   }
 }
