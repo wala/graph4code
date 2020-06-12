@@ -1,0 +1,46 @@
+
+# ========================================================================
+schema:Question
+    rdf:type               schema:Question;
+    sioc:content           "question.text";
+    schema:about           <{question.code_mentions}>;
+    schema:keywords        "{question.keywords}";
+    schema:name            "{question.title}";
+    schema:suggestedAnswer <{question.answers}>.
+
+
+# -------------Example---------------
+<https://stackoverflow.com/questions/46137945>
+        a                       schema:Question ;
+        sioc:content            "<p>I'm trying to build a random forest ... " ;
+        schema:about            py:sklearn.ensemble._forest.RandomForestClassifier.score , py:sklearn.ensemble.RandomForestClassifier.predict,     
+                                py:sklearn.ensemble.forest.RandomForestClassifier.predict , .... ;
+        schema:hasPart          <https://stackoverflow.com/questions/46137945/code_snippet/1> ;
+        schema:keywords         "<machine-learning><random-forest><data-analysis><grid-search>" ;
+        schema:name             "Random Forest Classifier" ;
+        schema:suggestedAnswer  <https://stackoverflow.com/questions/a/46138677> .
+# -------------------------------
+
+# ========================================================================
+schema:Answer
+    rdf:type           schema:Answer;
+    sioc:content       "{answer.text}";
+    schema:upvoteCount {answer.upvotes}.
+
+<https://stackoverflow.com/questions/a/46138677>
+        a                   schema:Answer ;
+        sioc:content        "<p>Your accuracy changes every time you run ...." ;
+        schema:upvoteCount  "4" .
+
+# ========================================================================
+
+schema:SoftwareSourceCode:
+  rdf:type   schema:SoftwareSourceCode;
+  prov:value "{sourcecode.text}".
+
+
+-------------Example---------------
+<https://stackoverflow.com/questions/20224526/code_snippet/1>
+        a           schema:SoftwareSourceCode ;
+        prov:value  "from sklearn.tree import export_graphviz\n    export_graphviz(tree,\n                out_file = \"tree.dot\",\n                feature_names = tree.columns) //or just [\"petal length\", \"petal width\"]\n" .
+-------------------------------
