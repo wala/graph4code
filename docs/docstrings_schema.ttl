@@ -1,0 +1,87 @@
+# ========================================================================
+graph4code:Function (same for graph4code:Method)
+    rdf:type                        graph4code:Function
+    graph4code:param                <{function.parameters}>;
+    rdfs:label                      "{function.import_path}";
+    dcterms:isPartOf                <{function.module}>;
+    graph4code:name_end             "{function.local_name}";
+    skos:definition                 "{function.docstring}".
+    graph4code:return_inferred_type <{function.returnval.docstring_type}>;
+    graph4code:return               <{function.returnval}>;
+    graph4code:module               <{funciton.module}>.
+
+
+# -----------Example-----------
+py:pandas.read_csv  a        graph4code:Function ;
+        rdfs:label           "pandas.read_csv" ;
+        dcterms:isPartOf     py:pandas ;
+        graph4code:module    py:pandas ;
+        graph4code:name_end  "read_csv" ;
+        graph4code:param     <http://purl.org/twc/graph4code/python/pandas.read_csv/p/13> , 
+                             <http://purl.org/twc/graph4code/python/pandas.read_csv/p/3> .... ;
+        graph4code:return    <http://purl.org/twc/graph4code/python/pandas.read_csv/r/1> ;
+        graph4code:return_inferred_type
+                py:pandas.io.json._json.DataFrame , py:pandas.DataFrame , py:pandas.io.parsers.DataFrame , .... ;
+        skos:definition      "\nRead a comma-separated values (csv) file into DataFrame..." .
+# -------------------------------
+
+#========================================================================
+
+
+graph4code:Parameter 
+    rdf:type                        graph4code:Parameter;
+    rdfs:label                      "{parameter.name}";
+    graph4code:param_index          {parameter.position};
+    graph4code:param_inferred_type  {<parameter.documented_type>};
+    graph4code:param_type           <{parameter.docstring_type}>;
+    skos:definition                 "{parameter.docstring}";
+    graph4code:optional             "{parameter.optional}".
+
+# -------------Example---------------
+<http://purl.org/twc/graph4code/python/pandas.read_csv/p/3>
+        a                               graph4code:Parameter ;
+        rdfs:label                      "filepath_or_buffer" ;
+        graph4code:param_index          1 ;
+        graph4code:param_inferred_type  py:object , py:pandas._typing.Path , py:str  .... ;
+        graph4code:param_type           "str, path object or file-like object" ;
+        skos:definition                 "Any valid string path is acceptable. The string could be a URL. ...." .
+# -------------------------------
+
+
+# ========================================================================
+
+graph4code:Return 
+    rdf:type                graph4code:Return;
+    skos:definition         "{returnval.docstring}";
+    graph4code:return_index {returnval.position};
+    graph4code:return_type  <{returnval.docstring_type}>.
+
+# -------------Example---------------
+<http://purl.org/twc/graph4code/python/pandas.read_csv/r/1>
+        a                        graph4code:Return ;
+        graph4code:return_index  1 ;
+        skos:definition          "A comma-separated values (csv) file is returned as two-dimensional" .
+# -------------------------------
+
+# ========================================================================
+
+graph4code:Class
+    rdfs:label "{class.import_path}";
+    rdf:type graph4code:Class;
+    dcterms:isPartOf <{class.module}>;
+    graph4code:name_end "{class.name}";
+    skos:definition "{class.docstring}";
+    rdfs:subClassOf <class.superclass>;
+    graph4code:module <class.module>.
+
+
+# -------------Example---------------
+py:sklearn.ensemble.RandomForestClassifier
+        a                    graph4code:Class ;
+        rdfs:label           "sklearn.ensemble.RandomForestClassifier" ;
+        rdfs:subClassOf      py:sklearn.ensemble._forest.ForestClassifier ;
+        dcterms:isPartOf     py:sklearn.ensemble , py:sklearn ;
+        graph4code:module    py:sklearn ;
+        graph4code:name_end  "RandomForestClassifier" ;
+        skos:definition      "\n    A random forest classifier.\n\n    A random forest is a meta estimator " .
+# -------------------------------
