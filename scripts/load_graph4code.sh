@@ -36,7 +36,11 @@ echo "-------Build Graph4Code JENA DB-----"
 cd $SOURCE_DIR/graph4code/scripts
 ./build_graph.sh $JENA_LOC $QUADS_LOC $JENA_DB_LOC
 
-echo "-------Launch FUSEKI over Graph4Code JENA DB-----"
+echo "-------Launch FUSEKI over Graph4Code JENA DB: log available at $FUSEKI_LOC/log-----"
 cd $SOURCE_DIR/graph4code/scripts
 ./serve_graph.sh $FUSEKI_LOC $JENA_DB_LOC
 
+
+echo "Testing sample query"
+cd $FUSEKI_LOC/bin/
+./s-query --service http://localhost:3030/graph_v1_0/query 'SELECT * { graph ?g {?s ?p ?o . }}  limit 10'
