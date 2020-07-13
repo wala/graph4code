@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "-------Cloning Graph4Code Github Repo-----"
-git clone https://github.com/wala/graph4code.git
-cd graph4code/scripts
-chmod +x *.sh
+#echo "-------Cloning Graph4Code Github Repo-----"
+#git clone https://github.com/wala/graph4code.git
+#cd graph4code/scripts
+#chmod +x *.sh
 
 echo "-------Downloading Graph4Code Files-----"
 QUADS_LOC=~/graph4code_quads/
