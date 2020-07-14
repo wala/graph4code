@@ -5,8 +5,10 @@ Knowledge graphs have proven extremely useful in powering diverse applications i
 * Download Graph4Code dataset as nquads from [here](https://archive.org/download/graph4codev1).
 
 
+
 ### Table of Contents
 1. [How Graph4Code is created?](#pipeline)
+2. [Loading and querying Graph4Code](./load_graph.md#loading)
 2. [Schema and Query By Example](#schema)
 3. [Example Use Cases](./use_cases.md#uses)
     * [Recommendation engine for developers](./use_cases.md#case1)
