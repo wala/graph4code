@@ -1,7 +1,7 @@
 #!/bin/bash
 JENA_LOC=$1
 QUADS_LOC=$2
-JENA_DB_LOC=$2
+JENA_DB_LOC=$3
 
 cd $JENA_LOC
 #sudo sysctl -w vm.max_map_count=500000
