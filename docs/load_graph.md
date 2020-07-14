@@ -1,4 +1,4 @@
-## Loading Graph4Code<a name="uses"></a>
+## Loading Graph4Code<a name="loading"></a>
 
 This script downloads and loads Graph4Code quad files in Apache Jena. The following scripts are tested on Linux Ubuntu with Java (openjdk version "1.8.0_252") and Ruby "ruby 2.3.1p112" installed.
 
