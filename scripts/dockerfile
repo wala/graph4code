@@ -1,0 +1,41 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -y g++ openjdk-8-jdk ruby git wget && apt-get clean 
+
+ARG SOURCE_DIR=/root/
+#ARG USER=graph4code
+#RUN useradd -m -d /home/graph4code/ -s /bin/bash -G sudo ${USER}
+
+ENV SOURCE_DIR=$SOURCE_DIR
+RUN echo "SOURCE_DIR: ${SOURCE_DIR}"
+ENV QUADS_LOC=${SOURCE_DIR}/graph4code_quads/
+ENV JENA_DB_LOC=${SOURCE_DIR}/graph4code_db/
+ENV JENA_LOC=${SOURCE_DIR}/apache-jena-3.16.0
+ENV FUSEKI_LOC=${SOURCE_DIR}/apache-jena-fuseki-3.16.0
+
+
+
+WORKDIR ${SOURCE_DIR}
+RUN echo "JENA_LOC: $JENA_LOC"
+RUN echo "QUADS_LOC: $QUADS_LOC"
+RUN echo "JENA_DB_LOC: $JENA_DB_LOC"
+RUN mkdir $QUADS_LOC
+RUN mkdir $JENA_DB_LOC
+
+#RUN cd $SOURCE_DIR
+RUN echo "$PWD"
+RUN git clone https://github.com/wala/graph4code.git
+RUN wget http://mirror.metrocast.net/apache/jena/binaries/apache-jena-fuseki-3.16.0.tar.gz
+RUN wget http://mirror.metrocast.net/apache/jena/binaries/apache-jena-3.16.0.tar.gz
+RUN tar -xzf apache-jena-fuseki-3.16.0.tar.gz
+RUN tar -xzf apache-jena-3.16.0.tar.gz
+
+
+RUN cat graph4code/scripts/download_graph_sample.sh
+RUN chmod +x graph4code/scripts/download_graph_sample.sh
+RUN graph4code/scripts/download_graph_sample.sh $QUADS_LOC
+RUN ls $QUADS_LOC
+
+RUN chmod +x graph4code/scripts/build_graph.sh
+RUN graph4code/scripts/build_graph.sh $JENA_LOC $QUADS_LOC $JENA_DB_LOC
+
