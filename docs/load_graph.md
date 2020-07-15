@@ -1,3 +1,7 @@
+## Machine Requirements
+
+ We run graph4code on an Intel VM with 64 cores, 512GB of RAM and 2TB of disk.
+ 
 ## Loading Graph4Code<a name="loading"></a>
 
 This script downloads and loads Graph4Code quad files in Apache Jena. The following scripts are tested on Linux Ubuntu with Java (openjdk version "1.8.0_252") and Ruby "ruby 2.3.1p112" installed.
@@ -53,3 +57,5 @@ cd $FUSEKI_LOC/bin/
 ./s-query --service http://localhost:3030/graph_v1_0/query 'SELECT * { graph ?g {?s ?p ?o . }}  limit 10'
 ```
 
+## Docker
+Alternatively, we also provide a docker file for creating a docker image with the graph database ready to use. The docker file is available here https://github.com/wala/graph4code/blob/master/scripts/dockerfile.
