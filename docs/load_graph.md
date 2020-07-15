@@ -58,7 +58,7 @@ cd $FUSEKI_LOC/bin/
 ```
 
 ## Docker
-Alternatively, we also provide a docker file for creating a docker image with the graph database ready to use. The docker file is available here https://github.com/wala/graph4code/blob/master/scripts/dockerfile.
+Alternatively, we also provide a docker file for creating a docker image with the graph database ready to use. 
 
 The required steps are as follows:
 - Clone this repo and go to script folder:
@@ -72,34 +72,23 @@ The required steps are as follows:
      mkdir grgraph4code_quads
      ./download_graph.sh ./grgraph4code_quads
      ```
-- Build docker image
+- Build the base docker image
      ```
-     docker build -t graph4code .
+     docker build -t graph4code_base -f dockerfile_base .
+     docker build -t graph4code_build -f dockerfile_build .
+     docker build -t graph4code_serve -f dockerfile_serve .
      ```
-- Run the docker image and mount the directory when graph4code files are downloaded:
+- Create directory where Jena db will be created
+    ```
+    mkdir graph4code_db/
+- Run the build docker image and mount Jena db directory:
+     ```
+     docker run --rm -it -v `pwd`:/graph4code_quads/:/graph4code_quads/ -v `pwd`:/graph4code_db/:/graph4code_db/ graph4code_build
+     ```
+- Now the db is ready, run the serve docker image and expose Jena default port.  
      ```
      docker run --rm -it -v ./graph4code_quads/:/graph4code_quads/ graph4code
-
      ```
-- Inside the docker image, build the graph 
-     ```
-     mkdir /graph4code_db/
-     cd graph4code/scripts/
-     chmod +x build_graph.sh
-
-     ./build_graph.sh /root/apache-jena-3.16.0/ /graph4code_quads/ /graph4code_db/
-     ```
-- Finally once the db is built, run jena fuseki to start querying
-     ```
-     chmod +x serve_graph.sh
-     /serve_graph.sh /root/apache-jena-fuseki-3.16.0/ /graph4code_db/
-     ```
-     This will start a background process with its output re-directed to back `/root/apache-jena-fuseki-3.16.0/logs/serve_graph_g1_v1_0.log`. Jena Fuseki runs on port 3030 by default. To check that it's working properly, one can run the following:
-
-     ```
-     cd /root/apache-jena-fuseki-3.16.0/bin/
-     ./s-query --service http://localhost:3030/graph_v1_0/query 'SELECT * { graph ?g {?s ?p ?o . }}  limit 10'
-
-     ``` 
+- This will start a background process for Jena Fuseki and should be accessible via http://localhost:3030/. 
      
  
