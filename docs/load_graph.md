@@ -70,7 +70,7 @@ The required steps are as follows:
 - Download graph4code quads
      ```
      mkdir grgraph4code_quads
-     ./download_graph.sh ./grgraph4code_quads
+     ./download_graph.sh ./graph4code_quads
      ```
 - Build the base docker image
      ```
