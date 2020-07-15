@@ -53,4 +53,5 @@ cd $FUSEKI_LOC/bin/
 ./s-query --service http://localhost:3030/graph_v1_0/query 'SELECT * { graph ?g {?s ?p ?o . }}  limit 10'
 ```
 
+## Docker
 Alternatively, we also provide a docker file for creating a docker image with the graph database ready to use. The docker file is available here https://github.com/wala/graph4code/blob/master/scripts/dockerfile.
