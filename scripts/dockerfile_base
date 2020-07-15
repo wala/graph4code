@@ -1,0 +1,22 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -y g++ openjdk-8-jdk ruby git wget && apt-get clean 
+
+ARG SOURCE_DIR=/root/
+ENV SOURCE_DIR=$SOURCE_DIR
+WORKDIR ${SOURCE_DIR}
+
+
+RUN echo "$PWD"
+RUN git clone https://github.com/wala/graph4code.git
+RUN wget http://mirror.metrocast.net/apache/jena/binaries/apache-jena-fuseki-3.16.0.tar.gz
+RUN wget http://mirror.metrocast.net/apache/jena/binaries/apache-jena-3.16.0.tar.gz
+RUN tar -xzf apache-jena-fuseki-3.16.0.tar.gz
+RUN tar -xzf apache-jena-3.16.0.tar.gz
+
+RUN mkdir /graph4code_db/
+WORKDIR graph4code/scripts/
+
+EXPOSE 3030
+
+

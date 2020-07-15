@@ -1,0 +1,4 @@
+FROM graph4code_base
+
+CMD chmod +x build_graph.sh && ./build_graph.sh /root/apache-jena-3.16.0/ /graph4code_quads/ /graph4code_db/ && chmod +x serve_graph.sh &&  ./serve_graph.sh /root/apache-jena-fuseki-3.16.0/ /graph4code_db/
+

@@ -1,0 +1,4 @@
+FROM graph4code_base
+
+CMD chmod +x serve_graph.sh &&  ./serve_graph.sh /root/apache-jena-fuseki-3.16.0/ /graph4code_db/
+
