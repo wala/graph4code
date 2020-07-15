@@ -59,3 +59,47 @@ cd $FUSEKI_LOC/bin/
 
 ## Docker
 Alternatively, we also provide a docker file for creating a docker image with the graph database ready to use. The docker file is available here https://github.com/wala/graph4code/blob/master/scripts/dockerfile.
+
+The required steps are as follows:
+- Clone this repo and go to script folder:
+     ```
+     git clone https://github.com/wala/graph4code.git
+     cd graph4code/scripts/
+
+     ```
+- Download graph4code quads
+     ```
+     mkdir grgraph4code_quads
+     ./download_graph.sh ./grgraph4code_quads
+     ```
+- Build docker image
+     ```
+     docker build -t graph4code .
+     ```
+- Run the docker image and mount the directory when graph4code files are downloaded:
+     ```
+     docker run --rm -it -v ./graph4code_quads/:/graph4code_quads/ graph4code
+
+     ```
+- Inside the docker image, build the graph 
+     ```
+     mkdir /graph4code_db/
+     cd graph4code/scripts/
+     chmod +x build_graph.sh
+
+     ./build_graph.sh /root/apache-jena-3.16.0/ /graph4code_quads/ /graph4code_db/
+     ```
+- Finally once the db is built, run jena fuseki to start querying
+     ```
+     chmod +x serve_graph.sh
+     /serve_graph.sh /root/apache-jena-fuseki-3.16.0/ /graph4code_db/
+     ```
+     This will start a background process with its output re-directed to back `/root/apache-jena-fuseki-3.16.0/logs/serve_graph_g1_v1_0.log`. Jena Fuseki runs on port 3030 by default. To check that it's working properly, one can run the following:
+
+     ```
+     cd /root/apache-jena-fuseki-3.16.0/bin/
+     ./s-query --service http://localhost:3030/graph_v1_0/query 'SELECT * { graph ?g {?s ?p ?o . }}  limit 10'
+
+     ``` 
+     
+ 
