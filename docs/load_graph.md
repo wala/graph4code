@@ -1,3 +1,7 @@
+## Machine Requirements
+
+ We run graph4code on an Intel VM with 64 cores, 512GB of RAM and 2TB of disk.
+ 
 ## Loading Graph4Code<a name="loading"></a>
 
 This script downloads and loads Graph4Code quad files in Apache Jena. The following scripts are tested on Linux Ubuntu with Java (openjdk version "1.8.0_252") and Ruby "ruby 2.3.1p112" installed.
