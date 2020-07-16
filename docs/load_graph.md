@@ -83,11 +83,11 @@ The required steps are as follows:
     mkdir graph4code_db/
 - Run the build docker image and mount Jena db directory:
      ```
-     docker run --rm -it -v `pwd`:/graph4code_quads/:/graph4code_quads/ -v `pwd`:/graph4code_db/:/graph4code_db/ graph4code_build
+     docker run --rm -it -v `pwd`/graph4code_quads/:/graph4code_quads/ -v `pwd`/graph4code_db/:/graph4code_db/ graph4code_build
      ```
 - Now the db is ready, run the serve docker image and expose Jena default port.  
      ```
-     docker run --rm -it -v ./graph4code_quads/:/graph4code_quads/ graph4code
+     docker run --rm -it --expose 3030 -v `pwd`/graph4code_db/:/graph4code_db/ graph4code_serve
      ```
 - This will start a background process for Jena Fuseki and should be accessible via http://localhost:3030/. 
      
