@@ -7,6 +7,4 @@ Knowledge graphs have proven extremely useful in powering diverse applications i
 
 The graph files are available [here](https://archive.org/download/graph4codev1). 
 
-To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. 
-
-Alternatively, we provide a docker file for creating a docker image with the graph database ready to use. The docker file is available here https://github.com/wala/graph4code/blob/master/scripts/dockerfile.  
+To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
