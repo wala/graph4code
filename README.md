@@ -8,3 +8,6 @@ Knowledge graphs have proven extremely useful in powering diverse applications i
 The graph files are available [here](https://archive.org/download/graph4codev1). 
 
 To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
+
+
+For any question, please contact us via email: ibrahim.abdelaziz1@ibm.com and kavitha.srinivas@ibm.com
