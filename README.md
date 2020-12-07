@@ -10,4 +10,12 @@ The graph files are available [here](https://archive.org/download/graph4codev1).
 To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
 
 
-For any question, please contact us via email: ibrahim.abdelaziz1@ibm.com and kavitha.srinivas@ibm.com
+# Processing new scripts
+
+If you have a directory tree of Python scripts (i.e. .py files) that you would like to build a graph for, you can create the nquads file for those script by running kaggle_proc.sh in the scripts directory.
+
+The usage is `bash kaggle_proc.sh <scripts dir> <out dir>`
+
+
+
+For any question, please contact us via email: ibrahim.abdelaziz1@ibm.com, kavitha.srinivas@ibm.com, dolby@us.ibm.com
