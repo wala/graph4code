@@ -103,6 +103,10 @@ select distinct ?label where {
 
 More Example queries can be found [here](https://github.com/wala/graph4code/tree/master/usage_queries) 
 
+### Resources
+* Download Graph4Code dataset as nquads from [here](https://archive.org/download/graph4codev1).
+* A map of python classes with import names/paths; e.g. `sklearn.ensemble.RandomForestClassifier`, vs. actual class path; e.g.    `sklearn.ensemble._forest.RandomForestClassifier`, can be found [here](https://github.com/wala/graph4code/blob/master/resources/classes.map)
+
 ### Publications<a name="papers"></a>
 * If you use Graph4Code in your research, please cite our work:
 
