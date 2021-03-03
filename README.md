@@ -17,5 +17,5 @@ If you have a directory tree of Python scripts (i.e. .py files) that you would l
 The usage is `bash kaggle_proc.sh <scripts dir> <out dir>`
 
 
-
+# Questions
 For any question, please contact us via email: ibrahim.abdelaziz1@ibm.com, kavitha.srinivas@ibm.com, dolby@us.ibm.com
