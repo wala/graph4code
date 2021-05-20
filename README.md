@@ -12,9 +12,9 @@ To load and query this data, please follow the instructions here: https://github
 
 # Processing new scripts
 
-If you have a directory tree of Python scripts (i.e. .py files) that you would like to build a graph for, you can create the nquads file for those script by running kaggle_proc.sh in the scripts directory.
+If you have a new script, run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.
 
-The usage is `bash kaggle_proc.sh <scripts dir> <out dir>`
+The usage is `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>`
 
 
 # Questions
