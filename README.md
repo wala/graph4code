@@ -18,6 +18,27 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
 
 Their usage is `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>` where *n* is either 2 or 3 depending on the desired version of Python.  As an example: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.
 
+### Publications<a name="papers"></a>
+* If you use Graph4Code in your research, please cite our work:
 
+ ```
+  @article{abdelaziz2020codebreaker,
+  title={A Demonstration of CodeBreaker: A Machine Interpretable Knowledge Graph for Code},
+  author={Abdelaziz, Ibrahim and Srinivas, Kavitha and Dolby, Julian and  McCusker, James P},
+  journal={International Semantic Web Conference (ISWC) (Demonstration Track)},
+  year={2020}
+}
+ @article{abdelaziz2020graph4code,
+  title={Graph4Code: A Machine Interpretable Knowledge Graph for Code},
+  author={Abdelaziz, Ibrahim and Dolby, Julian and  McCusker, James P and Srinivas, Kavitha},
+  journal={arXiv preprint arXiv:2002.09440},
+  year={2020}
+}
+```
+
+  
 # Questions
 For any question, please contact us via email: ibrahim.abdelaziz1@ibm.com, kavitha.srinivas@ibm.com, dolby@us.ibm.com
+  
+
+
