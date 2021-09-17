@@ -29,7 +29,29 @@ Many best practices for API frameworks can be encoded into query templates over 
 <a name="Example violation of best practice to use different datasets to train"></a>
 
 <p align="center">
-<img align="center" src="figures//train_test_different_data.png" width="90%"/>
+<img align="center" src="figures//train_test_different_data.png" width="70%"/>
+</p>
+<br><br>
+
+### Debugging with Stackoverflow
+A common use of sites such as StackOverflow is to search for posts related to an issue with a developer's code, often a crash.  
+In this use case, we show an example of searching StackOverflow using the code context in the following figure, based on the highlighted code locations found with dataflow to the {\tt fit} call.
+
+<p align="center">
+<img align="center" src="figures//ISWCMotivatingExample2.png" width="90%"/>
+</p>
+<br><br>
+
+Such a search on Graph4Code does produce the StackOverflow result shown above based on links with the coding context, specifically the `train_test_split` and `SVC.fit` call as one might expect.  Suppose we had given `SVC` a very large dataset, and the fit call had memory issues; we could augment the query to look for posts that mention `memory issue', in addition to taking the code context shown in the above figure into consideration.  The figure below shows the first result returned by such a query over the knowledge graph.  As shown in the figure, this hit is ranked highest because it matches both the code context in motivating figure  highlighted with green ellipses, and the terms "memory issue" in the text.  What is interesting is that, despite its irrelevant title, the answer is actually a valid one for the problem.  
+
+<p align="center">
+<img align="center" src="figures//debugging_memoryIssues.png" width="60%"/>
+</p>
+<br><br>
+A text search on StackOverflow with `sklearn`, `SVC` and `memory issues` as terms does not return this answer in the top 10 results.  We show below the second result, which is the first result returned by a text search on StackOverflow.  Note that our system ranks this lower because the coding context does not match the result as closely.
+
+<p align="center">
+<img align="center" src="figures//debugging_memory2.png" width="60%"/>
 </p>
 <br><br>
 
