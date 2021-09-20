@@ -21,7 +21,7 @@ Knowledge graphs have proven extremely useful in powering diverse applications i
 
 <!---![](figures//graph4code_pipeline2.png)-->
 <p align="center">
-<img align="center" src="figures//graph4code_pipeline2.png" width="90%"/>
+<img align="center" src="figures//graph4code_pipeline.png" width="90%"/>
 </p>
 <br><br>
 
