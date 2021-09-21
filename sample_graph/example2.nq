@@ -1,0 +1,692 @@
+<< <http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000230> "0" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000230> "0" >> <http://semanticscience.org/resource/SIO_000116> "random_state" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se91> <http://purl.org/twc/graph4code/read> "[sklearn, train_test_split, 0]" >> <http://semanticscience.org/resource/SIO_000420> "[sklearn, train_test_split, 0]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://schema.org/about> "read_csv" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://www.w3.org/2000/01/rdf-schema#label> "pandas.read_csv." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":6,\"firstCol\":7,\"lastOffset\":220,\"lastCol\":74,\"firstOffset\":153,\"url\":\"file:/tmp/e2.py\",\"firstLine\":6}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://schema.org/text> "pd.read_csv(\"../input/chinese_liver_patient.csv\", low_memory=False)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://purl.org/twc/graph4code/sourceLines> "data = pd.read_csv(\"../input/chinese_liver_patient.csv\", low_memory=False)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://purl.org/twc/graph4code/normalizedLabel> "pandas.core.frame.DataFrame" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://purl.org/twc/graph4code/valueNames> "data" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se88> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se64> <http://schema.org/about> "clear" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se64> <http://www.w3.org/2000/01/rdf-schema#label> "clear" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se64> <http://purl.org/twc/graph4code/normalizedLabel> "clear" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se64> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se65> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se100> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se43> <http://schema.org/about> "iter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se43> <http://www.w3.org/2000/01/rdf-schema#label> "iter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se43> <http://purl.org/twc/graph4code/normalizedLabel> "iter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se43> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se44> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se22> <http://schema.org/about> "complex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se22> <http://www.w3.org/2000/01/rdf-schema#label> "complex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se22> <http://purl.org/twc/graph4code/normalizedLabel> "complex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se22> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se23> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se98> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":10,\"firstCol\":16,\"lastOffset\":347,\"lastCol\":29,\"firstOffset\":334,\"url\":\"file:/tmp/e2.py\",\"firstLine\":10}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://schema.org/text> "train.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://purl.org/twc/graph4code/sourceLines> "train_X = train[train.columns[:len(train.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se93> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se94> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se95> <http://semanticscience.org/resource/SIO_000230> "Dataset" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se72> <http://schema.org/about> "KeyError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se72> <http://www.w3.org/2000/01/rdf-schema#label> "KeyError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se72> <http://purl.org/twc/graph4code/normalizedLabel> "KeyError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se72> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se73> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000230> "../input/chinese_liver_patient.csv" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se51> <http://schema.org/about> "ord" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se51> <http://www.w3.org/2000/01/rdf-schema#label> "ord" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se51> <http://purl.org/twc/graph4code/normalizedLabel> "ord" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se51> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se52> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se83> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se82> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se30> <http://schema.org/about> "filter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se30> <http://www.w3.org/2000/01/rdf-schema#label> "filter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se30> <http://purl.org/twc/graph4code/normalizedLabel> "filter" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se30> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se31> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se76> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se87> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se102> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se101> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://schema.org/about> "RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.RBF." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":15,\"firstCol\":38,\"lastOffset\":521,\"lastCol\":46,\"firstOffset\":513,\"url\":\"file:/tmp/e2.py\",\"firstLine\":15}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://schema.org/text> "RBF(1.0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://purl.org/twc/graph4code/sourceLines> "clf_svm_radial_basis=SVC(kernel=1.0 * RBF(1.0), random_state=0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se103> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se102> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se74> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se85> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se82> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se81> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se5> <http://schema.org/about> "None" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se5> <http://www.w3.org/2000/01/rdf-schema#label> "None" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se5> <http://purl.org/twc/graph4code/normalizedLabel> "None" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se5> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se6> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se59> <http://schema.org/about> "tuple" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se59> <http://www.w3.org/2000/01/rdf-schema#label> "tuple" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se59> <http://purl.org/twc/graph4code/normalizedLabel> "tuple" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se59> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se60> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://semanticscience.org/resource/SIO_000230> "1" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se38> <http://schema.org/about> "help" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se38> <http://www.w3.org/2000/01/rdf-schema#label> "help" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se38> <http://purl.org/twc/graph4code/normalizedLabel> "help" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se38> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se39> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se17> <http://schema.org/about> "bin" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se17> <http://www.w3.org/2000/01/rdf-schema#label> "bin" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se17> <http://purl.org/twc/graph4code/normalizedLabel> "bin" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se17> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se18> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se78> <http://semanticscience.org/resource/SIO_000230> "svm" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se95> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se95> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://schema.org/about> "Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://www.w3.org/2000/01/rdf-schema#label> "pandas.read_csv.Dataset." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":8,\"firstCol\":78,\"lastOffset\":315,\"lastCol\":93,\"firstOffset\":300,\"url\":\"file:/tmp/e2.py\",\"firstLine\":8}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://schema.org/text> "data['Dataset']" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://purl.org/twc/graph4code/sourceLines> "train, test  = train_test_split(data, test_size=0.3, random_state=0, stratify=data['Dataset'])" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://purl.org/twc/graph4code/normalizedLabel> "pandas.core.frame.DataFrame.Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se88> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se87> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se91> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se67> <http://schema.org/about> "hist" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se67> <http://www.w3.org/2000/01/rdf-schema#label> "hist" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se67> <http://purl.org/twc/graph4code/normalizedLabel> "hist" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se67> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se68> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se46> <http://schema.org/about> "max" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se46> <http://www.w3.org/2000/01/rdf-schema#label> "max" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se46> <http://purl.org/twc/graph4code/normalizedLabel> "max" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se46> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se47> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se25> <http://schema.org/about> "dir" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se25> <http://www.w3.org/2000/01/rdf-schema#label> "dir" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se25> <http://purl.org/twc/graph4code/normalizedLabel> "dir" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se25> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se26> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se95> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se104> >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se98> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se97> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se93> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se92> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://schema.org/about> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":12,\"firstCol\":14,\"lastOffset\":425,\"lastCol\":26,\"firstOffset\":413,\"url\":\"file:/tmp/e2.py\",\"firstLine\":12}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://schema.org/text> "test.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://purl.org/twc/graph4code/sourceLines> "test_X = test[test.columns[:len(test.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se96> <http://purl.org/twc/graph4code/valueNames> "test_X" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se0> <http://schema.org/about> "BaseException" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se0> <http://www.w3.org/2000/01/rdf-schema#label> "BaseException" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se0> <http://purl.org/twc/graph4code/normalizedLabel> "BaseException" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se0> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se1> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se54> <http://schema.org/about> "property" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se54> <http://www.w3.org/2000/01/rdf-schema#label> "property" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se54> <http://purl.org/twc/graph4code/normalizedLabel> "property" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se54> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se55> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se104> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se104> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se104> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se33> <http://schema.org/about> "frozenset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se33> <http://www.w3.org/2000/01/rdf-schema#label> "frozenset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se33> <http://purl.org/twc/graph4code/normalizedLabel> "frozenset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se33> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se34> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se82> <http://purl.org/twc/graph4code/read> "gaussian_process" >> <http://semanticscience.org/resource/SIO_000420> "gaussian_process" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se12> <http://schema.org/about> "__file__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se12> <http://www.w3.org/2000/01/rdf-schema#label> "__file__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se12> <http://purl.org/twc/graph4code/normalizedLabel> "__file__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se12> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se13> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se104> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se106> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://schema.org/about> "predict" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.SVC.fit.predict." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":18,\"firstCol\":0,\"lastOffset\":620,\"lastCol\":29,\"firstOffset\":591,\"url\":\"file:/tmp/e2.py\",\"firstLine\":18}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://schema.org/text> "\n\nmodel.predict(test_X, test_Y)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://purl.org/twc/graph4code/sourceLines> "model.predict(test_X, test_Y)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se106> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.SVC.fit.predict" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://schema.org/about> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":4,\"firstCol\":0,\"lastOffset\":144,\"lastCol\":48,\"firstOffset\":96,\"url\":\"file:/tmp/e2.py\",\"firstLine\":4}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://schema.org/text> "\n\nfrom sklearn.gaussian_process.kernels import RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://purl.org/twc/graph4code/sourceLines> "from sklearn.gaussian_process.kernels import RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se83> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se82> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se8> <http://schema.org/about> "TypeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se8> <http://www.w3.org/2000/01/rdf-schema#label> "TypeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se8> <http://purl.org/twc/graph4code/normalizedLabel> "TypeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se8> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se9> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se62> <http://schema.org/about> "Warning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se62> <http://www.w3.org/2000/01/rdf-schema#label> "Warning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se62> <http://purl.org/twc/graph4code/normalizedLabel> "Warning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se62> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se63> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se41> <http://schema.org/about> "input" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se41> <http://www.w3.org/2000/01/rdf-schema#label> "input" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se41> <http://purl.org/twc/graph4code/normalizedLabel> "input" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se41> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se42> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se20> <http://schema.org/about> "callable" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se20> <http://www.w3.org/2000/01/rdf-schema#label> "callable" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se20> <http://purl.org/twc/graph4code/normalizedLabel> "callable" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se20> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se21> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://semanticscience.org/resource/SIO_000230> "0" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://schema.org/about> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":10,\"firstCol\":16,\"lastOffset\":347,\"lastCol\":29,\"firstOffset\":334,\"url\":\"file:/tmp/e2.py\",\"firstLine\":10}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://schema.org/text> "train.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://purl.org/twc/graph4code/sourceLines> "train_X = train[train.columns[:len(train.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se91> <http://purl.org/twc/graph4code/valueNames> "train_X" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se81> <http://purl.org/twc/graph4code/read> "kernels" >> <http://semanticscience.org/resource/SIO_000420> "kernels" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se70> <http://schema.org/about> "history" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se70> <http://www.w3.org/2000/01/rdf-schema#label> "history" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se70> <http://purl.org/twc/graph4code/normalizedLabel> "history" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se70> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se71> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se99> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se49> <http://schema.org/about> "object" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se49> <http://www.w3.org/2000/01/rdf-schema#label> "object" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se49> <http://purl.org/twc/graph4code/normalizedLabel> "object" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se49> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se50> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se28> <http://schema.org/about> "exec" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se28> <http://www.w3.org/2000/01/rdf-schema#label> "exec" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se28> <http://purl.org/twc/graph4code/normalizedLabel> "exec" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se28> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se29> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se77> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se76> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://schema.org/about> "SVC" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.SVC." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":15,\"firstCol\":21,\"lastOffset\":538,\"lastCol\":63,\"firstOffset\":496,\"url\":\"file:/tmp/e2.py\",\"firstLine\":15}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://schema.org/text> "SVC(kernel=1.0 * RBF(1.0), random_state=0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://purl.org/twc/graph4code/sourceLines> "clf_svm_radial_basis=SVC(kernel=1.0 * RBF(1.0), random_state=0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.SVC" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://purl.org/twc/graph4code/valueNames> "clf_svm_radial_basis" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se104> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se100> <http://purl.org/twc/graph4code/read> "Dataset" >> <http://semanticscience.org/resource/SIO_000420> "Dataset" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se99> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se94> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":12,\"firstCol\":32,\"lastOffset\":443,\"lastCol\":44,\"firstOffset\":431,\"url\":\"file:/tmp/e2.py\",\"firstLine\":12}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://schema.org/text> "test.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://purl.org/twc/graph4code/sourceLines> "test_X = test[test.columns[:len(test.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se99> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se97> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se82> <http://semanticscience.org/resource/SIO_000230> "gaussian_process" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://schema.org/about> "svm" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.svm." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":3,\"firstCol\":13,\"lastOffset\":84,\"lastCol\":16,\"firstOffset\":81,\"url\":\"file:/tmp/e2.py\",\"firstLine\":3}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://schema.org/text> "svm" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://purl.org/twc/graph4code/sourceLines> "from sklearn.svm import SVC" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.svm" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://purl.org/twc/graph4code/valueNames> "importTree1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se78> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se83> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se3> <http://schema.org/about> "FutureWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se3> <http://www.w3.org/2000/01/rdf-schema#label> "FutureWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se3> <http://purl.org/twc/graph4code/normalizedLabel> "FutureWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se3> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se4> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se76> <http://purl.org/twc/graph4code/read> "model_selection" >> <http://semanticscience.org/resource/SIO_000420> "model_selection" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se57> <http://schema.org/about> "set" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se57> <http://www.w3.org/2000/01/rdf-schema#label> "set" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se57> <http://purl.org/twc/graph4code/normalizedLabel> "set" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se57> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se58> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se99> <http://semanticscience.org/resource/SIO_000230> "columns" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se36> <http://schema.org/about> "globals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se36> <http://www.w3.org/2000/01/rdf-schema#label> "globals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se36> <http://purl.org/twc/graph4code/normalizedLabel> "globals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se36> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se37> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se15> <http://schema.org/about> "all" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se15> <http://www.w3.org/2000/01/rdf-schema#label> "all" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se15> <http://purl.org/twc/graph4code/normalizedLabel> "all" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se15> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se16> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000230> "false" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://semanticscience.org/resource/SIO_000230> "false" >> <http://semanticscience.org/resource/SIO_000116> "low_memory" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se78> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se101> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se100> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se91> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se104> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se65> <http://schema.org/about> "pylab" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se65> <http://www.w3.org/2000/01/rdf-schema#label> "pylab" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se65> <http://purl.org/twc/graph4code/normalizedLabel> "pylab" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se65> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se66> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se76> <http://semanticscience.org/resource/SIO_000230> "model_selection" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se44> <http://schema.org/about> "locals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se44> <http://www.w3.org/2000/01/rdf-schema#label> "locals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se44> <http://purl.org/twc/graph4code/normalizedLabel> "locals" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se44> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se45> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se23> <http://schema.org/about> "del" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se23> <http://www.w3.org/2000/01/rdf-schema#label> "del" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se23> <http://purl.org/twc/graph4code/normalizedLabel> "del" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se23> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se24> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se81> <http://semanticscience.org/resource/SIO_000230> "kernels" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se98> <http://purl.org/twc/graph4code/read> "columns" >> <http://semanticscience.org/resource/SIO_000420> "columns" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "0.3" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "0.3" >> <http://semanticscience.org/resource/SIO_000116> "test_size" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se103> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":10,\"firstCol\":35,\"lastOffset\":366,\"lastCol\":48,\"firstOffset\":353,\"url\":\"file:/tmp/e2.py\",\"firstLine\":10}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://schema.org/text> "train.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://purl.org/twc/graph4code/sourceLines> "train_X = train[train.columns[:len(train.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se94> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se92> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se73> <http://schema.org/about> "display" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se73> <http://www.w3.org/2000/01/rdf-schema#label> "display" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se73> <http://purl.org/twc/graph4code/normalizedLabel> "display" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se73> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se74> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se103> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se102> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se52> <http://schema.org/about> "pow" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se52> <http://www.w3.org/2000/01/rdf-schema#label> "pow" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se52> <http://purl.org/twc/graph4code/normalizedLabel> "pow" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se52> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se53> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se31> <http://schema.org/about> "float" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se31> <http://www.w3.org/2000/01/rdf-schema#label> "float" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se31> <http://purl.org/twc/graph4code/normalizedLabel> "float" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se31> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se32> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se10> <http://schema.org/about> "ValueError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se10> <http://www.w3.org/2000/01/rdf-schema#label> "ValueError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se10> <http://purl.org/twc/graph4code/normalizedLabel> "ValueError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se10> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se11> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://schema.org/about> "fit" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.SVC.fit." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":16,\"firstCol\":8,\"lastOffset\":589,\"lastCol\":50,\"firstOffset\":547,\"url\":\"file:/tmp/e2.py\",\"firstLine\":16}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://schema.org/text> "clf_svm_radial_basis.fit(train_X, train_Y)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://purl.org/twc/graph4code/sourceLines> "model = clf_svm_radial_basis.fit(train_X, train_Y)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.SVC.fit" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://purl.org/twc/graph4code/valueNames> "model" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se104> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se106> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://schema.org/about> "kernels" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.gaussian_process.kernels." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":4,\"firstCol\":30,\"lastOffset\":133,\"lastCol\":37,\"firstOffset\":126,\"url\":\"file:/tmp/e2.py\",\"firstLine\":4}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://schema.org/text> "kernels" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://purl.org/twc/graph4code/sourceLines> "from sklearn.gaussian_process.kernels import RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.gaussian_process.kernels" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://purl.org/twc/graph4code/valueNames> "importTree2" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se81> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se85> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se6> <http://schema.org/about> "RuntimeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se6> <http://www.w3.org/2000/01/rdf-schema#label> "RuntimeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se6> <http://purl.org/twc/graph4code/normalizedLabel> "RuntimeError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se6> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se7> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se88> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se60> <http://schema.org/about> "vars" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se60> <http://www.w3.org/2000/01/rdf-schema#label> "vars" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se60> <http://purl.org/twc/graph4code/normalizedLabel> "vars" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se60> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se61> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se39> <http://schema.org/about> "hex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se39> <http://www.w3.org/2000/01/rdf-schema#label> "hex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se39> <http://purl.org/twc/graph4code/normalizedLabel> "hex" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se39> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se40> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se18> <http://schema.org/about> "bool" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se18> <http://www.w3.org/2000/01/rdf-schema#label> "bool" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se18> <http://purl.org/twc/graph4code/normalizedLabel> "bool" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se18> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se19> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "0" >> <http://semanticscience.org/resource/SIO_000613> "3" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "0" >> <http://semanticscience.org/resource/SIO_000116> "random_state" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se94> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se90> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://schema.org/about> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":8,\"firstCol\":0,\"lastOffset\":227,\"lastCol\":5,\"firstOffset\":222,\"url\":\"file:/tmp/e2.py\",\"firstLine\":8}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://schema.org/text> "\n\ntrain" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/sourceLines> "train, test  = train_test_split(data, test_size=0.3, random_state=0, stratify=data['Dataset'])" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/valueNames> "train" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se89> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se90> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se68> <http://schema.org/about> "matplotlib" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se68> <http://www.w3.org/2000/01/rdf-schema#label> "matplotlib" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se68> <http://purl.org/twc/graph4code/normalizedLabel> "matplotlib" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se68> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se69> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se93> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se47> <http://schema.org/about> "min" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se47> <http://www.w3.org/2000/01/rdf-schema#label> "min" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se47> <http://purl.org/twc/graph4code/normalizedLabel> "min" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se47> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se48> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se87> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se26> <http://schema.org/about> "divmod" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se26> <http://www.w3.org/2000/01/rdf-schema#label> "divmod" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se26> <http://purl.org/twc/graph4code/normalizedLabel> "divmod" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se26> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se27> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se101> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se104> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se89> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se91> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se100> <http://semanticscience.org/resource/SIO_000230> "Dataset" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se96> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":12,\"firstCol\":14,\"lastOffset\":447,\"lastCol\":48,\"firstOffset\":413,\"url\":\"file:/tmp/e2.py\",\"firstLine\":12}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://schema.org/text> "test.columns[:len(test.columns)-1]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://purl.org/twc/graph4code/sourceLines> "test_X = test[test.columns[:len(test.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se100> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://schema.org/about> "model_selection" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.model_selection." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":2,\"firstCol\":15,\"lastOffset\":50,\"lastCol\":30,\"firstOffset\":35,\"url\":\"file:/tmp/e2.py\",\"firstLine\":2}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://schema.org/text> "model_selection" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://purl.org/twc/graph4code/sourceLines> "import sklearn.model_selection.train_test_split" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.model_selection" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se76> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se79> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se1> <http://schema.org/about> "DeprecationWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se1> <http://www.w3.org/2000/01/rdf-schema#label> "DeprecationWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se1> <http://purl.org/twc/graph4code/normalizedLabel> "DeprecationWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se1> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se2> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se55> <http://schema.org/about> "repr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se55> <http://www.w3.org/2000/01/rdf-schema#label> "repr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se55> <http://purl.org/twc/graph4code/normalizedLabel> "repr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se55> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se56> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se34> <http://schema.org/about> "get_ipython" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se34> <http://www.w3.org/2000/01/rdf-schema#label> "get_ipython" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se34> <http://purl.org/twc/graph4code/normalizedLabel> "get_ipython" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se34> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se35> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se13> <http://schema.org/about> "__name__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se13> <http://www.w3.org/2000/01/rdf-schema#label> "__name__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se13> <http://purl.org/twc/graph4code/normalizedLabel> "__name__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se13> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se14> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se78> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se93> <http://semanticscience.org/resource/SIO_000230> "columns" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se88> <http://semanticscience.org/resource/SIO_000230> "Dataset" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "3" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "4" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se9> <http://schema.org/about> "UserWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se9> <http://www.w3.org/2000/01/rdf-schema#label> "UserWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se9> <http://purl.org/twc/graph4code/normalizedLabel> "UserWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se9> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se10> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se63> <http://schema.org/about> "cd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se63> <http://www.w3.org/2000/01/rdf-schema#label> "cd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se63> <http://purl.org/twc/graph4code/normalizedLabel> "cd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se63> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se64> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se85> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se88> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se42> <http://schema.org/about> "isinstance" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se42> <http://www.w3.org/2000/01/rdf-schema#label> "isinstance" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se42> <http://purl.org/twc/graph4code/normalizedLabel> "isinstance" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se42> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se43> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se21> <http://schema.org/about> "chr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se21> <http://www.w3.org/2000/01/rdf-schema#label> "chr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se21> <http://purl.org/twc/graph4code/normalizedLabel> "chr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se21> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se22> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se96> <http://purl.org/twc/graph4code/read> "[sklearn, train_test_split, 1]" >> <http://semanticscience.org/resource/SIO_000420> "[sklearn, train_test_split, 1]" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se96> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se88> <http://purl.org/twc/graph4code/read> "Dataset" >> <http://semanticscience.org/resource/SIO_000420> "Dataset" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se93> <http://purl.org/twc/graph4code/read> "columns" >> <http://semanticscience.org/resource/SIO_000420> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":10,\"firstCol\":16,\"lastOffset\":370,\"lastCol\":52,\"firstOffset\":334,\"url\":\"file:/tmp/e2.py\",\"firstLine\":10}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://schema.org/text> "train.columns[:len(train.columns)-1]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://purl.org/twc/graph4code/sourceLines> "train_X = train[train.columns[:len(train.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se92> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se95> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se71> <http://schema.org/about> "time" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se71> <http://www.w3.org/2000/01/rdf-schema#label> "time" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se71> <http://purl.org/twc/graph4code/normalizedLabel> "time" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se71> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se72> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se50> <http://schema.org/about> "open" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se50> <http://www.w3.org/2000/01/rdf-schema#label> "open" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se50> <http://purl.org/twc/graph4code/normalizedLabel> "open" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se50> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se51> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "4" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000116> "stratify" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se96> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se106> >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se29> <http://schema.org/about> "exit" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se29> <http://www.w3.org/2000/01/rdf-schema#label> "exit" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se29> <http://purl.org/twc/graph4code/normalizedLabel> "exit" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se29> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se30> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se98> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://schema.org/about> "expr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.RBF.expr." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":15,\"firstCol\":32,\"lastOffset\":521,\"lastCol\":46,\"firstOffset\":507,\"url\":\"file:/tmp/e2.py\",\"firstLine\":15}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://schema.org/text> "1.0 * RBF(1.0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://purl.org/twc/graph4code/sourceLines> "clf_svm_radial_basis=SVC(kernel=1.0 * RBF(1.0), random_state=0)" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.RBF.expr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se102> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se101> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se93> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se88> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se87> >> <http://semanticscience.org/resource/SIO_000613> "4" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://schema.org/about> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":3,\"firstCol\":0,\"lastOffset\":95,\"lastCol\":27,\"firstOffset\":68,\"url\":\"file:/tmp/e2.py\",\"firstLine\":3}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://schema.org/text> "\n\nfrom sklearn.svm import SVC" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://purl.org/twc/graph4code/sourceLines> "from sklearn.svm import SVC" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se79> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se78> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se4> <http://schema.org/about> "NameError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se4> <http://www.w3.org/2000/01/rdf-schema#label> "NameError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se4> <http://purl.org/twc/graph4code/normalizedLabel> "NameError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se4> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se5> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se58> <http://schema.org/about> "super" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se58> <http://www.w3.org/2000/01/rdf-schema#label> "super" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se58> <http://purl.org/twc/graph4code/normalizedLabel> "super" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se58> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se59> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se37> <http://schema.org/about> "hasattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se37> <http://www.w3.org/2000/01/rdf-schema#label> "hasattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se37> <http://purl.org/twc/graph4code/normalizedLabel> "hasattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se37> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se38> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se16> <http://schema.org/about> "any" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se16> <http://www.w3.org/2000/01/rdf-schema#label> "any" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se16> <http://purl.org/twc/graph4code/normalizedLabel> "any" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se16> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se17> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se100> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se106> >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se103> <http://semanticscience.org/resource/SIO_000230> "1.0" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://schema.org/about> "train_test_split" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":8,\"firstCol\":15,\"lastOffset\":316,\"lastCol\":94,\"firstOffset\":237,\"url\":\"file:/tmp/e2.py\",\"firstLine\":8}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://schema.org/text> "train_test_split(data, test_size=0.3, random_state=0, stratify=data['Dataset'])" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://purl.org/twc/graph4code/sourceLines> "train, test  = train_test_split(data, test_size=0.3, random_state=0, stratify=data['Dataset'])" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se87> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se89> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se79> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se78> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se66> <http://schema.org/about> "RuntimeWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se66> <http://www.w3.org/2000/01/rdf-schema#label> "RuntimeWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se66> <http://purl.org/twc/graph4code/normalizedLabel> "RuntimeWarning" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se66> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se67> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se45> <http://schema.org/about> "map" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se45> <http://www.w3.org/2000/01/rdf-schema#label> "map" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se45> <http://purl.org/twc/graph4code/normalizedLabel> "map" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se45> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se46> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se102> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se24> <http://schema.org/about> "dict" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se24> <http://www.w3.org/2000/01/rdf-schema#label> "dict" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se24> <http://purl.org/twc/graph4code/normalizedLabel> "dict" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se24> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se25> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se99> <http://purl.org/twc/graph4code/read> "columns" >> <http://semanticscience.org/resource/SIO_000420> "columns" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se81> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se103> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://schema.org/about> "Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.0.Dataset." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":11,\"firstCol\":10,\"lastOffset\":398,\"lastCol\":26,\"firstOffset\":382,\"url\":\"file:/tmp/e2.py\",\"firstLine\":11}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://schema.org/text> "train['Dataset']" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://purl.org/twc/graph4code/sourceLines> "train_Y = train['Dataset']" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.0.Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://purl.org/twc/graph4code/valueNames> "train_Y" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se95> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se98> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se94> <http://semanticscience.org/resource/SIO_000230> "columns" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://schema.org/about> "pandas" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://www.w3.org/2000/01/rdf-schema#label> "pandas" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":1,\"firstCol\":0,\"lastOffset\":19,\"lastCol\":19,\"firstOffset\":0,\"url\":\"file:/tmp/e2.py\",\"firstLine\":1}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://schema.org/text> "import pandas as pd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://purl.org/twc/graph4code/sourceLines> "import pandas as pd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://purl.org/twc/graph4code/normalizedLabel> "pandas" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://purl.org/twc/graph4code/valueNames> "pd" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se74> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se77> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se53> <http://schema.org/about> "print" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se53> <http://www.w3.org/2000/01/rdf-schema#label> "print" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se53> <http://purl.org/twc/graph4code/normalizedLabel> "print" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se53> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se54> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se32> <http://schema.org/about> "format" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se32> <http://www.w3.org/2000/01/rdf-schema#label> "format" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se32> <http://purl.org/twc/graph4code/normalizedLabel> "format" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se32> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se33> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se11> <http://schema.org/about> "__doc__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se11> <http://www.w3.org/2000/01/rdf-schema#label> "__doc__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se11> <http://purl.org/twc/graph4code/normalizedLabel> "__doc__" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se11> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se12> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se76> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se91> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se91> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se78> <http://purl.org/twc/graph4code/read> "svm" >> <http://semanticscience.org/resource/SIO_000420> "svm" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://schema.org/about> "gaussian_process" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.gaussian_process." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":4,\"firstCol\":13,\"lastOffset\":125,\"lastCol\":29,\"firstOffset\":109,\"url\":\"file:/tmp/e2.py\",\"firstLine\":4}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://schema.org/text> "gaussian_process" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://purl.org/twc/graph4code/sourceLines> "from sklearn.gaussian_process.kernels import RBF" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.gaussian_process" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se82> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se81> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se82> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se7> <http://schema.org/about> "StopIteration" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se7> <http://www.w3.org/2000/01/rdf-schema#label> "StopIteration" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se7> <http://purl.org/twc/graph4code/normalizedLabel> "StopIteration" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se7> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se8> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se61> <http://schema.org/about> "NotImplementedError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se61> <http://www.w3.org/2000/01/rdf-schema#label> "NotImplementedError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se61> <http://purl.org/twc/graph4code/normalizedLabel> "NotImplementedError" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se61> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se62> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se94> <http://purl.org/twc/graph4code/read> "columns" >> <http://semanticscience.org/resource/SIO_000420> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se40> <http://schema.org/about> "id" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se40> <http://www.w3.org/2000/01/rdf-schema#label> "id" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se40> <http://purl.org/twc/graph4code/normalizedLabel> "id" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se40> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se41> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se19> <http://schema.org/about> "bytes" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se19> <http://www.w3.org/2000/01/rdf-schema#label> "bytes" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se19> <http://purl.org/twc/graph4code/normalizedLabel> "bytes" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se19> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se20> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se87> <http://purl.org/twc/graph4code/flowsTo> <http://purl.org/twc/graph4code/se89> >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "3" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se97> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "4" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://schema.org/about> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":8,\"firstCol\":7,\"lastOffset\":233,\"lastCol\":11,\"firstOffset\":229,\"url\":\"file:/tmp/e2.py\",\"firstLine\":8}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://schema.org/text> "test" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/sourceLines> "train, test  = train_test_split(data, test_size=0.3, random_state=0, stratify=data['Dataset'])" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://purl.org/twc/graph4code/valueNames> "test" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se90> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se93> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se69> <http://schema.org/about> "recall" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se69> <http://www.w3.org/2000/01/rdf-schema#label> "recall" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se69> <http://purl.org/twc/graph4code/normalizedLabel> "recall" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se69> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se70> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se48> <http://schema.org/about> "next" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se48> <http://www.w3.org/2000/01/rdf-schema#label> "next" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se48> <http://purl.org/twc/graph4code/normalizedLabel> "next" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se48> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se49> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se27> <http://schema.org/about> "eval" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se27> <http://www.w3.org/2000/01/rdf-schema#label> "eval" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se27> <http://purl.org/twc/graph4code/normalizedLabel> "eval" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se27> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se28> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se96> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se96> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se95> <http://purl.org/twc/graph4code/read> "Dataset" >> <http://semanticscience.org/resource/SIO_000420> "Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://schema.org/about> "Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1.Dataset." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":13,\"firstCol\":9,\"lastOffset\":473,\"lastCol\":24,\"firstOffset\":458,\"url\":\"file:/tmp/e2.py\",\"firstLine\":13}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://schema.org/text> "test['Dataset']" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://purl.org/twc/graph4code/sourceLines> "test_Y = test['Dataset']" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1.Dataset" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://purl.org/twc/graph4code/valueNames> "test_Y" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se100> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se103> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se81> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://schema.org/about> "columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn.train_test_split.1.columns." <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":12,\"firstCol\":14,\"lastOffset\":425,\"lastCol\":26,\"firstOffset\":413,\"url\":\"file:/tmp/e2.py\",\"firstLine\":12}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://schema.org/text> "test.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://purl.org/twc/graph4code/sourceLines> "test_X = test[test.columns[:len(test.columns)-1]]" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn.train_test_split.1.columns" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se98> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se99> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se98> <http://semanticscience.org/resource/SIO_000230> "columns" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://schema.org/about> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://www.w3.org/2000/01/rdf-schema#label> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://semanticscience.org/resource/SIO_000061> "{\"lastLine\":2,\"firstCol\":0,\"lastOffset\":67,\"lastCol\":47,\"firstOffset\":20,\"url\":\"file:/tmp/e2.py\",\"firstLine\":2}" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://schema.org/text> "\n\nimport sklearn.model_selection.train_test_split" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://purl.org/twc/graph4code/sourceLines> "import sklearn.model_selection.train_test_split" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://purl.org/twc/graph4code/normalizedLabel> "sklearn" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se77> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se76> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se2> <http://schema.org/about> "Exception" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se2> <http://www.w3.org/2000/01/rdf-schema#label> "Exception" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se2> <http://purl.org/twc/graph4code/normalizedLabel> "Exception" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se2> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se3> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se56> <http://schema.org/about> "reversed" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se56> <http://www.w3.org/2000/01/rdf-schema#label> "reversed" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se56> <http://purl.org/twc/graph4code/normalizedLabel> "reversed" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se56> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se57> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se35> <http://schema.org/about> "getattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se35> <http://www.w3.org/2000/01/rdf-schema#label> "getattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se35> <http://purl.org/twc/graph4code/normalizedLabel> "getattr" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se35> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se36> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se14> <http://schema.org/about> "abs" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se14> <http://www.w3.org/2000/01/rdf-schema#label> "abs" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se14> <http://purl.org/twc/graph4code/normalizedLabel> "abs" <http://github/test/test> .
+<http://purl.org/twc/graph4code/se14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/twc/graph4code/Imported> <http://github/test/test> .
+<http://purl.org/twc/graph4code/se14> <http://semanticscience.org/resource/SIO_000250> <http://purl.org/twc/graph4code/se15> <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se106> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se106> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se106> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "2" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000613> "1" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se101> <http://semanticscience.org/resource/SIO_000230> "[]" >> <http://semanticscience.org/resource/SIO_000116> "kernel" <http://github/test/test> .
+<< <http://purl.org/twc/graph4code/se102> <http://semanticscience.org/resource/SIO_000230> "1.0" >> <http://semanticscience.org/resource/SIO_000613> "0" <http://github/test/test> .
