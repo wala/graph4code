@@ -12,7 +12,7 @@ Knowledge graphs have proven extremely useful in powering diverse applications i
 3. [Schema](#schema)
 4. [Example Graph](#toy_example)
 5. [Deploying and using Graph4Code](#deploy)
-6. [Generate your own graph](#process_new) 
+6. [Processing New Python Programs](#process_new) 
 7. [Example Queries](./example_queries.md)
 8. [Example Use Cases](./use_cases.md)
     * [Recommendation engine for developers](./use_cases.md#case1)
@@ -54,7 +54,7 @@ The graph files are available [here](https://archive.org/download/graph4codev1).
 To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
 
 
-### Processing new scripts <a name="process_new"></a>
+### Processing New Python Programs <a name="process_new"></a>
 
 If you have a new script, run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
 
