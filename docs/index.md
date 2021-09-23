@@ -3,7 +3,7 @@ Knowledge graphs have been proven extremely useful in powering diverse applicati
 In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs that can similarly power various applications such as program search, code understanding, bug detection, and code automation. GraphGen4Code uses generic techniques to capture code semantics with the key nodes in the graph representing classes, functions and methods. Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow). Our toolkit uses named graphs in RDF to model graphs per program, or can output graphs as JSON. We show the scalability of the toolkit by applying it to 1.3 million Python files drawn from GitHub, 2,300 Python modules, and 47 million forum posts. This results in an integrated code graph with over 2 billion triples. We make the toolkit to build such graphs as well as the sample extraction of the 2 billion triples graph publicly available to the community for use.
 
 * Paper: [https://arxiv.org/abs/2002.09440](https://arxiv.org/abs/2002.09440)<br>
-* Download Graph4Code dataset as nquads from [here](https://archive.org/download/graph4codev1).
+* Download Graph4CodeGen dataset as nquads from [here](https://archive.org/download/graph4codev1).
 
 
 
