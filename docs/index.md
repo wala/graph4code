@@ -35,30 +35,30 @@ The following shows a code snippet example as well as a _high level overview_ of
 
  
 
-<!---![](figures//graph4code_pipeline2.png)-->
+<!---![](figures//code_example.png)-->
 <p align="center">
 <img align="center" src="figures/code_example.png" width="70%"/>
-</p>
+</p><p align="center">Code Snippet Example</p>
 <br><br>
 
-<!---![](figures//graph4code_pipeline2.png)-->
+<!---![](figures//static_analysis_example.png)-->
 <p align="center">
 <img align="center" src="figures//static_analysis_example.png" width="70%"/>
-</p>
+</p><p align="center">Dataflow graph for the running example</p>
 <br><br>
 
 
-<!---![](figures//graph4code_pipeline2.png)-->
+<!---![](figures//stackoverflow.png)-->
 <p align="center">
 <img align="center" src="figures//stackoverflow.png" width="70%"/>
-</p>
+</p><p align="center">StackOverflow Graph Example</p>
 <br><br>
 
 
-<!---![](figures//graph4code_pipeline2.png)-->
+<!---![](figures//docstrings.png)-->
 <p align="center">
 <img align="center" src="figures//docstrings.png" width="70%"/>
-</p>
+</p><p align="center">Docstrings Graph Example</p>
 <br><br>
 
 
