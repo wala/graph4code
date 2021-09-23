@@ -20,7 +20,7 @@ In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs
     * [Learning from big code](./use_cases.md#case3) 
 8. [Publications](#papers)
 
-### Graph4Code Pipeline<a name="pipeline"></a>
+### Graph4CodeGen Pipeline<a name="pipeline"></a>
 
 <!---![](figures//graph4code_pipeline2.png)-->
 <p align="center">
@@ -62,7 +62,7 @@ The following shows a code snippet example as well as a high level overview of t
 <br><br>
 
 
-### Deploying and using Graph4Code <a name="deploy"></a>
+### Deploying and using Graph4CodeGen <a name="deploy"></a>
 
 The graph files are available [here](https://archive.org/download/graph4codev1). 
 
