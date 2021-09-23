@@ -66,7 +66,7 @@ The following shows a code snippet example as well as a _high level overview_ of
 
 The graph files are available [here](https://archive.org/download/graph4codev1). 
 
-To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
+To load and query this data, please follow the instructions [here](https://github.com/wala/graph4code/blob/master/docs/load_graph.md). We also provide scripts for creating a docker image with the graph database ready to use. 
 
 
 ### Processing New Python Programs <a name="process_new"></a>
