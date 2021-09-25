@@ -9,6 +9,18 @@ The graph files are available [here](https://archive.org/download/graph4codev1).
 To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
 
 # Create your own graph
+
+### Graph4CodeGen Pipeline<a name="pipeline"></a>
+
+The figure below shows the overall pipeline of steps followed by Graph4CodeGen to generate large-scale code knowledge graphs. 
+
+<!---![](./docs/figures//graph4code_pipeline2.png)-->
+<p align="center">
+<img align="center" src="./docs/figures//graph4code_pipeline.png" width="90%"/>
+</p>
+<br><br>
+
+
 ## Code Analysis Graph
 
 If you have a new script (code file), run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
