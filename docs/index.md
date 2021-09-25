@@ -11,7 +11,7 @@ In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs
 1. [Deploying and using Graph4Code](#deploy)
 2. [Graph4CodeGen Pipeline](#pipeline)
 4. [Schema](#schema)
-5. [Processing New Python Programs](#process_new) 
+5. [Create your own graph](./../README.md#create-your-own-graph) 
 6. [Example Queries](./example_queries.md)
 7. [Example Use Cases](./use_cases.md)
     * [Recommendation engine for developers](./use_cases.md#case1)
@@ -68,25 +68,6 @@ The following shows a code snippet example as well as a _high level overview_ of
 </p><p align="center">Docstrings Graph Example</p>
 <br><br>
 
-
-
-
-### Processing New Python Programs <a name="process_new"></a>
-
-If you have a new script, run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
-
-We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.
-   
-After cloning the repo https://github.com/wala/graph4code where jars are located, run the following:
-
- `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>`
-   
-   where *n* is either 2 or 3 depending on the desired version of Python.  As an example: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.
-   
-   
-### Resources
-* Download Graph4Code dataset as nquads from [here](https://archive.org/download/graph4codev1).
-* A map of python classes with import names/paths; e.g. `sklearn.ensemble.RandomForestClassifier`, vs. actual class path; e.g.    `sklearn.ensemble._forest.RandomForestClassifier`, can be found [here](https://github.com/wala/graph4code/blob/master/resources/classes.map)
 
 ### Publications<a name="papers"></a>
 * If you use Graph4Code in your research, please cite our work:
