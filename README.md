@@ -33,10 +33,23 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  1. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.
  2. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.
  
-## Creating the docstrings graph
+## Creating docstrings graph
 Using the output of the above step, run the following from inside the `src` directory 
  `python create_docstrings_graph --docstring_dir <directory where docstrings from above directory are saved> --class_map_file ../resources/classes.map --out_dir <where nq files will be saved`
  
+ 
+ ## Creating Forums graph
+To create a forum graph, first download the corresponding data dump from StackOverflow or StackExchange from https://archive.org/details/stackexchange. You then need to extract the zipped file into a folder <stackoverflow_in_dir> and run the following: 
+
+following:
+`python -u create_forum_graph.py --stackoverflow_in_dir <stackoverflow_in_dir> --docstring_dir <directory where docstrings from above directory are saved> --graph_output_dir <where graph nq files will be saved> --pickled_files_out <intermediate directory for saving stackoverflow dumps> --index_name <elastic search index name> --graph_main_prefix <prefix used for graph generation>`
+
+As an example, to create a graph from https://ai.stackexchange.com/ and link it to docstrings and code analysis graphs, one can run the following: 
+
+`python -u create_forum_graph.py --stackoverflow_in_dir ./data/stackexchange_data_dump/ai_stackexchange/ --docstring_dir ./data/docstrings_data/ --graph_output_dir ./data/stackexchange_data_dump/nq/ --pickled_files_out ./data/stackexchange_data_dump/ai_stackexchange/ --index_name ai_stackexchange --graph_main_prefix  ai_stackexchange`
+
+Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_stackexchange, stats_stackexchange, and stackoverflow3. 
+
 # Publications<a name="papers"></a>
 * If you use Graph4CodeGen in your research, please cite our work:
 
