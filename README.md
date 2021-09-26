@@ -20,6 +20,9 @@ The figure below shows the overall pipeline of steps followed by Graph4CodeGen t
 </p>
 <br><br>
 
+## Requirements
+
+In addition to installing the required  packages in `requirements.txt`, the steps below require a working installation of ElasticSearch running on the default port, 9200. 
 
 ## Code Analysis Graph
 
@@ -30,6 +33,7 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
 Their usage is `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>` where *n* is either 2 or 3 depending on the desired version of Python.  As an example: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.
 
 ## Collecting documentation (docstrings) for your scripts
+ 
  1. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.
  2. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.
  
