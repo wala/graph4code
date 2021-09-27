@@ -11,7 +11,7 @@ In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs
 1. [Deploying and using Graph4Code](#deploy)
 2. [Graph4CodeGen Pipeline](#pipeline)
 4. [Schema](#schema)
-5. [Create your own graph](./../README.md#create-your-own-graph) 
+5. [Create your own graph](https://github.com/wala/graph4code#create-your-own-graph) 
 6. [Example Queries](./example_queries.md)
 7. [Example Use Cases](./use_cases.md)
     * [Recommendation engine for developers](./use_cases.md#case1)
