@@ -17,6 +17,7 @@ The figure below shows the overall pipeline of steps followed by Graph4CodeGen t
 
 We used the above pipeline to demonstrate the scalability of Graph4CodeGen by creating a code knowledge graph of 2 billion facts about code. This graph was created using 1.3 million Python program and 47 million forum posts. The graph files are available [here](https://archive.org/download/graph4codev1). To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
 
+We list below the steps needed to create your own graph.
 
 ## Requirements
 
