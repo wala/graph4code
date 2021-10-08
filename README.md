@@ -64,7 +64,7 @@ Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_
   year={2020}
 }
  @article{abdelaziz2020graph4code,
-  title={Graph4Code: A Machine Interpretable Knowledge Graph for Code},
+  title={A Toolkit for Generating Code Knowledge Graphs},
   author={Abdelaziz, Ibrahim and Dolby, Julian and  McCusker, James P and Srinivas, Kavitha},
   journal={arXiv preprint arXiv:2002.09440},
   year={2020}
