@@ -70,7 +70,7 @@ The following shows a code snippet example as well as a _high level overview_ of
 
 
 ### Publications<a name="papers"></a>
-* If you use Graph4Code in your research, please cite our work:
+* If you use GraphGen4Code in your research, please cite our work:
 
  ```
   @article{abdelaziz2020codebreaker,
