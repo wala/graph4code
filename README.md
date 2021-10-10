@@ -1,13 +1,13 @@
-# Graph4CodeGen
+# GraphGen4Code
 Knowledge graphs have been proven extremely useful in powering diverse applications in semantic search and natural language understanding. In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs that can similarly power various applications such as program search, code understanding, bug detection, and code automation. GraphGen4Code uses generic techniques to capture code semantics with the key nodes in the graph representing classes, functions and methods. Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow). Our toolkit uses named graphs in RDF to model graphs per program, or can output graphs as JSON. We show the scalability of the toolkit by applying it to 1.3 million Python files drawn from GitHub, 2,300 Python modules, and 47 million forum posts. This results in an integrated code graph with over 2 billion triples. We make the toolkit to build such graphs as well as the sample extraction of the 2 billion triples graph publicly available to the community for use.
 
 Website: https://wala.github.io/graph4code/
 
 # Create your own graph
 
-### Graph4CodeGen Pipeline<a name="pipeline"></a>
+### GraphGen4Code Pipeline<a name="pipeline"></a>
 
-The figure below shows the overall pipeline of steps followed by Graph4CodeGen to generate large-scale code knowledge graphs. 
+The figure below shows the overall pipeline of steps followed by GraphGen4Code to generate large-scale code knowledge graphs. 
 
 <!---![](./docs/figures//graph4code_pipeline2.png)-->
 <p align="center">
@@ -15,7 +15,7 @@ The figure below shows the overall pipeline of steps followed by Graph4CodeGen t
 </p>
 <br><br>
 
-We used the above pipeline to demonstrate the scalability of Graph4CodeGen by creating a code knowledge graph of 2 billion facts about code. This graph was created using 1.3 million Python program and 47 million forum posts. The graph files are available [here](https://archive.org/download/graph4codev1). To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
+We used the above pipeline to demonstrate the scalability of GraphGen4Code by creating a code knowledge graph of 2 billion facts about code. This graph was created using 1.3 million Python program and 47 million forum posts. The graph files are available [here](https://archive.org/download/graph4codev1). To load and query this data, please follow the instructions here: https://github.com/wala/graph4code/blob/master/docs/load_graph.md. We also provide scripts for creating a docker image with the graph database ready to use. 
 
 We list below the steps needed to create your own graph.
 
