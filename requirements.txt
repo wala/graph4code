@@ -110,7 +110,7 @@ numpy==1.14.5
 numpydoc==0.8.0
 oauthlib==2.1.0
 olefile==0.45.1
-opencv-python==4.0.0.21
+opencv-python>=4.2.0.32
 openml==0.7.0
 oslo.concurrency==3.29.0
 oslo.config==6.7.0
