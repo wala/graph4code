@@ -10,7 +10,7 @@ asttokens==2.0.4
 atomicwrites==1.1.5
 attrs==18.1.0
 awscli==1.15.63
-Babel==2.6.0
+babel>=2.9.1
 backcall==0.1.0
 bayesian-optimization==1.0.0
 beautifulsoup4==4.8.0
