@@ -86,10 +86,10 @@ The following shows a code snippet example as well as a _high level overview_ of
   year={2020}
 }
  @article{abdelaziz2020graph4code,
-  title={Graph4Code: A Machine Interpretable Knowledge Graph for Code},
+  title={A Toolkit for Generating Code Knowledge Graphs},
   author={Abdelaziz, Ibrahim and Dolby, Julian and  McCusker, James P and Srinivas, Kavitha},
-  journal={arXiv preprint arXiv:2002.09440},
-  year={2020}
+  journal={The Eleventh International Conference on Knowledge Capture (K-CAP)},
+  year={2021}
 }
 ```
 
