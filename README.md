@@ -3,6 +3,13 @@ Knowledge graphs have been proven extremely useful in powering diverse applicati
 
 Website: https://wala.github.io/graph4code/
 
+# Example Use Cases
+* [Automated Machine Learning (AutoML)](./docs/use_cases.md#autoML)
+* [Recommendation engine for developers](./docs/use_cases.md#case1)   
+* [Building Language Models for Code Understanding](./docs/use_cases.md#lm)
+* [Enforcing best practices](./docs/use_cases.md#case2)  
+* [Learning from big code](./docs/use_cases.md#case3) 
+
 # Create your own graph
 
 ### GraphGen4Code Pipeline<a name="pipeline"></a>
