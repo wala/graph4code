@@ -30,7 +30,7 @@ All graph files are available [here](https://archive.org/download/graph4codev1).
 To load and query this data, please follow the instructions [here](https://github.com/wala/graph4code/blob/master/docs/load_graph.md). We also provide scripts for creating a docker image with the graph database ready to use. 
 
 #### ETH 150k Python Dataset
-We also used GraphGen4Code to produce graphs for [ETH 150k Python Dataset](https://www.sri.inf.ethz.ch/py150) collected from Github. ETH-150K dataset has been used to train models for code recommendation, type inferencing, program repairs, ...etc. We provide graph data for this dataset in both [JSON](https://archive.org/download/graph4codev1/eth150_json.tar.gz) and [RDF N-Quads](https://archive.org/download/graph4codev1/eth150_nq.tar.gz) formats.
+We also used GraphGen4Code to produce graphs for [ETH 150k Python Dataset](https://www.sri.inf.ethz.ch/py150) collected from Github. ETH-150K dataset has been used to train models for code recommendation, type inferencing, program repairs, ...etc. We provide graph data for this dataset in both JSON ([Python 2](https://archive.org/download/graph4codev1/eth150_json_py2_v2.tar), [Python 3](https://archive.org/download/graph4codev1/eth150_json_py3_v2.tar)) and [RDF N-Quads](https://archive.org/download/graph4codev1/eth150_nq.tar.gz) formats.
 
 
    
