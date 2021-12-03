@@ -3,7 +3,7 @@ Knowledge graphs have been proven extremely useful in powering diverse applicati
 
 Website: https://wala.github.io/graph4code/
 
-# Example Use Cases
+# Applications
 * [Automated Machine Learning (AutoML)](./docs/use_cases.md#autoML)
 * [Recommendation engine for developers](./docs/use_cases.md#case1)   
 * [Building Language Models for Code Understanding](./docs/use_cases.md#lm)
