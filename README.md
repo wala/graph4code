@@ -70,13 +70,17 @@ Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_
   journal={International Semantic Web Conference (ISWC) (Demonstration Track)},
   year={2020}
 }
-@misc{abdelaziz2021toolkit,
-      title={A Toolkit for Generating Code Knowledge Graphs}, 
+ @article{abdelaziz2021graph4code,
+  title={A Toolkit for Generating Code Knowledge Graphs},
+  author={Abdelaziz, Ibrahim and Dolby, Julian and  McCusker, James P and Srinivas, Kavitha},
+  journal={The Eleventh International Conference on Knowledge Capture (K-CAP)},
+  year={2021}
+}
+ @inproceedings{abdelaziz2022blanca,
+      title={Can Machines Read Coding Manuals Yet? -- A Benchmark for Building Better Language Models for Code Understanding}, 
       author={Ibrahim Abdelaziz and Julian Dolby and Jamie McCusker and Kavitha Srinivas},
-      year={2021},
-      eprint={2002.09440},
-      archivePrefix={arXiv},
-      primaryClass={cs.DB}
+      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2022)},
+      year={2022}
 }
 ```
 
