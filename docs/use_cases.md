@@ -6,17 +6,25 @@ AutoML systems build machine learning models automatically by performing a searc
 
 **Paper**: https://arxiv.org/abs/2111.00083
 
-### Recommendation engine for developers<a name="case1"></a>
-CodeBreaker is a coding assistant built on top of Graph4Code to help data scientists write code.  The coding assistant helps users find the most plausible next coding step, finds relevant stack overflow posts based purely on the users' code, and allows users to see what sorts of models other people have constructed for data flows similar to their own.  CodeBreaker uses the Language Server Protocol (LSP) to provide integration with any IDE.  For a detailed description of this use case, see the [demo paper](https://github.com/wala/graph4code/blob/master/papers/CodeBreaker_SigDemo.pdf). A video of this use case is also [here](https://github.com/wala/graph4code/blob/master/docs/figures/demo_v2.mp4).
-
-**Paper**: http://ceur-ws.org/Vol-2721/paper568.pdf 
-
 ### Buildng Better Language Models for Code Understanding<a name="lm"></a>
 Code understanding is an increasingly important application of Artificial Intelligence. A fundamental aspect of understanding code is understanding text about code, e.g., documentation and forum discussions. Pre-trained language models (e.g., BERT) are a popular approach for various NLP tasks, and there are now a variety of benchmarks, such as GLUE, to help improve the development of such models for natural language understanding. However, little is known about how well such models work on textual artifacts about code, and we are unaware of any systematic set of downstream tasks for such an evaluation. In this paper, we derive a set of benchmarks (BLANCA - Benchmarks for LANguage models on Coding Artifacts) that assess code understanding based on tasks such as predicting the best answer to a question in a forum post, finding related forum posts, or predicting classes related in a hierarchy from class documentation. We evaluate the performance of current state-of-the-art language models on these tasks and show that there is a significant improvement on each task from fine tuning. We also show that multi-task training over BLANCA tasks helps build better language models for code understanding. 
 
 **Paper**: https://arxiv.org/abs/2109.07452
 
 **Code**: https://github.com/wala/blanca
+
+### Large Scale Generation of Labeled Type Data for Python<a name="type_inf"></a>
+Recently, dynamically typed languages, such as Python, have gained unprecedented popularity. Although these languages alleviate the need for mandatory type annotations, types still play a critical role in program understanding and preventing runtime errors.  An attractive option is to infer types automatically to get static guarantees without writing types.  Existing inference techniques rely mostly on static typing tools such as PyType for direct type inference; more recently, neural type inference has been proposed.  However, neural type inference is data hungry, and depends on collecting labeled data based on static typing. Such tools, however, are poor at inferring user defined types. Furthermore, type annotation by developers in these languages is quite sparse. In this work, we propose novel techniques for generating high quality types using 1) information retrieval techniques that work on well documented libraries to extract types and 2) usage patterns by analyzing a large repository of programs. Our results show that these techniques are more precise and address the weaknesses of static tools, and can be useful for generating a large labeled dataset for type inference by machine learning methods. F1 scores are 0.52-0.58 for our techniques, compared to static typing tools which are at 0.06, and we use them to generate over 37,000 types for over 700 modules.
+
+**Dataset**: https://github.com/wala/graph4code/tree/master/type_inference_results
+
+**Paper**: coming soon
+
+### Recommendation engine for developers<a name="case1"></a>
+CodeBreaker is a coding assistant built on top of Graph4Code to help data scientists write code.  The coding assistant helps users find the most plausible next coding step, finds relevant stack overflow posts based purely on the users' code, and allows users to see what sorts of models other people have constructed for data flows similar to their own.  CodeBreaker uses the Language Server Protocol (LSP) to provide integration with any IDE.  For a detailed description of this use case, see the [demo paper](https://github.com/wala/graph4code/blob/master/papers/CodeBreaker_SigDemo.pdf). A video of this use case is also [here](https://github.com/wala/graph4code/blob/master/docs/figures/demo_v2.mp4).
+
+**Paper**: http://ceur-ws.org/Vol-2721/paper568.pdf 
+
 
 ### Enforcing best practices<a name="case2"></a>
 Many best practices for API frameworks can be encoded into query templates over data flow and control flow.  Here we give three such examples for data science code, along with queries which can be templatized.
