@@ -5,8 +5,9 @@ Website: https://wala.github.io/graph4code/
 
 # Applications
 * [Automated Machine Learning (AutoML)](./docs/use_cases.md#autoML)
-* [Recommendation engine for developers](./docs/use_cases.md#case1)   
 * [Building Language Models for Code Understanding](./docs/use_cases.md#lm)
+* [Large Scale Generation of Labeled Type Data for Python](./docs/use_cases.md#type_inf)
+* [Recommendation engine for developers](./docs/use_cases.md#case1)   
 * [Enforcing best practices](./docs/use_cases.md#case2)  
 * [Learning from big code](./docs/use_cases.md#case3) 
 
