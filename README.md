@@ -41,7 +41,7 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
  As an example, from the jars directory: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.
  
- Note that we use git lfs to store the jars.   Please use git lfs to pull the jars - their sizes should be above 50M.  
+ Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M.  
 
 ## Collecting documentation (docstrings) for your scripts
  
