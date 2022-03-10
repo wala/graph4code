@@ -106,7 +106,7 @@ netifaces==0.10.9
 networkx==2.2
 nltk>=3.4.5
 nose==1.3.7
-numpy==1.14.5
+numpy>=1.21
 numpydoc==0.8.0
 oauthlib==2.1.0
 olefile==0.45.1
