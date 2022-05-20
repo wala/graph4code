@@ -94,7 +94,7 @@ for f in glob(sys.argv[1]):
                     else:
                         modules[m] += 1
 
-modules = {k: v for k, v in sorted(modules.items(), key=lambda item: item[1])}
+modules = {k: v for k, v in sorted(modules.items(), reverse=True, key=lambda item: item[1])}
 
 if len(sys.argv) == 4:
     max = int(sys.argv[3])
