@@ -29,7 +29,7 @@ We list below the steps needed to create your own graph.
 
 ## Requirements
 
-In addition to installing the required  packages in `requirements.txt`, the steps below require a working installation of ElasticSearch running on the default port, 9200. 
+In addition to installing the required  packages in `requirements.txt`, the steps below require a working installation of `ElasticSearch` running on the default port, 9200. It also need an installation of `Java JDK 11`.
 
 ## Code Analysis Graph
 
