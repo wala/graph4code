@@ -44,9 +44,22 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M.  
 
 ## Collecting documentation (docstrings) for your scripts
+ 1. Install ElasticSearch (tested with 8.2.1).  
+
+     `wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.2.1-linux-x86_64.tar.gz`
  
- 1. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.
- 2. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.
+     `tar -xzf elasticsearch-8.2.1-linux-x86_64.tar.gz` 
+ 
+     `export ES_HOME=/data/graph4code/elasticsearch-8.2.1` 
+ 
+     `cd elasticsearch-8.2.1/` 
+ 
+     `./bin/elasticsearch`
+ 
+     Elastic search now starts with a bunch of security features enabled.  Make sure to find the elastic search user password in its display when you start: `Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):<password>`.  Export the password as an environment variable.  `export ES_PASSWORD=<password>`
+ 
+ 2. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.
+ 3. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.
  
 ## Creating docstrings graph
 Using the output of the above step, run the following from inside the `src` directory 
