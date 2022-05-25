@@ -113,7 +113,8 @@ indexname = 'return_doc'
 # later
 method_descriptions = {}
 
-es = Elasticsearch([{'host': 'localhost','port': 9200}])
+es = Elasticsearch("https://localhost:9200",
+                   ca_certs=os.path.join(os.environ['ES_HOME'], "http_ca.crt"), basic_auth=("elastic", os.environ['ES_PASSWORD']))
 print('starting')
 cache_of_indexed_functions = {}
 
@@ -331,7 +332,7 @@ def create_returns_map(return_map, func, clazz):
             doc = {'title': key, 'function': func, 'return_type': True, 'klass': clazz, 'content': return_map['type']}
         else:
             doc = {'title': key, 'function': func, 'return_type': True, 'content': return_map['type']}
-        es.index(indexname, body=doc)
+        es.index(index=indexname, body=doc)
         cache_of_indexed_functions[key] = 1
 
     return return_map
@@ -370,7 +371,7 @@ def create_parameter_map(param_docs, param_doc_types, key):
                 key_param = key + '.' + p
                 if key_param not in cache_of_indexed_functions:
                     doc = {'title': key, 'param_name': p, 'content': t}
-                    es.index(indexname, body=doc)
+                    es.index(index=indexname, body=doc)
                     cache_of_indexed_functions[key_param] = 1
 
             opt = find_optional(t)
