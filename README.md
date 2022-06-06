@@ -39,9 +39,9 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
 
 Their usage is `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>` where *n* is either 2 or 3 depending on the desired version of Python.  
  
- As an example, from the jars directory: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.
+ As an example, from the jars directory: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.  So to run on an example script provided from the main directory, use `java -DoutputDir=/tmp/g4c/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null`.
  
- Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M.  
+ Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M.  We currently use git lfs - and seem to be running out of quota limits.  Will be transitioning to a different system shortly. 
 
 ## Collecting documentation (docstrings) for your scripts
  1.  For this, create a conda environment with `conda create --name g4c python=3.9`. 
@@ -58,7 +58,7 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
      `tar -xzf elasticsearch-8.2.1-linux-x86_64.tar.gz` 
  
-     `export ES_HOME=/data/graph4code/elasticsearch-8.2.1` 
+     `export ES_HOME=/data/graph4code/elasticsearch-8.2.1/config/certs/` 
  
      `cd elasticsearch-8.2.1/` 
  
@@ -66,8 +66,11 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
      Elastic search now starts with a bunch of security features enabled.  Make sure to find the elastic search user password in its display when you start: `Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):<password>`.  Export the password as an environment variable.  `export ES_PASSWORD=<password>`
  
- 3. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.
- 4. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.
+ 3. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.  As an example, to run on the example script provided, run: ` python generate_top_modules.py '/tmp/g4c/*.json.bz2' top_modes.json 1` in the src dir.
+ 
+ 4. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.  Example: `sh inspect_modules_for_docstrings.sh ../src/top_modes.json /tmp/modules_out/ ~/anaconda3/`.  You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
+{'count': <xxx>, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}}`
+
  
 ## Creating docstrings graph
 Using the output of the above step, run the following from inside the `src` directory 
