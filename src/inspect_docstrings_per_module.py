@@ -21,6 +21,7 @@ the parameters, return values etc of a docstring out
 """
 
 config = Config(napoleon_use_param=True, napoleon_use_rtype=True)
+indexname = 'docstrings_index'
 
 
 def parse_docstring_into_restructured_text_google(docstring):
@@ -107,7 +108,6 @@ def parse_rst(lines):
     else:
         return function_doc, param_to_doc, param_to_type, None
 
-indexname = 'return_doc'
 
 # global dict to hold all functions obtained so far, so we can patch the descriptions
 # later
@@ -332,7 +332,7 @@ def create_returns_map(return_map, func, clazz):
             doc = {'title': key, 'function': func, 'return_type': True, 'klass': clazz, 'content': return_map['type']}
         else:
             doc = {'title': key, 'function': func, 'return_type': True, 'content': return_map['type']}
-        es.index(index=indexname, body=doc)
+        es.index(index=indexname, document=doc)
         cache_of_indexed_functions[key] = 1
 
     return return_map
@@ -371,7 +371,7 @@ def create_parameter_map(param_docs, param_doc_types, key):
                 key_param = key + '.' + p
                 if key_param not in cache_of_indexed_functions:
                     doc = {'title': key, 'param_name': p, 'content': t}
-                    es.index(index=indexname, body=doc)
+                    es.index(index=indexname, document=doc)
                     cache_of_indexed_functions[key_param] = 1
 
             opt = find_optional(t)
@@ -548,7 +548,8 @@ def main():
         print("*** error: print_tb:")
         traceback.print_tb(exc_traceback, limit=3, file=sys.stdout)
 
-    es.indices.delete(index=indexname, ignore=[400, 404])
+    print("Number of documents stored in index:" + indexname)
+    print(es.count(index=indexname))
 
 
 if __name__ == "__main__":
