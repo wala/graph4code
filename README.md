@@ -41,7 +41,7 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
  As an example, from the jars directory: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.  So to run on an example script provided from the main directory, use `java -DoutputDir=/tmp/g4c/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null`.
  
- Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M.  We currently use git lfs - and seem to be running out of quota limits.  Will be transitioning to a different system shortly. 
+ Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
 
 ## Collecting documentation (docstrings) for your scripts
  1.  For this, create a conda environment with `conda create --name g4c python=3.9`. 
