@@ -1,6 +1,7 @@
 import json
 from glob import glob
 import sys
+import bz2
 
 analysis_modules = ['BaseException', 'DeprecationWarning', 'Exception',
                     'FutureWarning',
@@ -78,21 +79,24 @@ analysis_modules = ['BaseException', 'DeprecationWarning', 'Exception',
 
 for f in glob(sys.argv[1]):
     modules = {}
-    with open(f) as input:
-        if f.endswith('.json'):
-            data = json.load(input)
-            for node in data['turtle_analysis']:
-                if node is None:
-                    continue
+    if f.endswith('.json'):
+        xf = open(f)
+    elif f.endswith('.bz2'):
+        xf = bz2.open(f)
+    with xf as input:
+        data = json.load(input)
+        for node in data['turtle_analysis']:
+            if node is None:
+                continue
 
-                if node["is_import"]:
-                    m = node["path_end"]
-                    if m in analysis_modules:
-                        continue
-                    if m not in modules:
-                        modules[m] = 0
-                    else:
-                        modules[m] += 1
+            if node["is_import"]:
+                m = node["path_end"]
+                if m in analysis_modules:
+                    continue
+                if m not in modules:
+                    modules[m] = 0
+                else:
+                    modules[m] += 1
 
 modules = {k: v for k, v in sorted(modules.items(), reverse=True, key=lambda item: item[1])}
 
