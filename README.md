@@ -70,6 +70,8 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
  4. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.  Example: `sh inspect_modules_for_docstrings.sh ../src/top_modes.json /tmp/modules_out/ ~/anaconda3/`.  You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
 {'count': <xxx>, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}}`
+ 
+ 5. Remember to delete the index if you are recreating it for the same packages.
 
  
 ## Creating docstrings graph
