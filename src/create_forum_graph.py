@@ -33,7 +33,9 @@ if __name__ == "__main__":
         "math_stackexchange" : "https://math.stackexchange.com/",
     '''
 
-    es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+#     es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+    es = Elasticsearch("https://localhost:9200",
+                   ca_certs=os.path.join(os.environ['ES_HOME'], "http_ca.crt"), basic_auth=("elastic", os.environ['ES_PASSWORD']))
     load_posts_if_exists = True
 
     try:
