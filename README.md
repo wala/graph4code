@@ -46,7 +46,7 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
 ## Collecting documentation (docstrings) for your scripts
  1.  For this, create a conda environment with `conda create --name g4c python=3.9`. 
  
-     `pip install bs4`
+     `pip install bs4 rdflib validators`
  
      `pip install elasticsearch`
  
