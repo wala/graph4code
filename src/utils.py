@@ -571,7 +571,8 @@ def create_stackoverflow_graph(index_name, es, docstring_dir, stack_output_dir, 
 
     print('problem set size; ', len(problem_set))
     for i in range(1000):
-        list_of_ES_conn.append(Elasticsearch([{'host': 'localhost', 'port': 9200}]))
+        list_of_ES_conn.append(Elasticsearch("https://localhost:9200",
+                   ca_certs=os.path.join(os.environ['ES_HOME'], "http_ca.crt"), basic_auth=("elastic", os.environ['ES_PASSWORD'])))
 
     pool = Pool(num_cores)
     it = pool.imap_unordered(create_doc_graph, problem_set)
