@@ -59,6 +59,12 @@ If you have a new script (code file), run the following command in the jars dire
 
 We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.
 
+#### Download code analysis libraries
+```
+ cd jars
+ wget https://archive.org/download/graph4codev1/codebreaker2.jar
+ wget https://archive.org/download/graph4codev1/codebreaker3.jar
+```
 #### Usage:
  
      java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier> 
@@ -74,7 +80,6 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
      mkdir -p ./output/static_analysis/ 
      java -DoutputDir=./output/static_analysis/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null
   ```
- Note that **we use git lfs to store the jars**.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
 
 ## Collecting documentation (docstrings) for your scripts
  
