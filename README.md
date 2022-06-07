@@ -29,28 +29,12 @@ We list below the steps needed to create your own graph.
 
 ## Requirements
 
-In addition to installing the required  packages in `requirements.txt`, the steps below require a working installation of `ElasticSearch` running on the default port, 9200. It also need an installation of `Java JDK 11`.
-
-## Code Analysis Graph
-
-If you have a new script (code file), run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
-
-We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.
-
-Their usage is `java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier>` where *n* is either 2 or 3 depending on the desired version of Python.  
+1.  For this, create a conda environment with `conda create --name g4c python=3.9`. 
  
- As an example, from the jars directory: `java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON.  So to run on an example script provided from the main directory, use `java -DoutputDir=/tmp/g4c/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null`.
- 
- Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
-
-## Collecting documentation (docstrings) for your scripts
- 1.  For this, create a conda environment with `conda create --name g4c python=3.9`. 
- 
-     `pip install bs4 rdflib validators`
+     `pip install bs4 rdflib validators torch xmltodict numpy`
  
      `pip install elasticsearch`
  
-     Or create it from `docstrings.yaml` in the graph4code directory.
  
  2. Install ElasticSearch (tested with 8.2.1).  
 
@@ -64,11 +48,52 @@ Their usage is `java -DoutputDir=<output dir to store JSON representation of gra
  
      `./bin/elasticsearch`
  
-     Elastic search now starts with a bunch of security features enabled.  Make sure to find the elastic search user password in its display when you start: `Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):<password>`.  Export the password as an environment variable.  `export ES_PASSWORD=<password>`
+     Elastic search now starts with a bunch of security features enabled.  Make sure to find the elastic search user password in its display when you start: `Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):<password>`.  Export the password as an environment variable.  
+     `export ES_PASSWORD=<password>`
+     
+You will also need an installation of `Java JDK 11` for running the jars of code analysis (next step).
+
+## Code Analysis Graph
+
+If you have a new script (code file), run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
+
+We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.
+
+#### Usage:
  
- 3. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>`.  As an example, to run on the example script provided, run: ` python generate_top_modules.py '/tmp/g4c/*.json.bz2' top_modes.json 1` in the src dir.
+     java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier> 
  
- 4. From the scripts dir, run: `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`.  Example: `sh inspect_modules_for_docstrings.sh ../src/top_modes.json /tmp/modules_out/ ~/anaconda3/`.  You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
+  where *n* is either 2 or 3 depending on the desired version of Python.  
+ 
+#### Example
+From the jars directory: 
+ 
+     java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
+ 
+ So to run on an example script provided from the main directory, use 
+ 
+     java -DoutputDir=/tmp/g4c/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null`.
+ 
+ Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
+
+## Collecting documentation (docstrings) for your scripts
+ 
+ 
+ 3. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>. ` 
+ 
+     **Example**: to run on the example script provided, run in the src dir: 
+      
+         python generate_top_modules.py '/tmp/g4c/*.json.bz2' top_modes.json 1
+ 
+ 4. From the scripts dir, run: 
+ 
+     `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`
+ 
+     **Example**: 
+ 
+         sh inspect_modules_for_docstrings.sh ../src/top_modes.json /tmp/modules_out/ ~/anaconda3/
+ 
+     You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
 {'count': <xxx>, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}}`
  
  5. Remember to delete the index if you are recreating it for the same packages.
