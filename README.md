@@ -95,7 +95,7 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
      sh inspect_modules_for_docstrings.sh ../output/top_modules.json ../output/modules_out/ ~/anaconda3/
  ```
  
-     You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
+You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
 {'count': <xxx>, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}}`
  
  5. Remember to delete the index if you are recreating it for the same packages.
