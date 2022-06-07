@@ -66,32 +66,34 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
   where *n* is either 2 or 3 depending on the desired version of Python.  
  
 #### Example
-From the jars directory: 
  
      java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
  
- So to run on an example script provided from the main directory, use 
- 
-     java -DoutputDir=/tmp/g4c/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null`.
- 
- Note that we use git lfs to store the jars.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
+ So to run on an example script provided from the `main` directory, use 
+ ```
+     mkdir -p ./output/static_analysis/ 
+     java -DoutputDir=./output/static_analysis/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null
+  ```
+ Note that **we use git lfs to store the jars**.   Please use `git lfs pull` to pull the jars - their sizes should be above 50M - (Update: git lfs seems to be currenly running out of quota limits.  Will be transitioning to a different system shortly.)
 
 ## Collecting documentation (docstrings) for your scripts
  
  
  3. Run `python generate_top_modules.py <DIR containing all analysis output>/*.json <OUTPUT_TOP_MODULES_PATH> <number for top K modules by count>. ` 
  
-     **Example**: to run on the example script provided, run in the src dir: 
+     **Example**: to run on the example script provided, run in the `src` dir: 
       
-         python generate_top_modules.py '/tmp/g4c/*.json.bz2' top_modes.json 1
+         python generate_top_modules.py '../output/static_analysis/*.json.bz2' ../output/top_modules.json 1
  
- 4. From the scripts dir, run: 
+ 4. From the `scripts` dir, run: 
  
      `sh inspect_modules_for_docstrings.sh <OUTPUT_TOP_MODULES_PATH> <OUTPUT_TO_WRITE_EXTRACTED_DOCSTRINGS> <ANACONDA_HOME>`
  
      **Example**: 
- 
-         sh inspect_modules_for_docstrings.sh ../src/top_modes.json /tmp/modules_out/ ~/anaconda3/
+ ```
+     mkdir ../output/modules_out/    
+     sh inspect_modules_for_docstrings.sh ../output/top_modules.json ../output/modules_out/ ~/anaconda3/
+ ```
  
      You should see each package being inspected, and some output that looks like this: `Number of documents stored in index:docstrings_index
 {'count': <xxx>, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}}`
@@ -101,8 +103,14 @@ From the jars directory:
  
 ## Creating docstrings graph
 Using the output of the above step, run the following from inside the `src` directory 
- `python create_docstrings_graph --docstring_dir <directory where docstrings from above directory are saved> --class_map_file ../resources/classes.map --out_dir <where nq files will be saved`
  
+     python create_docstrings_graph.py --docstring_dir <directory where docstrings from above directory are saved> --class_map_file ../resources/classes.map --out_dir <where nq files will be saved
+     
+     
+  **Example**: 
+  
+         mkdir ../output/docstrings_graph/    
+         python create_docstrings_graph --docstring_dir ../output/modules_out/ --class_map_file ../resources/classes.map --out_dir ../output/docstrings_graph/
  
  ## Creating Forums graph
 To create a forum graph, first download the corresponding data dump from StackOverflow or StackExchange from https://archive.org/details/stackexchange. You then need to extract the zipped file into a folder <stackoverflow_in_dir> and run the following: 
