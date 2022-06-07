@@ -124,6 +124,7 @@ As an example, to create a graph from https://ai.stackexchange.com/ and link it 
          wget https://archive.org/download/stackexchange/ai.stackexchange.com.7z
          7za x ai.stackexchange.com.7z
          cd ../../src 
+         mkdir ../output/ai_stackexchange_graph/
          python -u create_forum_graph.py --stackoverflow_in_dir ../output/ai_stackexchange_dump/ --docstring_dir ../output/modules_out/ --graph_output_dir ../output/ai_stackexchange_graph/ --pickled_files_out ../output/ai_stackexchange_dump/ --index_name ai_stackexchange --graph_main_prefix  ai_stackexchange
 
 Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_stackexchange, stats_stackexchange, and stackoverflow3. 
