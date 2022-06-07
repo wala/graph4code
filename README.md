@@ -115,12 +115,16 @@ Using the output of the above step, run the following from inside the `src` dire
  ## Creating Forums graph
 To create a forum graph, first download the corresponding data dump from StackOverflow or StackExchange from https://archive.org/details/stackexchange. You then need to extract the zipped file into a folder <stackoverflow_in_dir> and run the following: 
 
-following:
 `python -u create_forum_graph.py --stackoverflow_in_dir <stackoverflow_in_dir> --docstring_dir <directory where docstrings from above directory are saved> --graph_output_dir <where graph nq files will be saved> --pickled_files_out <intermediate directory for saving stackoverflow dumps> --index_name <elastic search index name> --graph_main_prefix <prefix used for graph generation>`
 
 As an example, to create a graph from https://ai.stackexchange.com/ and link it to docstrings and code analysis graphs, one can run the following: 
 
-`python -u create_forum_graph.py --stackoverflow_in_dir ./data/stackexchange_data_dump/ai_stackexchange/ --docstring_dir ./data/docstrings_data/ --graph_output_dir ./data/stackexchange_data_dump/nq/ --pickled_files_out ./data/stackexchange_data_dump/ai_stackexchange/ --index_name ai_stackexchange --graph_main_prefix  ai_stackexchange`
+         mkdir output/ai_stackexchange_dump/
+         cd output/ai_stackexchange_dump/
+         wget https://archive.org/download/stackexchange/ai.stackexchange.com.7z
+         7za x ai.stackexchange.com.7z
+         cd ../../src 
+         python -u create_forum_graph.py --stackoverflow_in_dir ../output/ai_stackexchange_dump/ --docstring_dir ../output/modules_out/ --graph_output_dir ../output/ai_stackexchange_graph/ --pickled_files_out ../output/ai_stackexchange_dump/ --index_name ai_stackexchange --graph_main_prefix  ai_stackexchange
 
 Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_stackexchange, stats_stackexchange, and stackoverflow3. 
 
