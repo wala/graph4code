@@ -156,6 +156,12 @@ Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_
       booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2022)},
       year={2022}
 }
+@inproceedings{helali2022,
+      title={A Scalable AutoML Approach Based on Graph Neural Networks}, 
+      author={Mossad Helali and Essam Mansour and Ibrahim Abdelaziz and Julian Dolby and Kavitha Srinivas},
+      booktitle={Proceedings of the Very Large Data bases (VLDB 2022)},
+      year={2022}
+}
 ```
 
   
