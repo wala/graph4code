@@ -2,13 +2,13 @@
 Knowledge graphs have been proven extremely useful in powering diverse applications in semantic search and natural language understanding. In this work, we present GraphGen4Code, a toolkit to build code knowledge graphs that can similarly power various applications such as program search, code understanding, bug detection, and code automation. GraphGen4Code uses generic techniques to capture code semantics with the key nodes in the graph representing classes, functions and methods. Edges indicate function usage (e.g., how data flows through function calls, as derived from program analysis of real code), and documentation about functions (e.g., code documentation, usage documentation, or forum discussions such as StackOverflow). Our toolkit uses named graphs in RDF to model graphs per program, or can output graphs as JSON. We show the scalability of the toolkit by applying it to 1.3 million Python files drawn from GitHub, 2,300 Python modules, and 47 million forum posts. This results in an integrated code graph with over 2 billion triples. We make the toolkit to build such graphs as well as the sample extraction of the 2 billion triples graph publicly available to the community for use.
 
 # How is GraphGen4Code different from other frameworks?
-Static analysis in GraphGen4Code is different from other analysis libraries in that it:
+Static analysis in GraphGen4Code is different from other analysis libraries in the following aspects:
  - Does not assume each program is self contained, but in fact uses other libraries.  Calls to each library function is explicitly modeled in the analysis (and data flow is approximated through the call).
  - Follows data and control flow across multiple function calls within the same script.
  - Simulates each function call within the script, even if the script does not explicitly call the functions (i.e., there is no main).
  This sort of analysis is needed to handle real Python code - most are full of library calls, most have different functions through which data flow and control flow occurs.  Many of the real world applications we look at that have been built on top of GraphGen4Code require for instance starting points for analysis that are library calls (e.g., start with pandas.read_csv), and proceeds till some end condition is needed (e.g., end with a fit call on any of the estimators in a data science pipeline).  
  
- Indeed, this is a better approximation of program graphs than what is currently produced by frameworks such as [python_graphs](https://github.com/google-research/python-graphs/blob/main/python_graphs/program_graph.py).  Using python_graphs as an example, the framework assumes:
+ Indeed, this is a better approximation of program graphs than what is currently produced by frameworks such as [python_graphs](https://github.com/google-research/python-graphs/blob/main/python_graphs/program_graph.py).  python_graphs as an example assumes:
   - Every function call occurs within the scope of the program.  No library calls appear in the program graph.
   - The analysis is strictly NOT interprocedural.
   - Only calls within a script to a function are modeled.
