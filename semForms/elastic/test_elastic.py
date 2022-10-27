@@ -10,3 +10,12 @@ client = Elasticsearch(
 
 # Successful response!
 print(client.info())
+print(client.indices.get_alias().keys())
+
+match_all = {
+    "query": {
+        "match_all": {}
+    }
+}
+
+print(client.search(index="expressions", body=match_all))
