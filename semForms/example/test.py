@@ -1,8 +1,16 @@
-import pandas
-housing = pandas.read_csv("houses.csv")
-housing["rooms_per_household"] = housing["total_rooms"]/housing["households"]
-housing["bedrooms_per_room"] = housing["total_bedrooms"]/housing["total_rooms"]
-housing["population_per_household"] = housing["population"]/housing["households"]
-corr_matrix = housing.corr()
-corr_matrix["median_house_value"].sort_values(ascending=False)
+import pandas as pd
+
+def read_df():
+  return pd.read_csv('houses.csv')
+
+def manipulate_df(houses_df):
+    houses_df['beds_to_total'] = houses_df['total_bedrooms'] / houses_df['total_rooms']
+    houses_df['popdf'] = houses_df['population' ] / houses_df['households']
+
+def main():
+    h_df = read_df()
+    manipulate_df(h_df)
+
+main()
+
 
