@@ -19,3 +19,6 @@ SemForms has three components:
 2. In the semforms directory, `bash run_expression_server.sh`
 
 ## Installation of the search for code component (Runs the search for code service in a docker container)
+
+## An illustrative example
+1.  For a notebook that shows the different components of SemForms look at [this notebook](https://github.com/wala/graph4code/blob/master/semForms/ExampleExpressions.ipynb)
