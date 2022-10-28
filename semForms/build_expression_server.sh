@@ -1,3 +1,3 @@
 #! /bin/bash
 docker rm -f g4c
-docker build --tag java-graph4code .
+docker build --no-cache --tag java-graph4code .
