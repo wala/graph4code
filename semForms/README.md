@@ -16,7 +16,8 @@ SemForms has three components:
 
 ## Installation of the analysis component (Runs the analysis/expression extraction service in a docker container)
 1. `export ELASTIC_PASSWORD=<PASSWORD>`
-2. In the semforms directory, `bash run_expression_server.sh`
+2. Do this only once to create the Docker image that houses the analysis/extraction code: `bash build_expression_server.sh`
+3. In the semforms directory, `bash run_expression_server.sh`
 
 ## Installation of the search for code component (Runs the search for code service in a docker container)
 
