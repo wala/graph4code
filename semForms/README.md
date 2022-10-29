@@ -23,3 +23,4 @@ SemForms has three components:
 
 ## An illustrative example
 1.  For a notebook that shows the different components of SemForms look at [this notebook](https://github.com/wala/graph4code/blob/master/semForms/ExampleExpressions.ipynb)
+2.  For a notebook that shows the analysis artifacts behind expression instruction look at [this notebook] (https://github.com/wala/graph4code/blob/master/semForms/ExampleAnalysis.ipynb)
