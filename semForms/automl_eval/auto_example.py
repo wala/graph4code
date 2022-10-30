@@ -32,7 +32,7 @@ SEED=33
 
 
 # Import for an AutoML solution (if desired)
-from automl import automl_estimator
+# from automl import automl_estimator
 # -------------------------------------------------------------------
 
 
@@ -199,7 +199,7 @@ def analyze(in_df, how, name, target, model_type, SEED, non_correlated_expr_colu
             pipeline = Pipeline(transforms)
         else:
             pipeline = Pipeline([ma])
-
+        ret['expressions'] = non_correlated_expr_columns
         ret['correlation_with_target'] = correlation_with_target
         if not compute_corr_only:
             pipeline.fit(X_train, Y_train)
@@ -235,8 +235,8 @@ def analyze(in_df, how, name, target, model_type, SEED, non_correlated_expr_colu
         ret['error'] = msg
     return ret
 
-def write_expressions_file():
-    with open('expressions_with_good_corr.json', 'w') as f:
+def write_expressions_file(output_dir):
+    with open(output_dir + '/expressions_with_good_corr.json', 'w') as f:
         json.dump(expressions_with_good_corr, f, indent=4)
 
 
