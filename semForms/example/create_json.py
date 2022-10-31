@@ -8,6 +8,6 @@ with open(sys.argv[1]) as f:
     data['repo'] = sys.argv[1]
     data['source'] = lines
     data['indexName'] = 'expressions'
-    with open('test.json', 'w') as out:
+    with open(sys.argv[2], 'w') as out:
         json.dump(data, out)
     
