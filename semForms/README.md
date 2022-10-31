@@ -16,11 +16,13 @@ SemForms has three components:
 
 ## Installation of the analysis component (Runs the analysis/expression extraction service in a docker container)
 1. `export ELASTIC_PASSWORD=<PASSWORD>`
-2. Do this only once to create the Docker image that houses the analysis/extraction code: `bash build_expression_server.sh`
-3. In the semforms directory, `bash run_expression_server.sh`
+2. `cd github`
+3. Do this only once to create the Docker image that houses the analysis/extraction code: `build_gh_server.sh`
+3. Run the container to create a github API search server `run_gh_server.sh`
 
 ## Installation of the search for code component (Runs the search for code service in a docker container)
-
+1. `export GH_TOKEN=<github access token>` to access GitHub API
+2. Do this only once to create the Docker image that houses the github search server code: 
 ## An illustrative example
 1.  For a notebook that shows the different components of SemForms look at [this notebook](https://github.com/wala/graph4code/blob/master/semForms/ExampleExpressions.ipynb)
 2.  For a notebook that shows the analysis artifacts behind expression extractions look at [here](https://github.com/wala/graph4code/blob/master/semForms/ExampleAnalysis.ipynb)
