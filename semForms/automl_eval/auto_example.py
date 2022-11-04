@@ -67,26 +67,28 @@ def handle_transforms(how, noncorr_expr_columns, Y, X, name):
 
     for exp in l:
         try:
+            print('------------------------------------------------------')
             print('Dataset columns (X):',  X.columns.tolist())
             print('Dataset columns (Y):',  Y.columns.tolist())
+            
             expr_code = exp['code']
             if target in expr_code:
                 print('expression code is about target')
                 continue
 
-            new_exp_val = FunctionTransformer(func=wrapper_func(exp['expr'], expr_code)).fit(X).transform(X)
+            new_exp_val = FunctionTransformer(func=wrapper_func(exp['expr_name'], expr_code)).fit(X).transform(X)
             ret_df = prune_correlated(new_exp_val)
-            if exp['expr'] not in ret_df.columns:
+            if exp['expr_name'] not in ret_df.columns:
                 continue
 
-            corrtest = pearsonr(new_exp_val[exp['expr']], Y[Y.columns.values.tolist()[0]])
+            corrtest = pearsonr(new_exp_val[exp['expr_name']], Y[Y.columns.values.tolist()[0]])
             print('correlation_with_target: ', corrtest)
             print(f'Found corr = {corrtest[0]} with significance {corrtest[1]} ')
             if 'nan' in str(corrtest).lower():
                 print('Bad correlation for ', expr_code,', Skip!!')
                 continue
 
-            correlation_with_target[exp['expr']] = corrtest
+            correlation_with_target[exp['expr_name']] = corrtest
 
             # capture if correlation is less than some significance level
             if corrtest[1] < .05:
@@ -99,7 +101,7 @@ def handle_transforms(how, noncorr_expr_columns, Y, X, name):
                         'significance': corrtest[1]
                     }
                 )
-            transforms.append((exp['expr'], FunctionTransformer(func=wrapper_func(exp['expr'], expr_code))))
+            transforms.append((exp['expr_name'], FunctionTransformer(func=wrapper_func(exp['expr_name'], expr_code))))
             # TODO: what about expr codes that don't work
             # TODO: filter by the ones with good correlation?
         except:
@@ -117,7 +119,7 @@ def handle_transforms(how, noncorr_expr_columns, Y, X, name):
         
         drop_plain = FunctionTransformer(func=dropf)
         transforms.append(('drop plain', drop_plain))
-
+    
     return transforms, correlation_with_target
 
 # Use any AutoML approach - ideally one that can deal with issues in the input data through preprocessing
