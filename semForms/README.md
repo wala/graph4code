@@ -17,10 +17,8 @@ SemForms has three components:
 ## Installation of the analysis component (Runs the analysis/expression extraction service in a docker container)
 1. `export ELASTIC_PASSWORD=<PASSWORD>`
 2. `cd github`
-3. Do this only once to create the Docker image that houses the analysis/extraction code: 
-`build_gh_server.sh`
-3. Run the container to create a github API search server 
-`run_gh_server.sh`
+3. `build_gh_server.sh`
+4. `run_gh_server.sh`
 
 ## Installation of the search for code component (Runs the search for code service in a docker container)
 1. `export GH_TOKEN=<github access token>` to access GitHub API
