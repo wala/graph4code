@@ -40,7 +40,10 @@ def wrapper_func(expname, code):
     f = eval(code)
 
     def df_func(df):
-        res = f(df)
+        try:
+            res = f(df)
+        except:
+            pass
         if isinstance(res, pandas.Series):
             df[expname] = res
         return df
