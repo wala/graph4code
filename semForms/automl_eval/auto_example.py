@@ -37,15 +37,18 @@ SEED=33
 
 
 def wrapper_func(expname, code):
-    f = eval(code)
-
+    try:
+        f = eval(code)
+    except:
+        pass
     def df_func(df):
         try:
             res = f(df)
+            if isinstance(res, pandas.Series):
+                df[expname] = res
         except:
             pass
-        if isinstance(res, pandas.Series):
-            df[expname] = res
+
         return df
 
     return df_func
