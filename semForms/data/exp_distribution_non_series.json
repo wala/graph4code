@@ -1,0 +1,962 @@
+{
+    "Arithmatic Expressions": [
+        {
+            "expr": "expr_4",
+            "code": "lambda df: (3 * df[ 'normalized-losses' ].std())",
+            "dataset": "/data/openml_rawds/autos.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: (\"There are %s patients in this dataset.\" % df[ 'case_number' ].max())",
+            "dataset": "/data/openml_rawds/pbcseq.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: (df[ 'f5' ].mean() / df[ 'f5' ].std())",
+            "dataset": "/data/openml_rawds/pol.csv"
+        },
+        {
+            "expr": "expr_11",
+            "code": "lambda df: (df[ 'total_cases' ].max() / 200)",
+            "dataset": "/data/kaggle-11k/data/csvs/italy-covid19.zip_covid19-ita-regions.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: (\" to \" + \"The dataset covers races from \" + df[ 'race_date' ].max())",
+            "dataset": "/data/kaggle-11k/data/csvs/formula-e-championship.zip_formula_e_race_results.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: (\" to \" + df[ 'race_date' ].max() + df[ 'race_date' ].min())",
+            "dataset": "/data/kaggle-11k/data/csvs/formula-e-championship.zip_formula_e_race_results.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: (\"The dataset covers races from \" + df[ 'race_date' ].max() + df[ 'race_date' ].min())",
+            "dataset": "/data/kaggle-11k/data/csvs/formula-e-championship.zip_formula_e_race_results.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: (100 * max(df[ 'event_name' ]))",
+            "dataset": "/data/kaggle-11k/data/csvs/csgo-professional-matches.zip_players.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: (df[ 'sp_attack' ].sum() / 3)",
+            "dataset": "/data/kaggle-11k/data/csvs/cleanedpokemon.zip_pokemon_clean.csv"
+        }
+    ],
+    "Boolean Expressions": [],
+    "isin": [],
+    "value_counts": [],
+    "head": [
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'class2' ].value_counts().to_frame().head(10)",
+            "dataset": "/data/openml_rawds/yeast_ml8.csv"
+        }
+    ],
+    "cut": [],
+    "astype": [],
+    "logical_and": [],
+    "sample": [],
+    "mean": [
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'chol' ].mean()",
+            "dataset": "/data/openml_rawds/heart-c.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'bore' ].mean()",
+            "dataset": "/data/openml_rawds/anneal.csv"
+        },
+        {
+            "expr": "expr_17",
+            "code": "lambda df: df[ 'peak-rpm' ].mean()",
+            "dataset": "/data/openml_rawds/BNG(autoPrice).csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: df[ 'capital_run_length_average' ].mean()",
+            "dataset": "/data/openml_rawds/spambase.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'albumin' ].mean()",
+            "dataset": "/data/openml_rawds/pbcseq.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: df[ 'sgot' ].mean()",
+            "dataset": "/data/openml_rawds/liver-disorders.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: df[ 'hot' ].mean()",
+            "dataset": "/data/openml_rawds/KDDCup99_full.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'total_bedrooms' ].mean()",
+            "dataset": "/data/openml_rawds/houses.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'radius_mean' ].mean()",
+            "dataset": "/data/openml_rawds/wisconsin.csv"
+        },
+        {
+            "expr": "expr_11",
+            "code": "lambda df: df[ 'area_mean' ].mean()",
+            "dataset": "/data/openml_rawds/wisconsin.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: df[ 'f5' ].mean()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: df[ 'len' ].mean()",
+            "dataset": "/data/openml_rawds/anneal.csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'overcrowding' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/covcsd-covid19-countries-statistical-dataset.zip_USA_COVID_19.csv"
+        },
+        {
+            "expr": "expr_19",
+            "code": "lambda df: df[ 'adr' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/csgo-professional-matches.zip_players.csv"
+        },
+        {
+            "expr": "expr_19",
+            "code": "lambda df: df[ 'average_rating' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/top2k-books-with-descriptions.zip_top2k_book_descriptions.csv"
+        },
+        {
+            "expr": "expr_17",
+            "code": "lambda df: df[ 'new_tests_smoothed_per_thousand' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/world-wide-covid-dataset.zip_Worldwide_Covid_Data.csv"
+        },
+        {
+            "expr": "expr_31",
+            "code": "lambda df: df[ 'gdp_per_capita' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/world-wide-covid-dataset.zip_Worldwide_Covid_Data.csv"
+        },
+        {
+            "expr": "expr_47",
+            "code": "lambda df: df[ 'release_clause_eur' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        },
+        {
+            "expr": "expr_51",
+            "code": "lambda df: df[ 'physic' ].mean()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        }
+    ],
+    "map": [],
+    "replace": [],
+    "get_dummies": [
+        {
+            "expr": "expr_23",
+            "code": "lambda df: pandas.get_dummies(df[ 'restecg' ])",
+            "dataset": "/data/openml_rawds/heart-c.csv"
+        },
+        {
+            "expr": "expr_32",
+            "code": "lambda df: pandas.get_dummies(df[ 'thal' ], prefix=\"thal\")",
+            "dataset": "/data/openml_rawds/heart-c.csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: pandas.get_dummies(df[ 'aspiration' ])",
+            "dataset": "/data/openml_rawds/BNG(autos).csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: pandas.get_dummies(df[ 'purpose' ], drop_first=True)",
+            "dataset": "/data/openml_rawds/BNG(credit-g,nominal,1000000).csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: pandas.get_dummies(df[ 'resting_electrocardiographic_results' ], prefix=\"resting_electrocardiographic_results\")",
+            "dataset": "/data/openml_rawds/BNG(heart-statlog).csv"
+        },
+        {
+            "expr": "expr_15",
+            "code": "lambda df: pandas.get_dummies(df[ 'number_of_major_vessels' ], prefix=\"number_of_major_vessels\")",
+            "dataset": "/data/openml_rawds/BNG(heart-statlog).csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: pandas.get_dummies(df[ 'treat' ], prefix=\"treat\")",
+            "dataset": "/data/openml_rawds/sleuth_case1102.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: pandas.get_dummies(df[ 'cp' ], drop_first=True)",
+            "dataset": "/data/openml_rawds/heart-c.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: pandas.get_dummies(df[ 'offer' ], drop_first=True)",
+            "dataset": "/data/kaggle-11k/data/csvs/google-search-results-pages-used-cars-us.zip_cars_forsale_price_us_uk.csv"
+        }
+    ],
+    "countplot": [],
+    "log1p": [],
+    "DataFrame": [
+        {
+            "expr": "expr_29",
+            "code": "lambda df: pandas.DataFrame(df[ 'slope' ].value_counts().sort_index())",
+            "dataset": "/data/openml_rawds/heart-c.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: pandas.DataFrame(df[ 'median_income' ])",
+            "dataset": "/data/openml_rawds/houses.csv"
+        },
+        {
+            "expr": "expr_23",
+            "code": "lambda df: pandas.DataFrame(df[ 'f13' ])",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_24",
+            "code": "lambda df: pandas.DataFrame(df[ 'f14' ])",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_29",
+            "code": "lambda df: pandas.DataFrame(df[ 'f25' ])",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: pandas.DataFrame(df[ 'cap-shape' ].value_counts())",
+            "dataset": "/data/openml_rawds/mushroom.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: pandas.DataFrame(df[ 'cap-color' ].value_counts())",
+            "dataset": "/data/openml_rawds/mushroom.csv"
+        },
+        {
+            "expr": "expr_5",
+            "code": "lambda df: pandas.DataFrame(df[ 'wt' ])",
+            "dataset": "/data/openml_rawds/sleuth_ex2016.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: pandas.DataFrame((2 + df[ 'wt' ]))",
+            "dataset": "/data/openml_rawds/sleuth_ex2016.csv"
+        },
+        {
+            "expr": "expr_28",
+            "code": "lambda df: pandas.DataFrame(df[ 'hashtags' ].value_counts())",
+            "dataset": "/data/kaggle-11k/data/csvs/covid19-vaccine-tweets.zip_file.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: pandas.DataFrame(df[ 'weight_class' ].value_counts())",
+            "dataset": "/data/kaggle-11k/data/csvs/ufcdata.zip_data.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: pandas.DataFrame(df[ 'maker' ].value_counts().to_dict(), index={\"0\":\"courses\"})",
+            "dataset": "/data/kaggle-11k/data/csvs/personal-cars-classifieds.zip_all_anonymized_2015_11_2017_03.csv"
+        }
+    ],
+    "as_matrix": [],
+    "drop": [],
+    "abs": [],
+    "std": [
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'normalized-losses' ].std()",
+            "dataset": "/data/openml_rawds/BNG(autoPrice).csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'f5' ].std()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        }
+    ],
+    "fillna": [],
+    "to_frame": [
+        {
+            "expr": "expr_11",
+            "code": "lambda df: df[ 'drive-wheels' ].value_counts().to_frame()",
+            "dataset": "/data/openml_rawds/BNG(autos).csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: df[ 'engine-location' ].value_counts().to_frame()",
+            "dataset": "/data/openml_rawds/BNG(autos).csv"
+        },
+        {
+            "expr": "expr_5",
+            "code": "lambda df: df[ 'pregnant' ].value_counts().to_frame()",
+            "dataset": "/data/openml_rawds/BNG(hypothyroid,nominal,1000000).csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'median_house_value' ].sort_values(ascending=False).head(10).to_frame()",
+            "dataset": "/data/openml_rawds/houses.csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'median_income' ].sort_values(ascending=False).head(10).to_frame()",
+            "dataset": "/data/openml_rawds/houses.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'itching' ].value_counts().to_frame()",
+            "dataset": "/data/openml_rawds/BNG(dermatology,nominal,1000000).csv"
+        }
+    ],
+    "pearsonr": [],
+    "apply": [],
+    "to_dict": [
+        {
+            "expr": "expr_18",
+            "code": "lambda df: df[ 'fuel-system' ].value_counts().to_dict()",
+            "dataset": "/data/openml_rawds/BNG(autos).csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'flag' ].value_counts().to_dict()",
+            "dataset": "/data/openml_rawds/KDDCup99_full.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'maker' ].value_counts().to_dict()",
+            "dataset": "/data/kaggle-11k/data/csvs/personal-cars-classifieds.zip_all_anonymized_2015_11_2017_03.csv"
+        }
+    ],
+    "copy": [],
+    "isnull": [],
+    "median": [
+        {
+            "expr": "expr_15",
+            "code": "lambda df: df[ 'horsepower' ].median()",
+            "dataset": "/data/openml_rawds/BNG(autoPrice).csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'education' ].median()",
+            "dataset": "/data/openml_rawds/BNG(adult).csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'serum_cholestoral' ].median()",
+            "dataset": "/data/openml_rawds/BNG(heart-statlog).csv"
+        },
+        {
+            "expr": "expr_16",
+            "code": "lambda df: df[ 'total_bedrooms' ].median()",
+            "dataset": "/data/openml_rawds/houses.csv"
+        },
+        {
+            "expr": "expr_11",
+            "code": "lambda df: df[ 'f5' ].median()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_20",
+            "code": "lambda df: df[ 'total_points' ].median()",
+            "dataset": "/data/kaggle-11k/data/csvs/complete-pokemon-dataset-updated-090420.zip_pokedex_(Update_05.20).csv"
+        },
+        {
+            "expr": "expr_14",
+            "code": "lambda df: df[ 'percentage_male' ].median()",
+            "dataset": "/data/kaggle-11k/data/csvs/diverse-algorithm-analysis-dataset-daad.zip_Pokemon_categorical.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'bedrooms' ].median()",
+            "dataset": "/data/kaggle-11k/data/csvs/airbnb-dataset-of-barcelona-city.zip_barca.csv"
+        }
+    ],
+    "array": [],
+    "to_datetime": [],
+    "skew": [
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'respiratory_rate' ].skew()",
+            "dataset": "/data/openml_rawds/colic.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: df[ 'total_protein' ].skew()",
+            "dataset": "/data/openml_rawds/colic.csv"
+        }
+    ],
+    "null": [],
+    "to_numeric": [],
+    "reset_index": [
+        {
+            "expr": "expr_4",
+            "code": "lambda df: pandas.DataFrame(df[ 'winner' ].value_counts()).reset_index()",
+            "dataset": "/data/kaggle-11k/data/csvs/us-house-cook-ratings-election-results-20022018.zip_2002-2018_house_election_ratings_results.csv"
+        },
+        {
+            "expr": "expr_27",
+            "code": "lambda df: pandas.DataFrame(df[ 'hashtags' ].value_counts()).reset_index()",
+            "dataset": "/data/kaggle-11k/data/csvs/covid19-vaccine-tweets.zip_file.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'armed' ].value_counts().reset_index()",
+            "dataset": "/data/kaggle-11k/data/csvs/police-deadly-force-usage-us.zip_fatal-police-shootings-data.csv"
+        },
+        {
+            "expr": "expr_16",
+            "code": "lambda df: df[ 'language_code' ].agg({\"0\":\"unique\"}).reset_index()",
+            "dataset": "/data/kaggle-11k/data/csvs/top2k-books-with-descriptions.zip_top2k_book_descriptions.csv"
+        }
+    ],
+    "sum": [
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'fnlwgt' ].sum()",
+            "dataset": "/data/openml_rawds/BNG(adult).csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'capital_run_length_total' ].sum()",
+            "dataset": "/data/openml_rawds/spambase.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'population' ].sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/covcsd-covid19-countries-statistical-dataset.zip_USA_COVID_19.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'population' ].sum().sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/covcsd-covid19-countries-statistical-dataset.zip_USA_COVID_19.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'f3' ].isnull().sum()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'f5' ].sort_values(ascending=False).head(7).sum()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_20",
+            "code": "lambda df: df[ 'stalk-root' ].isnull().sum()",
+            "dataset": "/data/openml_rawds/mushroom.csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'new_confirmed_cases' ].sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/italy-covid19.zip_covid19-ita-regions.csv"
+        },
+        {
+            "expr": "expr_18",
+            "code": "lambda df: df[ 'sp_defense' ].sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/the-complete-pokemon-dataset.zip_Pokemon_data.csv"
+        },
+        {
+            "expr": "expr_20",
+            "code": "lambda df: df[ 'ratings_count' ].sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/top2k-books-with-descriptions.zip_top2k_book_descriptions.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: df[ 'overall_satisfaction' ].sum()",
+            "dataset": "/data/kaggle-11k/data/csvs/airbnb-dataset-of-barcelona-city.zip_barca.csv"
+        }
+    ],
+    "log": [],
+    "plot": [],
+    "describe": [],
+    "crosstab": [],
+    "unique": [
+        {
+            "expr": "expr_1",
+            "code": "lambda df: df[ 'housing' ].unique()",
+            "dataset": "/data/openml_rawds/nursery.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'speaker' ].unique()",
+            "dataset": "/data/openml_rawds/BNG(JapaneseVowels).csv"
+        },
+        {
+            "expr": "expr_14",
+            "code": "lambda df: df[ 'legs' ].unique()",
+            "dataset": "/data/openml_rawds/BNG(zoo).csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'molecule_name' ].unique()",
+            "dataset": "/data/openml_rawds/musk.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: pandas.unique(df[ 'disease_type' ])",
+            "dataset": "/data/openml_rawds/kidney.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: df[ 'ae' ].unique()",
+            "dataset": "/data/openml_rawds/sleuth_ex2016.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'title_id' ].unique()",
+            "dataset": "/data/openml_rawds/Click_prediction_small.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'user_id' ].unique()",
+            "dataset": "/data/kaggle-11k/data/csvs/us-election-2020-tweets.zip_hashtag_joebiden.csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'player_url' ].unique()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        }
+    ],
+    "sort_values": [],
+    "to_numpy": [
+        {
+            "expr": "expr_2",
+            "code": "lambda df: df[ 'd' ].to_numpy()",
+            "dataset": "/data/openml_rawds/jm1.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'symboling' ].to_numpy()",
+            "dataset": "/data/openml_rawds/BNG(autoPrice).csv"
+        },
+        {
+            "expr": "expr_5",
+            "code": "lambda df: df[ 'p4' ].to_numpy()",
+            "dataset": "/data/openml_rawds/molecular-biology_promoters.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'a1' ].to_numpy()",
+            "dataset": "/data/openml_rawds/pwLinear.csv"
+        },
+        {
+            "expr": "expr_11",
+            "code": "lambda df: df[ 'distance' ].to_numpy()",
+            "dataset": "/data/kaggle-11k/data/csvs/dating-app-lovoo-user-profiles.zip_lovoo_v3_users_api-results.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'public' ].to_numpy()",
+            "dataset": "/data/openml_rawds/sleuth_case1201.csv"
+        }
+    ],
+    "where": [],
+    "sqrt": [],
+    "quantile": [
+        {
+            "expr": "expr_9",
+            "code": "lambda df: df[ 'mpg' ].quantile(0.75)",
+            "dataset": "/data/openml_rawds/cars.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'mpg' ].quantile(0.25)",
+            "dataset": "/data/openml_rawds/cars.csv"
+        }
+    ],
+    "min": [
+        {
+            "expr": "expr_6",
+            "code": "lambda df: df[ 'density' ].min()",
+            "dataset": "/data/openml_rawds/BNG(wine_quality).csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'green' ].min()",
+            "dataset": "/data/openml_rawds/flags.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: df[ 'blue' ].min()",
+            "dataset": "/data/openml_rawds/flags.csv"
+        },
+        {
+            "expr": "expr_50",
+            "code": "lambda df: df[ 'f97' ].min()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'day_from_jan_first' ].min()",
+            "dataset": "/data/kaggle-11k/data/csvs/weather-data-for-covid19-data-analysis.zip_training_data_with_weather_info_week_1.csv"
+        }
+    ],
+    "max": [
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'case_number' ].max()",
+            "dataset": "/data/openml_rawds/pbcseq.csv"
+        },
+        {
+            "expr": "expr_3",
+            "code": "lambda df: df[ 'number_of_days' ].max()",
+            "dataset": "/data/openml_rawds/pbcseq.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: df[ 'r2' ].max()",
+            "dataset": "/data/openml_rawds/CovPokElec.csv"
+        },
+        {
+            "expr": "expr_14",
+            "code": "lambda df: df[ 'smoothness_mean' ].max()",
+            "dataset": "/data/openml_rawds/wisconsin.csv"
+        },
+        {
+            "expr": "expr_7",
+            "code": "lambda df: df[ 'density' ].max()",
+            "dataset": "/data/openml_rawds/BNG(wine_quality).csv"
+        },
+        {
+            "expr": "expr_10",
+            "code": "lambda df: df[ 'blue' ].max()",
+            "dataset": "/data/openml_rawds/flags.csv"
+        },
+        {
+            "expr": "expr_49",
+            "code": "lambda df: df[ 'f97' ].max()",
+            "dataset": "/data/openml_rawds/isolet.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: df[ 'total_cases' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/world-wide-covid-dataset.zip_Worldwide_Covid_Data.csv"
+        },
+        {
+            "expr": "expr_14",
+            "code": "lambda df: df[ 'city_id' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/restaurant-recommendation-challenge.zip_train_full.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'cycle' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/campaign-contributions-19902016.zip_individual_contributions.csv"
+        },
+        {
+            "expr": "expr_13",
+            "code": "lambda df: df[ 'percentage_male' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/diverse-algorithm-analysis-dataset-daad.zip_Pokemon_categorical.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: df[ 'month_number' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/indian-card-payment-data-set.zip_rbi_payment_data_as_on_aug_2019.csv"
+        },
+        {
+            "expr": "expr_46",
+            "code": "lambda df: df[ 'release_clause_eur' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        },
+        {
+            "expr": "expr_54",
+            "code": "lambda df: df[ 'movement_reactions' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        },
+        {
+            "expr": "expr_76",
+            "code": "lambda df: df[ 'lwb' ].max()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        }
+    ],
+    "concat": [],
+    "minmax_scaling": [],
+    "rename": [],
+    "sort_index": [],
+    "rstrip": [],
+    "lstrip": [],
+    "strip": [],
+    "nunique": [
+        {
+            "expr": "expr_5",
+            "code": "lambda df: df[ 'speaker' ].nunique()",
+            "dataset": "/data/openml_rawds/BNG(JapaneseVowels).csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'work_id' ].nunique()",
+            "dataset": "/data/kaggle-11k/data/csvs/top2k-books-with-descriptions.zip_top2k_book_descriptions.csv"
+        },
+        {
+            "expr": "expr_14",
+            "code": "lambda df: df[ 'abilities_number' ].nunique()",
+            "dataset": "/data/kaggle-11k/data/csvs/complete-pokemon-dataset-updated-090420.zip_pokedex_(Update_05.20).csv"
+        }
+    ],
+    "isna": [],
+    "fit": [],
+    "corr": [
+        {
+            "expr": "expr_11",
+            "code": "lambda df: df[ 'dst_host_srv_serror_rate' ].corr(df[ 'srv_serror_rate' ])",
+            "dataset": "/data/openml_rawds/KDDCup99_full.csv"
+        }
+    ],
+    "unstack": [],
+    "choice": [],
+    "tolist": [
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'skewness' ].tolist()",
+            "dataset": "/data/openml_rawds/meta.csv"
+        },
+        {
+            "expr": "expr_44",
+            "code": "lambda df: df[ 'messages' ].tolist()",
+            "dataset": "/data/kaggle-11k/data/csvs/google-search-results-pages-used-cars-us.zip_cars_forsale_price_us_uk.csv"
+        },
+        {
+            "expr": "expr_25",
+            "code": "lambda df: df[ 'tag_name' ].tolist()",
+            "dataset": "/data/kaggle-11k/data/csvs/top2k-books-with-descriptions.zip_top2k_book_descriptions.csv"
+        },
+        {
+            "expr": "expr_10",
+            "code": "lambda df: df[ 'short_name' ].tolist()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        },
+        {
+            "expr": "expr_57",
+            "code": "lambda df: df[ 'mentality_vision' ].tolist()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        }
+    ],
+    "confusion_matrix": [],
+    "imread": [],
+    "join": [],
+    "mod": [],
+    "sub": [],
+    "reshape": [],
+    "Path": [],
+    "notnull": [],
+    "corrwith": [],
+    "ttest_rel": [],
+    "round": [],
+    "count": [
+        {
+            "expr": "expr_16",
+            "code": "lambda df: df[ 'compactness_se' ].count()",
+            "dataset": "/data/openml_rawds/wisconsin.csv"
+        },
+        {
+            "expr": "expr_8",
+            "code": "lambda df: df[ 'blue' ].count()",
+            "dataset": "/data/openml_rawds/flags.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: df[ 'ad_id' ].count()",
+            "dataset": "/data/openml_rawds/Click_prediction_small.csv"
+        },
+        {
+            "expr": "expr_18",
+            "code": "lambda df: df[ 'user_id' ].count()",
+            "dataset": "/data/kaggle-11k/data/csvs/us-election-2020-tweets.zip_hashtag_joebiden.csv"
+        },
+        {
+            "expr": "expr_9",
+            "code": "lambda df: df[ 'manner_of_death' ].count()",
+            "dataset": "/data/kaggle-11k/data/csvs/police-deadly-force-usage-us.zip_fatal-police-shootings-data.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: df[ 'tweet_id' ].count()",
+            "dataset": "/data/kaggle-11k/data/csvs/us-election-2020-tweets.zip_hashtag_joebiden.csv"
+        },
+        {
+            "expr": "expr_20",
+            "code": "lambda df: df[ 'user_name' ].count()",
+            "dataset": "/data/kaggle-11k/data/csvs/us-election-2020-tweets.zip_hashtag_joebiden.csv"
+        }
+    ],
+    "bincount": [],
+    "sort": [],
+    "to_list": [],
+    "PairGrid": [],
+    "items": [],
+    "log2": [],
+    "bar": [],
+    "factorize": [
+        {
+            "expr": "expr_3",
+            "code": "lambda df: pandas.factorize(df[ 'maint' ])",
+            "dataset": "/data/openml_rawds/car.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: pandas.factorize(df[ 'lug_boot' ])",
+            "dataset": "/data/openml_rawds/car.csv"
+        }
+    ],
+    "duplicated": [],
+    "agg": [],
+    "drop_duplicates": [],
+    "mode": [],
+    "diff": [],
+    "nanmedian": [],
+    "turtle": [],
+    "count_nonzero": [],
+    "vstack": [],
+    "append": [],
+    "flatten": [],
+    "qcut": [],
+    "rint": [],
+    "SARIMAX": [],
+    "boxplot": [],
+    "mark_bar": [],
+    "encode": [],
+    "eq": [],
+    "mul": [],
+    "Counter": [],
+    "expr": [],
+    "dropna": [],
+    "nanmax": [],
+    "nanmin": [],
+    "transpose": [
+        {
+            "expr": "expr_2",
+            "code": "lambda df: pandas.DataFrame(df[ 'maker' ].value_counts().to_dict(), index={\"0\":\"courses\"}).transpose()",
+            "dataset": "/data/kaggle-11k/data/csvs/personal-cars-classifieds.zip_all_anonymized_2015_11_2017_03.csv"
+        }
+    ],
+    "cbrt": [],
+    "reciprocal": [],
+    "fit_transform": [],
+    "isnan": [],
+    "winner_rank_points": [],
+    "loser_rank_points": [],
+    "get_xticklabels": [],
+    "keys": [
+        {
+            "expr": "expr_39",
+            "code": "lambda df: df[ 'preferred_foot' ].value_counts().keys()",
+            "dataset": "/data/kaggle-11k/data/csvs/fifa-21-complete-player-dataset.zip_players_18.csv"
+        }
+    ],
+    "whiten": [],
+    "split": [],
+    "argmax": [],
+    "Transformation Expressions": [
+        {
+            "expr": "expr_8",
+            "code": "lambda df: max(df[ 'mpg' ])",
+            "dataset": "/data/openml_rawds/cars.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: abs(df[ 'mpg' ].median())",
+            "dataset": "/data/openml_rawds/cars.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: set(df[ 'label' ])",
+            "dataset": "/data/openml_rawds/sylva_prior.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: set(df[ 'title_id' ].unique())",
+            "dataset": "/data/openml_rawds/Click_prediction_small.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: dict(df[ 'category' ].value_counts())",
+            "dataset": "/data/kaggle-11k/data/csvs/all-products-available-on-sephora-website.zip_sephora_website_dataset.csv"
+        },
+        {
+            "expr": "expr_6",
+            "code": "lambda df: max(df[ 'event_name' ])",
+            "dataset": "/data/kaggle-11k/data/csvs/csgo-professional-matches.zip_players.csv"
+        }
+    ],
+    "Other Expressions": [
+        {
+            "expr": "expr_4",
+            "code": "lambda df: (df[ 'index' ] [9])",
+            "dataset": "/data/openml_rawds/prnn_crabs.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: (df[ 'name' ] [0])",
+            "dataset": "/data/openml_rawds/cars.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: (df[ 'p1' ] [100])",
+            "dataset": "/data/openml_rawds/molecular-biology_promoters.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: (df[ 'p2' ] [100])",
+            "dataset": "/data/openml_rawds/molecular-biology_promoters.csv"
+        },
+        {
+            "expr": "expr_0",
+            "code": "lambda df: (df[ 'shape' ] [1])",
+            "dataset": "/data/openml_rawds/Stagger3.csv"
+        },
+        {
+            "expr": "expr_1",
+            "code": "lambda df: (df[ 'strip' ] [0])",
+            "dataset": "/data/openml_rawds/grub-damage.csv"
+        },
+        {
+            "expr": "expr_4",
+            "code": "lambda df: (df[ 'itching' ] [1])",
+            "dataset": "/data/openml_rawds/dermatology.csv"
+        },
+        {
+            "expr": "expr_12",
+            "code": "lambda df: (df[ 'text' ] [20])",
+            "dataset": "/data/openml_rawds/flags.csv"
+        },
+        {
+            "expr": "expr_19",
+            "code": "lambda df: (df[ 'stalk-root' ].mode() [0])",
+            "dataset": "/data/openml_rawds/mushroom.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: (df[ 'capacity' ].mode() [0])",
+            "dataset": "/data/kaggle-11k/data/csvs/cinema-ticket.zip_cinemaTicket_Ref.csv"
+        },
+        {
+            "expr": "expr_24",
+            "code": "lambda df: (df[ 'ingredients' ] [0])",
+            "dataset": "/data/kaggle-11k/data/csvs/all-products-available-on-sephora-website.zip_sephora_website_dataset.csv"
+        },
+        {
+            "expr": "expr_2",
+            "code": "lambda df: (df[ 'ethnicity' ] [5005])",
+            "dataset": "/data/kaggle-11k/data/csvs/linkedin-profile-data.zip_LinkedIn Profile Data.csv"
+        },
+        {
+            "expr": "expr_18",
+            "code": "lambda df: (df[ 'tests_units' ].mode() [0])",
+            "dataset": "/data/kaggle-11k/data/csvs/world-wide-covid-dataset.zip_Worldwide_Covid_Data.csv"
+        },
+        {
+            "expr": "expr_10",
+            "code": "lambda df: (df[ 'retweet_count' ].describe() [7])",
+            "dataset": "/data/kaggle-11k/data/csvs/us-election-2020-tweets.zip_hashtag_joebiden.csv"
+        }
+    ]
+}
