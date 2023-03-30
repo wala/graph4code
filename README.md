@@ -92,6 +92,7 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
      mkdir -p ./output/static_analysis/ 
      java -DoutputDir=./output/static_analysis/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null
   ```
+ ./output/static_analysis should have a JSON file and an NQ file for the same information.  Please note that as the project has moved on to different applications, we have focused more on the JSON representation which is up to date.  The NQ is less what we use and test - so it may be out of date.
 
 ## Collecting documentation (docstrings) for your scripts
  
