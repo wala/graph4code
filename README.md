@@ -76,7 +76,8 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
  cd jars
  wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot/CodeBreaker_py3-0.0.1-SNAPSHOT.jar
 ```
-For corresponding source:
+For corresponding sources:
+
 ``
 wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot-sources/CodeBreaker_py3-0.0.1-SNAPSHOT-sources.jar
 ``
