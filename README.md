@@ -74,9 +74,13 @@ We provide analysis for both Python 2 and Python 3.  Python 3 is the supported v
 #### Download code analysis libraries
 ```
  cd jars
- wget https://archive.org/download/graph4codev1/codebreaker2.jar
- wget https://archive.org/download/graph4codev1/codebreaker3.jar
+ wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot/CodeBreaker_py3-0.0.1-SNAPSHOT.jar
 ```
+For corresponding source:
+``
+wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot-sources/CodeBreaker_py3-0.0.1-SNAPSHOT-sources.jar
+``
+
 #### Usage:
  
      java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier> 
