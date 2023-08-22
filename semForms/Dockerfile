@@ -9,4 +9,4 @@ RUN wget https://archive.org/download/graph4codev1/CodeBreaker_py3-0.0.1-SNAPSHO
 
 COPY elastic/http_ca.crt .
 
-CMD ["java", "-cp", "codebreaker3.jar", "com.ibm.wala.codeBreaker.turtleServer.TurtleWrapper"]
+CMD ["java", "-cp", "CodeBreaker_py3-0.0.1-SNAPSHOT.jar", "com.ibm.wala.codeBreaker.turtleServer.TurtleWrapper"]
