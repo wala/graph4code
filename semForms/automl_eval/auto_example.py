@@ -65,6 +65,7 @@ def prune_correlated(df):
     return df.drop(to_drop, axis=1)
 
 def handle_transforms(how, noncorr_expr_columns, Y, X, name):
+    transform_code = []
     transforms = []
     l = noncorr_expr_columns
     assert len(l) > 0
@@ -108,6 +109,7 @@ def handle_transforms(how, noncorr_expr_columns, Y, X, name):
                     }
                 )
             transforms.append((exp['expr_name'], FunctionTransformer(func=wrapper_func(exp['expr_name'], expr_code))))
+            transform_code.append((exp['expr_name'], expr_code, exp['url']))
             # TODO: what about expr codes that don't work
             # TODO: filter by the ones with good correlation?
         except:
@@ -125,8 +127,9 @@ def handle_transforms(how, noncorr_expr_columns, Y, X, name):
         
         drop_plain = FunctionTransformer(func=dropf)
         transforms.append(('drop plain', drop_plain))
+        transform_code.append(('drop plain', dropf))
     
-    return transforms, correlation_with_target
+    return transforms, correlation_with_target, transform_code
 
 # Use any AutoML approach - ideally one that can deal with issues in the input data through preprocessing
 def make_automl(model_type, seed):
