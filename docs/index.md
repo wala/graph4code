@@ -84,11 +84,23 @@ The following shows a code snippet example as well as a _high level overview_ of
 * If you use GraphGen4Code in your research, please cite our work:
 
  ```
-@article{abdelaziz2020codebreaker,
-     title={A Demonstration of CodeBreaker: A Machine Interpretable Knowledge Graph for Code},
-     author={Abdelaziz, Ibrahim and Srinivas, Kavitha and Dolby, Julian and  McCusker, James P},
-     journal={International Semantic Web Conference (ISWC) (Demonstration Track)},
-     year={2020}
+@inproceedings{abdelaziz2023semforms,
+      title={ SemFORMS: Automatic Generation of Semantic Transforms By Mining Data Science Code }, 
+      author={Ibrahim Abdelaziz, Julian Dolby, Udayan Khurana, Horst Samulowitz, Kavitha Srinivas,
+      booktitle={The 32nd International Joint Conference on Artificial Intelligence (IJCAI-23) (demo)},
+      year={2023}
+}
+@inproceedings{helali2022,
+      title={A Scalable AutoML Approach Based on Graph Neural Networks}, 
+      author={Mossad Helali and Essam Mansour and Ibrahim Abdelaziz and Julian Dolby and Kavitha Srinivas},
+      booktitle={Proceedings of the Very Large Data bases (VLDB 2022)},
+      year={2022}
+}
+@inproceedings{abdelaziz2022blanca,
+      title={Can Machines Read Coding Manuals Yet? -- A Benchmark for Building Better Language Models for Code Understanding}, 
+      author={Ibrahim Abdelaziz and Julian Dolby and Jamie McCusker and Kavitha Srinivas},
+      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2022)},
+      year={2022}
 }
 @article{abdelaziz2021graph4code,
      title={A Toolkit for Generating Code Knowledge Graphs},
@@ -96,11 +108,11 @@ The following shows a code snippet example as well as a _high level overview_ of
      journal={The Eleventh International Conference on Knowledge Capture (K-CAP)},
      year={2021}
 }
-@inproceedings{abdelaziz2022blanca,
-      title={Can Machines Read Coding Manuals Yet? -- A Benchmark for Building Better Language Models for Code Understanding}, 
-      author={Ibrahim Abdelaziz and Julian Dolby and Jamie McCusker and Kavitha Srinivas},
-      booktitle={Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2022)},
-      year={2022}
+@article{abdelaziz2020codebreaker,
+     title={A Demonstration of CodeBreaker: A Machine Interpretable Knowledge Graph for Code},
+     author={Abdelaziz, Ibrahim and Srinivas, Kavitha and Dolby, Julian and  McCusker, James P},
+     journal={International Semantic Web Conference (ISWC) (Demonstration Track)},
+     year={2020}
 }
 ```
 
