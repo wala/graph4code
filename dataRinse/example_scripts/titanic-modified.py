@@ -50,4 +50,9 @@ train_df = train_df.drop(['Parch', 'SibSp', 'FamilySize'], axis=1)
 freq_port = train_df['Embarked'].dropna().mode()[0]
 train_df['Embarked'] = train_df['Embarked'].fillna(freq_port)
 train_df['Embarked'] = train_df['Embarked'].map( {'S': 0, 'C': 1, 'Q': 2} ).astype(int)
-
+train_df.loc[ train_df['Age'] <= 16, 'Age'] = 0
+train_df.loc[(train_df['Age'] > 16) & (train_df['Age'] <= 32), 'Age'] = 1
+train_df.loc[(train_df['Age'] > 32) & (train_df['Age'] <= 48), 'Age'] = 2
+train_df.loc[(train_df['Age'] > 48) & (train_df['Age'] <= 64), 'Age'] = 3
+train_df.loc[ train_df['Age'] > 64, 'Age']
+train_df['Age*Class'] = train_df.Age * train_df.Pclass
