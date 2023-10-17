@@ -158,22 +158,11 @@ Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_
 * If you use Graph4CodeGen in your research, please cite our work:
 
 ```
-@article{10.14778/3611540.3611628,
+@inproceedings{abdelaziz2023datarinse,
 author = {Abdelaziz, Ibrahim and Dolby, Julian and Khurana, Udayan and Samulowitz, Horst and Srinivas, Kavitha},
 title = {DataRinse: Semantic Transforms for Data Preparation Based on Code Mining},
 year = {2023},
-issue_date = {August 2023},
-publisher = {VLDB Endowment},
-volume = {16},
-number = {12},
-issn = {2150-8097},
-url = {https://doi.org/10.14778/3611540.3611628},
-doi = {10.14778/3611540.3611628},
-abstract = {Data preparation is a crucial first step to any data analysis problem. This task is largely manual, performed by a person familiar with the data domain. DataRinse is a system designed to extract relevant transforms from large scale static analysis of repositories of code. Our motivation is that in any large enterprise, multiple personas such as data engineers and data scientists work on similar datasets. However, sharing or re-using that code is not obvious and difficult to execute. In this paper, we demonstrate DataRinse to handle data preparation, such that the system recommends code designed to help with the preparation of a column for data analysis more generally. We show that DataRinse does not simply shard expressions observed in code but also uses analysis to group expressions applied to the same field such that related transforms appear coherently to a user. It is a human-in-the-loop system where the users select relevant code snippets produced by DataRinse to apply on their dataset.},
-journal = {Proc. VLDB Endow.},
-month = {sep},
-pages = {4090–4093},
-numpages = {4}
+booktitle={Proceedings of the Very Large Data bases (VLDB 2022)}
 }
 @inproceedings{abdelaziz2023semforms,
       title={ SemFORMS: Automatic Generation of Semantic Transforms By Mining Data Science Code }, 
