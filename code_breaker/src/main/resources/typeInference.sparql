@@ -1,0 +1,35 @@
+select ?n1 ?loc ?source ?cls ?super where {
+  graph <program> {
+    {
+      select ?n1 ?cls where {
+        {
+          select ?n1 (count(distinct ?n3) as ?all) where {
+            ?n1 <http://flow_type0> ?n3 .
+          } group by ?n1
+        }   
+
+        {
+          select ?n1 ?cls (count(distinct ?n2) as ?ok) where {
+            ?n1 <http://flow_type0> ?n2 .
+            ?n2 <http://path_end> ?p2 .
+
+            graph <http://docstrings.org/> {
+              ?s <http://docstrings.org/name_end> ?p2 ;
+              <http://docstrings.org/partOf> ?cls .
+            } 
+          } group by ?n1 ?cls
+        }
+  
+        filter(?ok = ?all)
+      }
+
+    }
+ 
+    graph <http://docstrings.org/> {
+      ?cls <http://docstrings.org/base_class>* ?super .
+    }
+
+    ?n1 <http://turtle_info> ?loc .
+    ?n1 <http://source> ?source .
+  }
+} 

@@ -1,0 +1,31 @@
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX graph4code: <http://purl.org/twc/graph4code/>
+PREFIX graph4codeOntology: <http://purl.org/twc/graph4code/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+          select ?g ?read ?fit ?x ?y ?label where {
+	    graph ?g {
+            { ?read rdfs:label "pandas.read_csv" } union {
+              ?read rdfs:label "pandas.DataFrame.from_csv" }
+	    ?read a sio:SIO_000667 .
+
+	    ?fit a sio:SIO_000667 ;
+                 schema:about "fit" .
+
+            ?x graph4code:flowsTo* ?fit ;
+               (^graph4code:flowsTo)* ?read .
+
+            ?x rdfs:label ?label .
+	    
+            optional {
+              ?x graph4code:flowsTo ?y .
+              ?y graph4code:flowsTo* ?fit .
+	    }
+	  }
+        } 
+    

@@ -21,7 +21,7 @@ Website: https://wala.github.io/graph4code/
 * [Large Scale Generation of Labeled Type Data for Python](./docs/use_cases.md#type_inf)
 * [Recommendation engine for developers](./docs/use_cases.md#case1)   
 * [Enforcing best practices](./docs/use_cases.md#case2)  
-* [Learning from big code](./docs/use_cases.md#case3) 
+* [Learning from big code](./docs/use_cases.md#case3)
 
 # Create your own graph
 
@@ -69,18 +69,14 @@ You will also need an installation of `Java JDK 11` for running the jars of code
 
 If you have a new script (code file), run the following command in the jars directory.  Please ensure you have Java 11 before you run.  Note that the last two arguments are to create a unique graph URI for each script that gets analyzed, where the graph URI is made up of <graph prefix> + '/' + <graph qualifier> for a single file.  Note also that we have migrated the RDF store model to RDF* to make it a more compact, easier to understand representation.  We have also added more information about each node.  Model definition will be updated soon.
 
-We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.
+We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.  ** All source code for the files that perform operations on the analysis graphs is now included - see directories that start with the string codebreaker. **
 
-#### Download code analysis libraries
+#### Build the code analysis libraries
 ```
- cd jars
- wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot/CodeBreaker_py3-0.0.1-SNAPSHOT.jar
+ cd scripts
+ bash setup.sh
 ```
-For corresponding sources:
 
-``
-wget https://archive.org/download/code-breaker-py-3-0.0.1-snapshot-sources/CodeBreaker_py3-0.0.1-SNAPSHOT-sources.jar
-``
 
 #### Usage:
  
@@ -162,6 +158,23 @@ Current accepted prefixes are ai_stackexchange, math_stackexchange, datascience_
 * If you use Graph4CodeGen in your research, please cite our work:
 
 ```
+@article{10.14778/3611540.3611628,
+author = {Abdelaziz, Ibrahim and Dolby, Julian and Khurana, Udayan and Samulowitz, Horst and Srinivas, Kavitha},
+title = {DataRinse: Semantic Transforms for Data Preparation Based on Code Mining},
+year = {2023},
+issue_date = {August 2023},
+publisher = {VLDB Endowment},
+volume = {16},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3611540.3611628},
+doi = {10.14778/3611540.3611628},
+abstract = {Data preparation is a crucial first step to any data analysis problem. This task is largely manual, performed by a person familiar with the data domain. DataRinse is a system designed to extract relevant transforms from large scale static analysis of repositories of code. Our motivation is that in any large enterprise, multiple personas such as data engineers and data scientists work on similar datasets. However, sharing or re-using that code is not obvious and difficult to execute. In this paper, we demonstrate DataRinse to handle data preparation, such that the system recommends code designed to help with the preparation of a column for data analysis more generally. We show that DataRinse does not simply shard expressions observed in code but also uses analysis to group expressions applied to the same field such that related transforms appear coherently to a user. It is a human-in-the-loop system where the users select relevant code snippets produced by DataRinse to apply on their dataset.},
+journal = {Proc. VLDB Endow.},
+month = {sep},
+pages = {4090–4093},
+numpages = {4}
+}
 @inproceedings{abdelaziz2023semforms,
       title={ SemFORMS: Automatic Generation of Semantic Transforms By Mining Data Science Code }, 
       author={Ibrahim Abdelaziz, Julian Dolby, Udayan Khurana, Horst Samulowitz, Kavitha Srinivas,

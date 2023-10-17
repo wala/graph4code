@@ -1,0 +1,399 @@
+<?xml version="1.0" ?>
+<!DOCTYPE summary-spec>
+<!-- Pandas model -->
+<summary-spec>
+  <classloader name="PythonLoader">
+    <class name="numpy" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lnumpy;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="sklearn" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lsklearn;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="sklearn_pandas" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lsklearn_pandas;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="pandas" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lpandas;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="patsy" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lpatsy;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="seaborn" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lseaborn;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+     <class name="statsmodels" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lstatsmodels;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+        <class name="scipy" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lscipy;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+     <class name="matplotlib" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lmatplotlib;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="IPython" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()LIPython;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+     <class name="mpl_toolkits" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lmpl_toolkits;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="tensorflow" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Ltensorflow;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="argparse" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Largparse;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+     <class name="csv" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lcsv;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+    <class name="itertools" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Litertools;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+        <class name="json" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Ljson;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="logging" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Llogging;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+ 	<class name="math" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lmath;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+ 	<class name="os" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Los;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+ 	<class name="pickle" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lpickle;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="pylab" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lpylab;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="random" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lrandom;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="re" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lre;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="sys" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lsys;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="time" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Ltime;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="warnings" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lwarnings;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+  	<class name="sknn" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Lsknn;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+ 	<class name="lightgbm" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Llightgbm;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+	<class name="imblearn" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Limblearn;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+	<class name="imbalanced-learn" allocatable="true">
+      <method name="import"
+	      static="true"
+	      descriptor="()Limbalanced-learn;">
+        <new def="x" class="Lturtle"/>
+ 	<putfield class="Lturtle"
+                  field="any"
+                  fieldType="LRoot"
+                  ref="x"
+                  value="x"/>
+        <return value="x"/>
+      </method>
+    </class>
+ 
+  </classloader>
+</summary-spec>
+
