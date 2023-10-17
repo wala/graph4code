@@ -8,6 +8,12 @@ AutoML systems build machine learning models automatically by performing a searc
 
 **Code**: https://github.com/CoDS-GCS/kgpip-public 
 
+We also use this analysis for feature engineering from code.  Within an enterprise, several data scientists often work with the same type of data.  SEMFORMS and DataRinse help data scientists leverage existing code for either feature engineering (SEMFORMS) or for cleansing data (DataRinse).
+
+**SEMFORMS Paper**: [https://arxiv.org/abs/2111.00083](https://www.ijcai.org/proceedings/2023/0827.pdf)
+
+**DataRinse Paper**: [https://dl.acm.org/doi/10.14778/3611540.3611628]
+
 ### Buildng Better Language Models for Code Understanding<a name="lm"></a>
 Code understanding is an increasingly important application of Artificial Intelligence. A fundamental aspect of understanding code is understanding text about code, e.g., documentation and forum discussions. Pre-trained language models (e.g., BERT) are a popular approach for various NLP tasks, and there are now a variety of benchmarks, such as GLUE, to help improve the development of such models for natural language understanding. However, little is known about how well such models work on textual artifacts about code, and we are unaware of any systematic set of downstream tasks for such an evaluation. In this paper, we derive a set of benchmarks (BLANCA - Benchmarks for LANguage models on Coding Artifacts) that assess code understanding based on tasks such as predicting the best answer to a question in a forum post, finding related forum posts, or predicting classes related in a hierarchy from class documentation. We evaluate the performance of current state-of-the-art language models on these tasks and show that there is a significant improvement on each task from fine tuning. We also show that multi-task training over BLANCA tasks helps build better language models for code understanding. 
 
