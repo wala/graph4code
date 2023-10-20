@@ -72,6 +72,8 @@ If you have a new script (code file), run the following command in the jars dire
 We provide analysis for both Python 2 and Python 3.  Python 3 is the supported version of Python, but, while Python 2 is no longer supported, many existing datasets have significant quantities it.  Since the two languages have different syntax in some cases, we need two different analyses that rely on diffferent parsers, and hence we have two analysis jars.  ** All source code for the files that perform operations on the analysis graphs is now included - see directories that start with the string codebreaker. **
 
 #### Build the code analysis libraries
+Fetch these jars from [https://archive.org/download/graph4code_prereq_jars/graph4code_prereq_jars.tar](https://archive.org/download/graph4code_prereq_jars/graph4code_prereq_jars.tar).  In graph4code, untar.
+
 ```
  cd scripts
  bash setup.sh
