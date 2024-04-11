@@ -88,7 +88,7 @@ Fetch these jars from [https://archive.org/download/graph4code_prereq_jars/graph
  
 #### Example
  
-     java -DoutputDir=<output dir to store JSON representation of graph> -cp codebreaker3.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
+     java -DoutputDir=<output dir to store JSON representation of graph> -cp ./code_breaker_prereq_py3/target/CodeBreakerPrereqPy3-0.0.1-SNAPSHOT.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
  
  So to run on an example script provided from the `main` directory, use 
  ```
