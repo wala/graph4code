@@ -88,12 +88,12 @@ Fetch these jars from [https://archive.org/download/graph4code_prereq_jars/graph
  
 #### Example
  
-     java -DoutputDir=<output dir to store JSON representation of graph> -cp ./code_breaker_prereq_py3/target/CodeBreakerPrereqPy3-0.0.1-SNAPSHOT.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
+     java -DoutputDir=<output dir to store JSON representation of graph> -cp ../code_breaker_prereq_py3/target/CodeBreakerPrereqPy3-0.0.1-SNAPSHOT.jar util.RunTurtleSingleAnalysis <python script to run on> null null` to run on a Python 3 file, with an output of the graph on JSON. 
  
  So to run on an example script provided from the `main` directory, use 
  ```
      mkdir -p ./output/static_analysis/ 
-     java -DoutputDir=./output/static_analysis/ -cp jars/codebreaker3.jar util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null
+     java -DoutputDir=./output/static_analysis/ -cp ../code_breaker_prereq_py3/target/CodeBreakerPrereqPy3-0.0.1-SNAPSHOT.jar  util.RunTurtleSingleAnalysis ./example_scripts/test1.py null null
   ```
  ./output/static_analysis should have a JSON file and an NQ file for the same information.  Please note that as the project has moved on to different applications, we have focused more on the JSON representation which is up to date.  The NQ is less what we use and test - so it may be out of date.
 
