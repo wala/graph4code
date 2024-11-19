@@ -82,7 +82,7 @@ Fetch these jars from [https://archive.org/download/graph4code_prereq_jars/graph
 
 #### Usage:
  
-     java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp codebreaker*n*.jar util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier> 
+     java -DoutputDir=<output dir to store JSON representation of graph> -DquadFile=<file name to write quads to - this file gets appended to, so all analyzed scripts end up in a single file> -cp <absolute path of codebreaker*n*.jar> util.RunTurtleSingleAnalysis <python script to run on> <graph prefix> <graph qualifier> 
  
   where *n* is either 2 or 3 depending on the desired version of Python.  
  
